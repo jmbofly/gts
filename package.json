@@ -1,6 +1,10 @@
 {
   "name": "gts",
   "version": "0.0.0",
+  "author": "jimi flynn",
+  "bugs": {
+    "email": "jimi@medtelplus.com"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
