@@ -1,35 +1,53 @@
 <!-- Navigation -->
-<nav class="navbar navbar-light bg-light static-top">
+<header #header class="default-header navbar navbar-fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#"><img src="../assets/svg/gts_logo.svg" width="125" alt=""></a>
-    <ul class="nav justify-content-center ml-auto">
+    <div class="header-wrap" style="width: 100%;">
+      <div class="header-top d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <img src="../assets/img/gts_logo_alt_short.png" width="100" class="" alt="global technology services logo">
+        </div>
+        <div class="main-menubar d-flex align-items-center justify-content-end">
+          <nav [ngClass]="showMenuBar ? 'show':'hide'">
+            <button class="btn btn-link" (click)="animateScroll('home')">Home</button>
+            <button class="btn btn-link" (click)="animateScroll('featured')">Featured</button>
+            <button class="btn btn-link" (click)="animateScroll('about')">About</button>
+            <button class="btn btn-link" (click)="animateScroll('contact')">Contact</button>
+          </nav>
+          <div class="menu-bar mr-3" (click)="toggleMenuBar()"><i class="fa fa-bars"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End Header Area -->
+
+<!-- Mobilenav -->
+<!-- <div id="mobile_nav_container" [ngClass]="{'show': showMobileNav | async}">
+  <div id="mobile_nav">
+    <ul class="nav justify-content-center">
       <li class="nav-item">
-        <button class="btn-link btn nav-link active" (click)="navigateTo('')">About</button>
+        <a class="nav-link active" href="#">Featured</a>
       </li>
       <li class="nav-item">
-        <button class="btn-link btn nav-link" (click)="navigateTo('')">Featured</button>
+        <a class="nav-link" href="#">Services</a>
       </li>
       <li class="nav-item">
-        <button class="btn-link btn nav-link" (click)="navigateTo('')">Services</button>
-      </li>
-      <li class="nav-item">
-        <button class="btn-link btn nav-link disabled" (click)="navigateTo('')">Account</button>
+        <a class="nav-link" href="#">About </a>
       </li>
     </ul>
-    <a class="btn btn-primary" (click)="navigateTo('')">Sign In</a>
   </div>
-</nav>
+</div> -->
 
 <!-- Masthead -->
-<header class="masthead text-white text-center pt-4">
+<header id="home" class="masthead text-white text-center pt-4" [style.margin-top]="'74px'">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
       <div class="col-xl-9 mx-auto">
-        <img class="mb-4 img-fluid" src="../assets/img/gts_logo_alt_short_2.png" alt="">
+        <h1 class="mb-5" [style.font-size]="'2.5rem'">Your Technology Solution</h1>
       </div>
       <div class="col-xl-9 mx-auto">
-        <h1 class="mb-5" [style.font-size]="'2.5rem'">Your Technology Solution</h1>
+        <img class="mb-4 img-fluid" src="../assets/img/gts_logo_alt_short_2.png" alt="">
       </div>
       <div class="col-xl-9 mx-auto">
         <h3 class="mb-5">Want updates on our tech?</h3>
@@ -89,20 +107,52 @@
 </section>
 
 
-
-<section>
-  <div class="jumbotron jumbotron-fluid bg-dark text-light">
+<!-- Featured -->
+<section id="featured">
+  <div class="jumbotron jumbotron-fluid text-center mb-0" [style.background-color]="'#f15a24E0'">
     <div class="container">
-      <h1 class="display-4">Featured Partner</h1>
-      <p class="lead"><img width="150" src="https://xstreamingtv.com/assets/images/xstreamingtv-logo-5000x1659.png"
-          alt=""></p>
-      <hr class="my-2">
-      <p>More info</p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+      <h2 class="text-light text-center">
+        <i class="fa fa-handshake-o"></i> Featured Partner
+        <hr>
+        <br>
+        <img width="250" class="img-thumbnail bg-dark mb-2"
+          src="https://xstreamingtv.com/assets/images/xstreamingtv-logo-5000x1659.png" alt="xstreamingtv logo">
+      </h2>
+
+      <p class="lead mb-4">
+
+        Our newest partner, XStreamingTv, consistently exceeds expectations with trained support and a high
+        quality, affordable video streaming service. We are proud to work with them and are pleased to share their
+        amazing packages!
+        <br>
       </p>
+      <hr>
+      <p class="lead text-center mt-4"><i class="fa fa-wrench" [style.font-size]="'2rem'"></i> Service includes:
+      </p>
+      <ul class="list-group text-uppercase">
+        <li class="list-group-item">500+ Channels on your phone</li>
+        <li class="list-group-item">Watch TV/Sports on our Web Player</li>
+        <li class="list-group-item">Stream your favorite channels</li>
+        <li class="list-group-item">5 Devices anywhere</li>
+        <li class="list-group-item">Works on your android tablet, phone and android tv box using our APP</li>
+      </ul>
+      <div class="card mt-2">
+        <div class="card-body">
+          <blockquote class="blockquote">
+            <p>Share with your
+              family, it will work anywhere!
+              Check out ALL the great features we have to offer.
+
+              Apple users, please use Safari or Chrome for best experience.</p>
+            <footer class="card-blockquote"><a href="https://xstreamingtv.com/dump/aff/go/kevin" target="_blank"
+                class="btn btn-primary mt-4">Learn
+                more</a></footer>
+          </blockquote>
+        </div>
+      </div>
+      <hr>
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
 
           <div class="card col-12 mx-2 my-2 justify-content-center col-lg-3">
             <div class="card-header text-center pt-5">
@@ -125,8 +175,8 @@
                     to try our Web Player and APP for Android for 3 days of all access use of our list.</li>
                 </ul>
               </div>
-              <div class="mbr-section-btn text-center py-4 pb-5"><a a="" href="javascript:;"
-                  onclick="cart.addCheckoutExternal(this,2); return false;" class="btn btn-warning display-4">TRY
+              <div class="mbr-section-btn text-center py-4 pb-5"><a target="_blank"
+                  href="https://xstreamingtv.com/dump/aff/go/kevin" class="btn btn-warning display-4">TRY
                   NOW</a>
               </div>
             </div>
@@ -157,8 +207,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="mbr-section-btn text-center py-4 pb-5"><a href="javascript:;"
-                  onclick="cart.addCheckoutExternal(this,3); return false;" class="btn btn-warning display-4">BUY
+              <div class="mbr-section-btn text-center py-4 pb-5"><a target="_blank"
+                  href="https://xstreamingtv.com/dump/aff/go/kevin" class="btn btn-warning display-4">BUY
                   NOW</a>
               </div>
             </div>
@@ -185,8 +235,8 @@
                     Windows, Mac, laptop, desktop) and APP for Android with hundreds of live channels.</li>
                 </ul>
               </div>
-              <div class="mbr-section-btn text-center py-4 pb-5"><a href="javascript:;"
-                  onclick="cart.addCheckoutExternal(this,6); return false;" class="btn btn-warning display-4">BUY
+              <div class="mbr-section-btn text-center py-4 pb-5"><a target="_blank"
+                  href="https://xstreamingtv.com/dump/aff/go/kevin" class="btn btn-warning display-4">BUY
                   NOW</a>
               </div>
             </div>
@@ -241,6 +291,7 @@
                   </div>-->
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -249,24 +300,35 @@
 <!-- Image Showcases -->
 <section class="showcase">
   <div class="container-fluid p-0">
+    <div class="p-4 mb-0 text-light bg-dark text-center" [style.min-height]="'300px'">
+      <h2 class="my-4">We provide a full service integration of technology in many industries, and in several ways,
+        whatever
+        you need.</h2>
+      <h4 class="my-3">Founded by an American disabled veteran, we set out to offer our services with understanding and
+        care. Not all
+        businesses are alike, and we take the time to learn what it is our customers need, and implement our services
+        with empathy and efficiency.</h4>
+      <img src="../assets/img/sdv3.png" alt="">
+    </div>
     <div class="row no-gutters">
 
       <div class="col-lg-6 order-lg-2 text-white showcase-img"
         style="background-image: url('../assets/img/bg-showcase-1.jpg');">
       </div>
       <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-        <h2>Fully Responsive Design</h2>
-        <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on
-          any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+        <h2>Digital Marketing</h2>
+        <p class="lead mb-0">From S.E.O. to branding, GTS offers expert marketing and consulting, giving businesses
+          the winning edge needed to reach your customers.</p>
       </div>
     </div>
     <div class="row no-gutters">
       <div class="col-lg-6 text-white showcase-img" style="background-image: url('../assets/img/bg-showcase-2.jpg');">
       </div>
       <div class="col-lg-6 my-auto showcase-text">
-        <h2>Updated For Bootstrap 4</h2>
-        <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile
-          responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+        <h2>Research &amp; Development</h2>
+        <p class="lead mb-0">Technology can change lives, and better our planet. GTS puts the advancment of green
+          technology as our number one priority. Through fundraising, followed by research and
+          development, we can help provide solutions to some of the worlds toughest problems.</p>
       </div>
     </div>
     <div class="row no-gutters">
@@ -274,10 +336,9 @@
         style="background-image: url('../assets/img/bg-showcase-3.jpg');">
       </div>
       <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-        <h2>Easy to Use &amp; Customize</h2>
-        <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper
-          customization options. Out of the box, just add your content and images, and your new landing page will be
-          ready to go!</p>
+        <h2>Empathy &amp; Accessability</h2>
+        <p class="lead mb-0">Technology should be available for everyone, allowing the convenience and benefits to
+          better all who integrate it into their lives.</p>
       </div>
     </div>
   </div>
@@ -290,24 +351,24 @@
     <div class="row">
       <div class="col-lg-4">
         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-          <img class="img-fluid rounded-circle mb-3" src="../assets/img/testimonials-1.jpg" alt="">
+          <img class="img-fluid rounded-circle mb-3" src="../assets/img/avatar.png" alt="">
           <h5>Margaret E.</h5>
-          <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+          <p class="font-weight-light mb-0">"XStreamingTv is fantastic! Thanks so much guys!"</p>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-          <img class="img-fluid rounded-circle mb-3" src="../assets/img/testimonials-2.jpg" alt="">
+          <img class="img-fluid rounded-circle mb-3" src="../assets/img/avatar.png" alt="">
           <h5>Fred S.</h5>
-          <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice
-            landing pages."</p>
+          <p class="font-weight-light mb-0">"GTS is amazing. Their insight and technology has helped my business grow so
+            fast!"</p>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-          <img class="img-fluid rounded-circle mb-3" src="../assets/img/testimonials-3.jpg" alt="">
+          <img class="img-fluid rounded-circle mb-3" src="../assets/img/avatar.png" alt="">
           <h5>Sarah W.</h5>
-          <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          <p class="font-weight-light mb-0">"Thanks so much for making the world a better place!"</p>
         </div>
       </div>
     </div>
@@ -344,14 +405,14 @@
     <div class="row">
       <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
         <ul class="list-inline mb-2">
-          <li class="list-inline-item">
+          <!-- <li class="list-inline-item">
             <a href="#">About</a>
           </li>
           <li class="list-inline-item">&sdot;</li>
           <li class="list-inline-item">
             <a href="#">Contact</a>
           </li>
-          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">&sdot;</li> -->
           <li class="list-inline-item">
             <a href="#">Terms of Use</a>
           </li>
@@ -360,12 +421,12 @@
             <a href="#">Privacy Policy</a>
           </li>
         </ul>
-        <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
+        <p class="text-muted small mb-4 mb-lg-0">&copy; Global Technology Services, LLC 2019. All Rights Reserved.</p>
       </div>
       <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
         <ul class="list-inline mb-0">
           <li class="list-inline-item mr-3">
-            <a href="#">
+            <a target="_blank" href="https://facebook.com/GloablTechnologyServicesLLC/">
               <i class="fab fa-facebook fa-2x fa-fw"></i>
             </a>
           </li>
@@ -384,3 +445,29 @@
     </div>
   </div>
 </footer>
+
+<!-- Sign up Modal -->
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Sign up</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="form-group">
+      <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="first" id="first" aria-describedby="firstHelpId"
+        placeholder="First Name">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="last" id="last" aria-describedby="lastHelpId"
+        placeholder="Last Name">
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="modal.close('Close click')">Go</button>
+  </div>
+</ng-template>
