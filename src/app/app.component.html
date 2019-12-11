@@ -17,9 +17,15 @@
         </div>
       </div>
     </div>
+    <ngb-alert #alert style="top: 80px;position: fixed;right: 0;" (close)="closeAlert(alert)" *ngIf="signUpSuccess"
+      type="success" [dismissible]="true">
+      Successfully signed
+      up!
+    </ngb-alert>
   </div>
 </header>
 <!-- End Header Area -->
+<!-- Simple signup success alert -->
 
 <!-- Mobilenav -->
 <!-- <div id="mobile_nav_container" [ngClass]="{'show': showMobileNav | async}">
@@ -56,10 +62,11 @@
         <form>
           <div class="form-row">
             <div class="col-12 col-md-9 mb-2 mb-md-0">
-              <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              <input type="email" #email class="form-control form-control-lg" placeholder="Enter your email...">
             </div>
             <div class="col-12 col-md-3">
-              <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+              <button type="button" (click)="signUpAndRedirect(email.value, null)"
+                class="btn btn-block btn-lg btn-primary">Sign up!</button>
             </div>
           </div>
         </form>
@@ -298,7 +305,7 @@
 
 
 <!-- Image Showcases -->
-<section class="showcase">
+<section id="about" class="showcase">
   <div class="container-fluid p-0">
     <div class="p-4 mb-0 text-light bg-dark text-center" [style.min-height]="'300px'">
       <h2 class="my-4">We provide a full service integration of technology in many industries, and in several ways,
@@ -308,7 +315,7 @@
         care. Not all
         businesses are alike, and we take the time to learn what it is our customers need, and implement our services
         with empathy and efficiency.</h4>
-      <img src="../assets/img/sdv3.png" alt="">
+      <img class="img-fluid" width="200" src="../assets/img/sdv3.png" alt="">
     </div>
     <div class="row no-gutters">
 
@@ -376,7 +383,7 @@
 </section>
 
 <!-- Call to Action -->
-<section class="call-to-action text-white text-center">
+<section id="contact" class="call-to-action text-white text-center">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
@@ -387,10 +394,11 @@
         <form>
           <div class="form-row">
             <div class="col-12 col-md-9 mb-2 mb-md-0">
-              <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              <input #email type="email" class="form-control form-control-lg" placeholder="Enter your email...">
             </div>
             <div class="col-12 col-md-3">
-              <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+              <button type="button" (click)="signUpAndRedirect(email.value, null)"
+                class="btn btn-block btn-lg btn-primary">Sign up!</button>
             </div>
           </div>
         </form>

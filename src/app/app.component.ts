@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { switchMap, map } from 'rxjs/operators';
-
+import { DataService } from './data.service';
 
 import { Router, ActivatedRoute } from '@angular/router';
 
@@ -19,7 +19,9 @@ export class AppComponent implements OnInit {
   title = 'Global Technology Services, LLC';
   showMenuBar = true;
 
-  constructor(private http: HttpClient, private router: Router, private route: ActivatedRoute, public modal: NgbModal) {
+  signUpSuccess = false;
+
+  constructor(public data: DataService, private http: HttpClient, private router: Router, private route: ActivatedRoute, public modal: NgbModal) {
   }
 
   ngOnInit() {
@@ -33,7 +35,7 @@ export class AppComponent implements OnInit {
       behavior: 'smooth',
       left: 0
     });
-    this.showMenuBar = false;
+    // this.showMenuBar = false;
     console.log('scrolled', { top, id, anchor });
   }
 
@@ -58,7 +60,19 @@ export class AppComponent implements OnInit {
     this.showMenuBar = !this.showMenuBar;
   }
 
-  signUpAndRedirect(email: string, extra?: { name: string, message: string }) {
+  async signUpAndRedirect(email: string, data?: any, redirect = false) {
+    const redirectUrl = 'https://xstreamingtv.com/dump/aff/go/kevin';
+    return await this.data.signUp(email, data).then(res => {
+      this.signUpSuccess = true;
+      // console.log(res)
+      if (redirect) {
+        this.navigateTo(redirectUrl, true);
+      }
+    });
+  }
 
+  closeAlert(alert) {
+    this.signUpSuccess = false;
+    console.log(alert)
   }
 }
