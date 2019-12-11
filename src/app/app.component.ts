@@ -17,7 +17,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'Global Technology Services, LLC';
-  showMenuBar = true;
+  showMenuBar = false;
 
   signUpSuccess = false;
 
@@ -64,6 +64,7 @@ export class AppComponent implements OnInit {
     const redirectUrl = 'https://xstreamingtv.com/dump/aff/go/kevin';
     return await this.data.signUp(email, data).then(res => {
       this.signUpSuccess = true;
+      email = '';
       // console.log(res)
       if (redirect) {
         this.navigateTo(redirectUrl, true);

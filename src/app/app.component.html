@@ -65,7 +65,7 @@
               <input type="email" #email class="form-control form-control-lg" placeholder="Enter your email...">
             </div>
             <div class="col-12 col-md-3">
-              <button type="button" (click)="signUpAndRedirect(email.value, null)"
+              <button type="button" (click)="signUpAndRedirect(email.value, {})"
                 class="btn btn-block btn-lg btn-primary">Sign up!</button>
             </div>
           </div>
@@ -394,10 +394,10 @@
         <form>
           <div class="form-row">
             <div class="col-12 col-md-9 mb-2 mb-md-0">
-              <input #email type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              <input #signup type="email" class="form-control form-control-lg" placeholder="Enter your email...">
             </div>
             <div class="col-12 col-md-3">
-              <button type="button" (click)="signUpAndRedirect(email.value, null)"
+              <button type="button" (click)="signUpAndRedirect(signup.value, {})"
                 class="btn btn-block btn-lg btn-primary">Sign up!</button>
             </div>
           </div>
@@ -434,7 +434,7 @@
       <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
         <ul class="list-inline mb-0">
           <li class="list-inline-item mr-3">
-            <a target="_blank" href="https://facebook.com/GloablTechnologyServicesLLC/">
+            <a target="_blank" href="https://facebook.com/GlobalTechnologyServicesLLC/">
               <i class="fab fa-facebook fa-2x fa-fw"></i>
             </a>
           </li>

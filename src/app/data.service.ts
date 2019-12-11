@@ -6,7 +6,12 @@ import { switchMap, map } from 'rxjs/operators';
 
 export class User {
   email: string;
-  data?: any;
+  data?: UserData;
+}
+
+export class UserData {
+  timestamp: any;
+  extra?: any;
 }
 
 @Injectable({
@@ -19,8 +24,9 @@ export class DataService {
     this.userCollection = this.afs.collection<User>('users');
   }
 
-  public signUp(email: string, data?: any) {
+  public signUp(email: string, data?: UserData) {
     const userData = { email, data };
+    userData.data.timestamp = new Date();
     return this.userCollection.add(userData);
   }
 }
