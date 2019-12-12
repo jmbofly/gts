@@ -1,9 +1,8 @@
 
 // TODO: Add navigation/routes
-// TODO: Add email signup
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, NgbAlert } from '@ng-bootstrap/ng-bootstrap';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { switchMap, map } from 'rxjs/operators';
 import { DataService } from './data.service';
@@ -20,6 +19,9 @@ export class AppComponent implements OnInit {
   showMenuBar = false;
 
   signUpSuccess = false;
+  signUpError = false;
+
+  alerts = [];
 
   constructor(public data: DataService, private http: HttpClient, private router: Router, private route: ActivatedRoute, public modal: NgbModal) {
   }
@@ -61,19 +63,32 @@ export class AppComponent implements OnInit {
   }
 
   async signUpAndRedirect(email: string, data?: any, redirect = false) {
+    let error = '';
     const redirectUrl = 'https://xstreamingtv.com/dump/aff/go/kevin';
-    return await this.data.signUp(email, data).then(res => {
-      this.signUpSuccess = true;
-      email = '';
-      // console.log(res)
-      if (redirect) {
-        this.navigateTo(redirectUrl, true);
-      }
-    });
+    if (email.indexOf('@') != -1) {
+      return await this.data.signUp(email, data).then(res => {
+        this.signUpSuccess = true;
+        // console.log(res)
+        if (redirect) {
+          this.navigateTo(redirectUrl, true);
+        }
+        return email = '';
+      }).catch(err => {
+        error = err;
+        this.alerts.push('Error during sign up!')
+        this.signUpError = true;
+      });
+    } else {
+      error = 'Please enter a valid email!';
+      this.signUpError = true;
+      this.alerts.push('Error during sign up! ' + error)
+      console.log('Error on signup', error);
+    }
   }
 
-  closeAlert(alert) {
-    this.signUpSuccess = false;
-    console.log(alert)
+  closeAlert(alert, type: string) {
+    this.alerts = [];
+    this[type] = false;
+    console.log(alert.close)
   }
 }

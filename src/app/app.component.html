@@ -17,10 +17,14 @@
         </div>
       </div>
     </div>
-    <ngb-alert #alert style="top: 80px;position: fixed;right: 0;" (close)="closeAlert(alert)" *ngIf="signUpSuccess"
+    <ngb-alert #alert style="top: 80px;position: fixed;right: 0;" (close)="closeAlert(alert, 'signUpSuccess')" *ngIf="signUpSuccess"
       type="success" [dismissible]="true">
       Successfully signed
       up!
+    </ngb-alert>
+    <ngb-alert #error style="top: 80px;position: fixed;right: 0;" (close)="closeAlert(error, 'signUpError')" *ngIf="signUpError"
+      type="danger" [dismissible]="true">
+      {{alerts}}
     </ngb-alert>
   </div>
 </header>
