@@ -9,10 +9,5 @@
 
 // Font Mixins
 @mixin body-font {
-  font-family: 'Source Sans Pro';
-  font-weight: 300;
-}
-@mixin heading-font {
-  font-family: 'Merriweather';
-  font-weight: 700;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

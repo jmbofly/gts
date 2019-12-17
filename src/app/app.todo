@@ -1,0 +1,31 @@
+TODO: Sitemap: @critical 
+        ☐ Home
+        ☐ Featured
+        ☐ Services
+            ☐ Digital Marketing
+            ☐ Telemedicine
+            ☐ Video Streaming
+        ☐ About
+        ☐ Contact
+
+TODO: Features: @high
+        ☐ Forms
+            ☐ Signup
+                ☐ Newsletter
+                    ☐ collect email
+                    ☐ send current newsletter to user email
+                    ☐ alert user of success
+                    ☐ alert user of error
+                ☐ Account (track and display user service payments and history)
+            ☐ Contact
+            ☐ Collect And Redirect
+                ☐ form data input saved to database
+                ☐ redirects user to partner website
+
+        
+TODO: Image Slider: @low
+        ☐ masthead
+            ☐ ad/featured list input
+        ☐ testamonial
+            ☐ data list input
+    

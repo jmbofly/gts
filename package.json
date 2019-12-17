@@ -1,6 +1,10 @@
 {
   "name": "gts",
   "version": "0.0.0",
+  "author": "jimi flynn",
+  "bugs": {
+    "email": "jimi@medtelplus.com"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -20,6 +24,7 @@
     "@angular/platform-browser": "~8.2.3",
     "@angular/platform-browser-dynamic": "~8.2.3",
     "@angular/router": "~8.2.3",
+    "@ng-bootstrap/ng-bootstrap": "^5.1.4",
     "angularfire2": "^5.2.1",
     "animate.css": "^3.7.0",
     "aos": "^2.3.4",
