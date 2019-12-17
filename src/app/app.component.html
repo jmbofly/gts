@@ -1,54 +1,3 @@
-<<<<<<< HEAD
-<div class="overlay"></div>
-<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-  <source (loadstart)="videoLoaded($event)" src="../assets/mp4/bg.mp4" type="video/mp4">
-</video>
-
-<div class="masthead">
-  <div class="masthead-bg"></div>
-  <div class="container h-100">
-    <div class="row h-100">
-      <div class="col-12 my-auto">
-        <div class="masthead-content text-white py-5 py-md-0">
-          <h1 class="mb-4 pb-2"><img width="100%" src="../assets/img/gts_logo_alt_short_2.png" alt="">
-          </h1>
-          <hr class="bg-white">
-          <h1 class="mb-3 mt-3">Coming Soon!</h1>
-          <p class="mb-5">We're working hard to finish the development of this site. Our target launch date is
-            <strong>January 2020</strong>! Sign up for updates using the form below!</p>
-          <div class="input-group input-group-newsletter">
-            <input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..."
-              aria-describedby="basic-addon">
-            <div class="input-group-append">
-              <button class="btn btn-secondary" type="button">Notify Me!</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="social-icons">
-  <ul class="list-unstyled text-center mb-0">
-    <li class="list-unstyled-item">
-      <a href="#">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </li>
-    <li class="list-unstyled-item">
-      <a href="htpps://facebook.com/global-technology-services">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-    </li>
-    <li class="list-unstyled-item">
-      <a href="#">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </li>
-  </ul>
-</div>
-=======
 <!-- Navigation -->
 <header #header class="default-header navbar navbar-fixed-top">
   <div class="container">
@@ -68,13 +17,13 @@
         </div>
       </div>
     </div>
-    <ngb-alert #alert style="top: 80px;position: fixed;right: 0;" (close)="closeAlert(alert, 'signUpSuccess')" *ngIf="signUpSuccess"
-      type="success" [dismissible]="true">
+    <ngb-alert #alert style="top: 80px;position: fixed;right: 0;" (close)="closeAlert(alert, 'signUpSuccess')"
+      *ngIf="signUpSuccess" type="success" [dismissible]="true">
       Successfully signed
       up!
     </ngb-alert>
-    <ngb-alert #error style="top: 80px;position: fixed;right: 0;" (close)="closeAlert(error, 'signUpError')" *ngIf="signUpError"
-      type="danger" [dismissible]="true">
+    <ngb-alert #error style="top: 80px;position: fixed;right: 0;" (close)="closeAlert(error, 'signUpError')"
+      *ngIf="signUpError" type="danger" [dismissible]="true">
       {{alerts}}
     </ngb-alert>
   </div>
