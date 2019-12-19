@@ -17,10 +17,12 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'Global Technology Services, LLC';
+  showMenuBar = false;
+
 
   alerts = [];
 
-  constructor(public data: DataService, private http: HttpClient, private router: Router, private route: ActivatedRoute, public modal: NgbModal) {
+  constructor(private router: Router, private route: ActivatedRoute, public modal: NgbModal) {
   }
 
   ngOnInit() {
@@ -32,7 +34,7 @@ export class AppComponent implements OnInit {
     })
   }
 
-  animateScroll(id) {
+  animateScroll(id: string) {
     const anchor: HTMLElement = document.getElementById(id);
     const top = anchor.offsetTop;
     window.scrollTo({
@@ -40,12 +42,18 @@ export class AppComponent implements OnInit {
       behavior: 'smooth',
       left: 0
     });
+    this.showMenuBar = false;
     console.log('scrolled', { top, id, anchor });
   }
 
   navigateTo(url: string) {
     console.log('navigating to :', url)
     return this.router.navigateByUrl(url)
+      .then(res => window.scrollTo({
+        top: 0,
+        behavior: 'auto',
+        left: 0
+      }))
   }
 
   toggleMenuBar() {

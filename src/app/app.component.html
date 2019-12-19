@@ -23,3 +23,77 @@
 
 
 <router-outlet></router-outlet>
+
+<!-- Footer -->
+<footer class="footer bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+        <ul class="list-inline mb-2">
+          <!-- <li class="list-inline-item">
+            <a href="#">About</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#">Contact</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li> -->
+          <li class="list-inline-item">
+            <a href="#">Terms of Use</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-4 mb-lg-0">&copy; Global Technology Services, LLC 2019. All Rights
+          Reserved.</p>
+      </div>
+      <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mr-3">
+            <a target="_blank" href="https://facebook.com/GlobalTechnologyServicesLLC/">
+              <i class="fab fa-facebook fa-2x fa-fw"></i>
+            </a>
+          </li>
+          <li class="list-inline-item mr-3">
+            <a href="#">
+              <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fab fa-instagram fa-2x fa-fw"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sign up Modal -->
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Sign up</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="form-group">
+      <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="first" id="first" aria-describedby="firstHelpId"
+        placeholder="First Name">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="last" id="last" aria-describedby="lastHelpId"
+        placeholder="Last Name">
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="modal.close('Close click')">Go</button>
+  </div>
+</ng-template>
