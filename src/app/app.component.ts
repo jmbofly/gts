@@ -49,11 +49,15 @@ export class AppComponent implements OnInit {
   navigateTo(url: string) {
     console.log('navigating to :', url)
     return this.router.navigateByUrl(url)
-      .then(res => window.scrollTo({
-        top: 0,
-        behavior: 'auto',
-        left: 0
-      }))
+      .then(res => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'auto',
+          left: 0
+        })
+        this.showMenuBar = false;
+      })
+
   }
 
   toggleMenuBar() {

@@ -18,15 +18,22 @@ export class UserData {
   providedIn: 'root'
 })
 export class DataService {
-  userCollection: AngularFirestoreCollection<any>;
+  userCollection: AngularFirestoreCollection<User>;
+  prizeEntryCollection: AngularFirestoreCollection<any>;
 
   constructor(public afs: AngularFirestore, public http: HttpClient) {
     this.userCollection = this.afs.collection<User>('users');
+    this.prizeEntryCollection = this.afs.collection<any>('prize-entries');
   }
 
   public signUp(email: string, data?: UserData) {
     const userData = { email, data };
     userData.data.timestamp = new Date();
     return this.userCollection.add(userData);
+  }
+
+  prizeEntrySignUp(data: any) {
+    data.timestamp = new Date();
+    return this.prizeEntryCollection.add(data);
   }
 }

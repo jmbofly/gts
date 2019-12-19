@@ -1,45 +1,23 @@
-<app-masthead [title]="title"></app-masthead>
+<app-masthead [title]="title" *ngIf="isPage"></app-masthead>
 <!-- Featured -->
 <section id="featured">
-    <div class="jumbotron jumbotron-fluid text-center mb-0" [style.background-color]="'#f15a24E0'">
+    <div class="jumbotron jumbotron-fluid text-center mb-0" [style.background-color]="'#151719'">
         <div class="container">
-
-
-            <p class="lead mb-4">
-
-                Our newest partner, XStreamingTv, consistently exceeds expectations with trained support and a high
-                quality, affordable video streaming service. We are proud to work with them and are pleased to share
-                their
-                amazing packages!
-                <br>
-            </p>
-            <hr>
-            <p class="lead text-center mt-4"><i class="fa fa-wrench" [style.font-size]="'2rem'"></i> Service includes:
-            </p>
-            <ul class="list-group text-uppercase">
-                <li class="list-group-item">500+ Channels on your phone</li>
-                <li class="list-group-item">Watch TV/Sports on our Web Player</li>
-                <li class="list-group-item">Stream your favorite channels</li>
-                <li class="list-group-item">5 Devices anywhere</li>
-                <li class="list-group-item">Works on your android tablet, phone and android tv box using our APP</li>
-            </ul>
-            <div class="card mt-2">
-                <div class="card-body">
-
-                    <p>Share with your
-                        family, it will work anywhere!
-                        Check out ALL the great features we have to offer.
-                    </p>
-                    <blockquote class="blockquote">
-                        Apple users, please use Safari or Chrome for best experience.
-                    </blockquote>
-                    <footer class="card-blockquote"><a href="https://xstreamingtv.com/dump/aff/go/kevin" target="_blank"
-                            class="btn btn-primary mt-4">Learn
-                            more</a></footer>
-
+            <div class="row">
+                <div class="p-4 text-center col-md-4">
+                    <h3 class="text-light">Enter to win a Samsung 50" 4k tv or a Samsung Galaxy Tab A</h3>
+                    <button class="btn btn-block btn-primary my-4">Learn more</button>
                 </div>
+                <div class="p-4 col-md-4"><img src="../assets/img/samsung_tv.png" width="250" alt=""></div>
+                <div class="p-4 col-md-4"><img src="../assets/img/samsung_tab.png" width="250" alt=""></div>
+
             </div>
-            <hr>
+            <hr class="bg-light">
+            <h3 class="my-4 text-light">
+                Check out these fantastic packages!
+                <br>
+            </h3>
+
             <div class="container">
                 <div class="row justify-content-center">
 
@@ -65,10 +43,9 @@
                                         list.</li>
                                 </ul>
                             </div>
-                            <div class="mbr-section-btn text-center py-4 pb-5"><a target="_blank"
-                                    href="https://xstreamingtv.com/dump/aff/go/kevin"
-                                    class="btn btn-warning display-4">TRY
-                                    NOW</a>
+                            <div class="mbr-section-btn text-center py-4 pb-5"><button
+                                    (click)="openModal(signUpContent)" class="btn btn-warning display-4">TRY
+                                    NOW</button>
                             </div>
                         </div>
                     </div>
@@ -100,10 +77,9 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="mbr-section-btn text-center py-4 pb-5"><a target="_blank"
-                                    href="https://xstreamingtv.com/dump/aff/go/kevin"
-                                    class="btn btn-warning display-4">BUY
-                                    NOW</a>
+                            <div class="mbr-section-btn text-center py-4 pb-5"><button
+                                    (click)="openModal(signUpContent)" class="btn btn-warning display-4">BUY
+                                    NOW</button>
                             </div>
                         </div>
                     </div>
@@ -125,16 +101,19 @@
                         <div class="card-body">
                             <div class="card-list align-center">
                                 <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                                    <li class="list-group-item">Save $20/yr: Access to our list to use on ANY device,
+                                    <li class="list-group-item">
+                                        <blockquote class="blockquote">Save $20/yr:</blockquote>
+                                        Access to our list to
+                                        use on ANY device,
                                         our Web Player (iOS,
                                         Windows, Mac, laptop, desktop) and APP for Android with hundreds of live
-                                        channels.</li>
+                                        channels.
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="mbr-section-btn text-center py-4 pb-5"><a target="_blank"
-                                    href="https://xstreamingtv.com/dump/aff/go/kevin"
-                                    class="btn btn-warning display-4">BUY
-                                    NOW</a>
+                            <div class="mbr-section-btn text-center py-4 pb-5"><button
+                                    (click)="openModal(signUpContent)" class="btn btn-warning display-4">BUY
+                                    NOW</button>
                             </div>
                         </div>
                     </div>
@@ -188,34 +167,85 @@
                   </div>-->
                 </div>
             </div>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-info"><i class="fa fa-wrench"></i> &nbsp;Service
+                    includes:
+                </li>
+                <li class="list-group-item"><i class="fa fa-mobile-phone"></i> &nbsp;500+ Channels on your phone</li>
+                <li class="list-group-item"><i class="fas fa-football-ball"></i> &nbsp;Watch TV/Sports on our Web Player
+                </li>
+                <li class="list-group-item"><i class="fas fa-stream"></i> &nbsp;Stream your favorite channels</li>
+                <li class="list-group-item"><i class="fas fa-location-arrow"></i> &nbsp;5 Devices anywhere</li>
+                <li class="list-group-item"><i class="fas fa-thumbs-up"></i> &nbsp;Works on your android tablet, phone
+                    and
+                    android
+                    tv box using our APP</li>
+            </ul>
+            <div class="card mt-2">
+                <div class="card-body">
+                    <p class="blockquote text-muted">
+                        Apple users, please use Safari or Chrome for best experience.
+                    </p>
+                    <hr>
+                    <p>Share with your
+                        family, it will work anywhere!
+                        Check out ALL the great features we have to offer.
+                    </p>
+                    <footer class="card-blockquote"><a href="https://xstreamingtv.com/dump/aff/go/kevin" target="_blank"
+                            class="btn btn-primary mt-4">Learn
+                            more</a></footer>
+
+                </div>
+            </div>
+            <hr>
 
         </div>
     </div>
 </section>
 
-<ng-template #modalContent let-modal>
+<ng-template #signUpContent let-modal>
     <div class="modal-header">
         <h4 class="modal-title">Enter Prize Drawing</h4>
-        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cancel click')">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
     <div class="modal-body">
+        <p>Please provide your Name and Email.<br>
+            Fields with( <b class="text-danger">*</b> ) are required
+        </p>
+        <hr>
         <form>
             <div class="form-group">
-                <input #fname [(ngModel)]="signUp.fname" type="text" [maxLength]="30" class="form-control" name="name"
+                <input #name [(ngModel)]="signUp.name" type="text" [maxLength]="30" class="form-control" name="name"
                     id="name" aria-describedby="emailHelpId" placeholder="Name">
-                <small id="emailHelpId" class="form-text text-muted">{{fname.value.length}}/25</small>
+                <small id="emailHelpId" class="form-text text-muted">{{name.value.length}}/25</small>
             </div>
             <div class="form-group">
-                <input #email [(ngModel)]="signUp.email" type="email" [maxLength]="30" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
-                    placeholder="Email">
+                <input #email [(ngModel)]="signUp.email" type="email" [maxLength]="30" class="form-control" name="email"
+                    id="email" aria-describedby="emailHelpId" placeholder="Email">
                 <small id="emailHelpId" class="form-text text-muted">{{email.value.length}}/30</small>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input #optOut [(ngModel)]="signUp.optedOut" type="checkbox" class="form-check-input" name="optOut"
+                        id="optOut" value="true">
+                    No thanks, just take me to their website
+                </label>
             </div>
         </form>
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Submit</button>
+        <button type="button" class="btn btn-secondary" (click)="modal.dismiss('Cancel click')">Cancel</button>
+        <button type="button" class="btn btn-success" (click)="signupAndRedirect(signUp, title.redirectURL)"
+            [disabled]="(!signUp.name || !signUp.email) && !signUp.optedOut">Submit</button>
+        <div class="mx-3">
+            <hr>
+            <small class="text-muted">
+                After submitting, you will be redirected to our featured partner. You will be entered in prize
+                drawing
+                once you have signed up for their services as listed on each prize displayed.
+            </small>
+        </div>
     </div>
 </ng-template>
-<button class="btn btn-lg btn-outline-primary" (click)="modal.open(modalContent)">Launch demo modal</button>
