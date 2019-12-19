@@ -1,12 +1,14 @@
 <app-masthead [title]="title" *ngIf="isPage"></app-masthead>
 <!-- Featured -->
 <section id="featured">
-    <div class="jumbotron jumbotron-fluid text-center mb-0" [style.background-color]="'#151719'">
+    <div class="jumbotron jumbotron-fluid text-center mb-0" [style.background]="'linear-gradient(#000000, #434343)'">
         <div class="container">
             <div class="row">
-                <div class="p-4 text-center col-md-4">
-                    <h3 class="text-light">Enter to win a Samsung 50" 4k tv or a Samsung Galaxy Tab A</h3>
-                    <button class="btn btn-block btn-primary my-4">Learn more</button>
+                <div class="p-4 text-center col-md-3 bg-light mx-4 border-top animate" data-aos="flip-down"
+                    style="top: -80px;">
+                    <h3 class="text-dark">Enter to win a Samsung 50" 4k tv or a Samsung Galaxy Tab A</h3>
+                    <button class="btn btn-block btn-primary my-4" (click)="openModal(signUpContent)">Learn
+                        more</button>
                 </div>
                 <div class="p-4 col-md-4"><img src="../assets/img/samsung_tv.png" width="250" alt=""></div>
                 <div class="p-4 col-md-4"><img src="../assets/img/samsung_tab.png" width="250" alt=""></div>
@@ -25,7 +27,7 @@
                         <div class="card-header text-center pt-5">
                             <h3 class="card-title mbr-fonts-style display-5">
                                 3 Day Trial</h3>
-                            <div class="card-price">
+                            <div class="card-price animate" data-aos="flip-left" data-aos-delay="0">
                                 <span class="price-value mbr-fonts-style display-5">
                                     $
                                 </span>
@@ -54,7 +56,7 @@
                         <div class="card-header text-center pt-5">
                             <h3 class="card-title mbr-fonts-style display-5">
                                 Monthly</h3>
-                            <div class="card-price">
+                            <div class="card-price animate" data-aos="flip-left" data-aos-delay="150">
                                 <span class="price-value mbr-fonts-style display-5">
                                     $
                                 </span>
@@ -88,7 +90,7 @@
                         <div class="card-header text-center pt-5">
                             <h3 class="card-title mbr-fonts-style display-5">
                                 3 Months</h3>
-                            <div class="card-price">
+                            <div class="card-price animate" data-aos="flip-left" data-aos-delay="300">
                                 <span class="price-value mbr-fonts-style display-5">
                                     $
                                 </span>
@@ -167,16 +169,23 @@
                   </div>-->
                 </div>
             </div>
+            <br>
+            <hr class="bg-light">
+            <br>
             <ul class="list-group">
-                <li class="list-group-item list-group-item-info"><i class="fa fa-wrench"></i> &nbsp;Service
+                <li class="list-group-item border-0 list-group-item-info"><i class="fa fa-wrench"></i> &nbsp;Service
                     includes:
                 </li>
-                <li class="list-group-item"><i class="fa fa-mobile-phone"></i> &nbsp;500+ Channels on your phone</li>
-                <li class="list-group-item"><i class="fas fa-football-ball"></i> &nbsp;Watch TV/Sports on our Web Player
+                <li class="list-group-item border-0"><i class="fa fa-mobile-phone"></i> &nbsp;500+ Channels on your
+                    phone</li>
+                <li class="list-group-item border-0"><i class="fas fa-football-ball"></i> &nbsp;Watch TV/Sports on our
+                    Web Player
                 </li>
-                <li class="list-group-item"><i class="fas fa-stream"></i> &nbsp;Stream your favorite channels</li>
-                <li class="list-group-item"><i class="fas fa-location-arrow"></i> &nbsp;5 Devices anywhere</li>
-                <li class="list-group-item"><i class="fas fa-thumbs-up"></i> &nbsp;Works on your android tablet, phone
+                <li class="list-group-item border-0"><i class="fas fa-stream"></i> &nbsp;Stream your favorite channels
+                </li>
+                <li class="list-group-item border-0"><i class="fas fa-location-arrow"></i> &nbsp;5 Devices anywhere</li>
+                <li class="list-group-item border-0"><i class="fas fa-thumbs-up"></i> &nbsp;Works on your android
+                    tablet, phone
                     and
                     android
                     tv box using our APP</li>
@@ -191,9 +200,9 @@
                         family, it will work anywhere!
                         Check out ALL the great features we have to offer.
                     </p>
-                    <footer class="card-blockquote"><a href="https://xstreamingtv.com/dump/aff/go/kevin" target="_blank"
+                    <footer class="card-blockquote"><button (click)="openModal(signUpContent)"
                             class="btn btn-primary mt-4">Learn
-                            more</a></footer>
+                            more</button></footer>
 
                 </div>
             </div>

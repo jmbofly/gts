@@ -1,10 +1,10 @@
 <!-- Masthead -->
 <app-masthead #masthead [title]="title"></app-masthead>
 <!-- Icons Grid -->
-<section class="features-icons bg-light text-center">
+<section class="features-icons text-center text-light" style="background: #151719;">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 animate" data-aos="fade-in">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                     <div class="features-icons-icon d-flex">
                         <i class="fa fa-medkit m-auto text-primary"></i>
@@ -15,7 +15,7 @@
                         technology!</p>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 animate" data-aos="fade-in" data-aos-delay="150">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                     <div class="features-icons-icon d-flex">
                         <i class="fa fa-server m-auto text-primary"></i>
@@ -26,7 +26,7 @@
                         efficient!</p>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 animate" data-aos="fade-in" data-aos-delay="300">
                 <div class="features-icons-item mx-auto mb-0 mb-lg-3">
                     <div class="features-icons-icon d-flex">
                         <i class="fa fa-arrow-up m-auto text-primary"></i>
@@ -46,7 +46,6 @@
     <div class="row">
         <div class="col-12">
             <h1 class="text-dark text-center my-4">
-                <hr>
                 <i class="fa fa-handshake-o"></i> Featured Partner
                 <br>
                 <img width="250" class="img-thumbnail bg-dark my-4"
@@ -64,26 +63,45 @@
 <!-- Image Showcases -->
 <section id="about" class="showcase">
     <div class="container-fluid p-0 text-center">
-        <div class="p-4 mb-0 text-light text-center" [style.min-height]="'300px'"
-            [style.background-color]="'rgba(0,0,0,.85)'">
-            <h2><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                    class="fa fa-star"></i><i class="fa fa-star"></i></h2>
-            <h2 class="my-4">We provide a full service integration of technology in many industries, and in several
-                ways,
-                whatever
-                you need.</h2>
-            <h2 class="my-4">Founded by an American disabled veteran, we set out to offer our services with
-                understanding and
-                care. Not all
-                businesses are alike, and we take the time to learn what it is our customers need, and implement our
-                services
-                with empathy and efficiency.</h2>
-            <img class="img-fluid" width="200" src="../assets/img/sdv3.png" alt="">
-            <h2 class="mt-4"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                    class="fa fa-star"></i><i class="fa fa-star"></i></h2>
+        <div class="p-4 mb-0 text-center" [style.min-height]="'500px'" [style.background-color]="'#000000'">
+            <div class="container">
+                <div class="row">
+
+                    <div class="card mb-2 animate" data-aos="fade">
+                        <div class="card-body">
+                            <h4><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i></h4>
+                            <hr>
+                            <h4 class="my-4">We provide a full service integration of technology in many industries, and
+                                in
+                                several
+                                ways,
+                                whatever
+                                you need.</h4>
+                        </div>
+                    </div>
+                    <div class="card animate" data-aos="fade" data-aos-delay="250">
+                        <div class="card-body">
+                            <h4><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i></h4>
+                            <hr>
+                            <h4 class="my-4">Founded by an American disabled veteran, we set out to offer our services
+                                with
+                                understanding and
+                                care. Not all
+                                businesses are alike, and we take the time to learn what it is our customers need, and
+                                implement
+                                our
+                                services
+                                with empathy and efficiency.</h4>
+                            <img class="img-fluid" width="200" src="../assets/img/sdv3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img"
+            <div class="col-lg-6 order-lg-2 text-white showcase-img animate" data-aos="flip-left"
                 style="background-image: url('../assets/img/bg-showcase-1.jpg');">
             </div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
@@ -94,7 +112,7 @@
             </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-lg-6 text-white showcase-img"
+            <div class="col-lg-6 text-white showcase-img animate" data-aos="flip-right"
                 style="background-image: url('../assets/img/bg-showcase-2.jpg');">
             </div>
             <div class="col-lg-6 my-auto showcase-text">
@@ -106,7 +124,7 @@
             </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img"
+            <div class="col-lg-6 order-lg-2 text-white showcase-img animate" data-aos="flip-left"
                 style="background-image: url('../assets/img/bg-showcase-3.jpg');">
             </div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">

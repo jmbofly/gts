@@ -6,15 +6,8 @@
 
   .showcase-img {
     transition: all .35s ease-in-out;
-    filter: hue-rotate(0);
     min-height: 30rem;
     background-size: cover;
-
-    &:hover {
-      filter: hue-rotate(150deg);
-
-
-    }
   }
 
   .fa-star {
