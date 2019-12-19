@@ -1,0 +1,43 @@
+<!-- Masthead -->
+<header id="home" class="masthead text-white text-center pt-4" [style.margin-top]="'74px'"
+    [style.background-image]="'url(' + title?.bg + ')'">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <h1 class="mb-5" [style.font-size]="'2.5rem'">{{title.main}}</h1>
+            </div>
+            <div class="col-xl-9 mx-auto">
+                <img class="mb-4 img-fluid" [src]="title?.overlay?.src" [alt]="title?.overlay?.alt">
+            </div>
+            <div class="col-xl-9 mx-auto">
+                <h3 class="mb-5">{{title?.sub}}</h3>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto" *ngIf="title?.cta">
+                <div class="row">
+                    <div class="col-12" *ngIf="title?.action === 'redirect' && title?.redirectURL">
+                        <a type="button" [href]="title.redirectURL" target="_blank"
+                            class="btn btn-block btn-lg btn-primary">Learn more</a>
+                    </div>
+
+                </div>
+                <form *ngIf="title.action === 'signup'">
+                    <div class="form-row">
+                        <div class="col-12 col-md-9 mb-2 mb-md-0">
+                            <input type="email" #email class="form-control form-control-lg"
+                                placeholder="Enter your email...">
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <button type="button" (click)="mastheadAction(email.value)"
+                                class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                        </div>
+                        <div *ngIf="emailSuccess" class="text-success text-bolder p-3">
+                            <i class="fa fa-check"></i>Success! Check your email
+                            inbox!
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
