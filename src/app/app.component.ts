@@ -28,9 +28,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     AOS.init({
       useClassNames: true,
-      animatedClassName: 'animate',
+      once: false,
       duration: 800,
-      easing: 'ease',
     })
   }
 
