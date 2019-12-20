@@ -22,6 +22,39 @@ const mailTransport: nodemailer.Transporter = nodemailer.createTransport({
 // Company name to include in the emails
 const APP_NAME = 'Global Technology Services, LLC';
 
+/** * 
+ * method for sending email to verify prize-drawing entry 
+ */
+exports.sendEntryEmail = functions.firestore
+.document('prize-entries/{entryId}')
+.onCreate((snap, context) => {
+    let user: any;
+    if (snap.exists) {
+        user = snap.data();
+        return sendNewEntryEmail(user.email, user.name).then(() =>
+                sendAdminNotice({ ...user, type: 'Prize Entry' })
+            );
+    } else {
+        return null;
+    }
+})
+
+async function sendNewEntryEmail(email: string, name: string) {
+    const mailOptions: nodemailer.SendMailOptions = {
+        from: `"Global Technology Services, LLC" info@medtelplus.com`,
+        to: email,
+        html: `Hey, ${name}!<br/><br/><br/>Thanks for your entry!<br/> Remember, sign-up or purchase from featured partner is required to win.<br/>Purchase/Signup must be done <b>within 7 days</b> of submitting entry.<br/>  GTS will automatically verify sign-up and/or purchase with featured partner.<br/><br/>GOOD LUCK!<br/><br/><br/><a href="https://trygts.com"><img src="https://trygts.com/assets/img/gts_logo_alt_short_2.png"></img></a><br/>Global Technology Services, LLC<br/>Digital Marketing and Sales`
+    };
+
+    // The user submitted entry.
+    mailOptions.subject = `You're entered into ${APP_NAME} prize drawing!`;
+    // mailOptions.text = `Hey, ${name}! Thanks for your entry!<br/> Remember, sign-up or purchase from featured partner is required to win.<br/>Purchase/Signup must be done <b>within 7 days</b> of submitting entry.<br/>  GTS will automatically verify sign-up and/or purchase with featured partner.<br/> GOOD LUCK!`;
+    await mailTransport.sendMail(mailOptions);
+    console.log('New entry email sent to:', email);
+    return null;
+}
+
+
 /**
  * method for sending email to subscriber
  */
@@ -41,7 +74,7 @@ exports.sendNewsletterToSubscriber = functions.firestore
 
 async function sendNewSubscriberEmail(email: string) {
     const mailOptions: nodemailer.SendMailOptions = {
-        from: `"Global Technology Services" info@medtelplus.com`,
+        from: `"Global Technology Services, LLC" info@medtelplus.com`,
         to: email,
         html: template,
         // attachments: [
@@ -56,7 +89,7 @@ async function sendNewSubscriberEmail(email: string) {
         // ],
     };
 
-    // The user sent a contact form.
+    // The user subscribed.
     mailOptions.subject = `Thanks for subscribing to the ${APP_NAME} newsletter!`;
     mailOptions.text = `Hey! Thanks for subscribing! Keep an eye out for your monthly newsletter with tons of great content.`;
     await mailTransport.sendMail(mailOptions);
@@ -88,7 +121,7 @@ async function sendWelcomeToContact(
     subject?: string
 ) {
     const mailOptions: nodemailer.SendMailOptions = {
-        from: `"Global Technology Services" info@medtelplus.com`,
+        from: `"Global Technology Services, LLC" info@medtelplus.com`,
         to: email,
         html: template,
         // attachments: [
@@ -112,7 +145,7 @@ async function sendAdminNotice(message?: any) {
     const keys = Object.keys(message);
     const body: any = keys.map(val => Object.create(message[val]));
     const mailOptions: nodemailer.SendMailOptions = {
-        from: `info@medtelplus.com`,
+        from: `"GTS ADMIN NOTICE" info@medtelplus.com`,
         to: 'jimi@medtelplus.com',
     };
 

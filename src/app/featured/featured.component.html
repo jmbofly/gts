@@ -220,11 +220,29 @@
         </button>
     </div>
     <div class="modal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 p-2">
+                    <p>Signup for a 3 month package and get a chance to win a Samsung 50" 4k TV!</p>
+                </div>
+                <div class="p-2 col-6">
+                    <img src="../assets/img/samsung_tv.png" width="200" alt="">
+                </div>
+
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-6 p-2">
+                    <p>Signup for a 1 month package and get a chance to win a Samsung Galaxy Tab A!</p>
+                </div>
+                <div class="p-2 col-6"><img src="../assets/img/samsung_tab.png" width="200" alt=""></div>
+            </div>
+        </div>
+        <hr>
         <p>Please provide your Name and Email.<br>
             Fields with( <b class="text-danger">*</b> ) are required
         </p>
-        <hr>
-        <form>
+        <form class="py-4">
             <div class="form-group">
                 <input #name [(ngModel)]="signUp.name" type="text" [maxLength]="30" class="form-control" name="name"
                     id="name" aria-describedby="emailHelpId" placeholder="Name">
