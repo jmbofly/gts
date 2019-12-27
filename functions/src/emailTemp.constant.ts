@@ -229,7 +229,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                             <table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0"
                                 cellspacing="0">
                                 <tr>
-                                    <td class="img-flex"><img src="https://trygts.com/assets/img/bg-masthead.jpg"
+                                    <td class="img-flex"><img src="https://trygts.com/assets/img/bg-masthead-3.jpg"
                                             style="vertical-align:top;" width="600" height="306" alt="" /></td>
                                 </tr>
                                 <tr>

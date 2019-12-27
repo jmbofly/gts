@@ -1,7 +1,8 @@
 <app-masthead [title]="title" *ngIf="isPage"></app-masthead>
 <!-- Featured -->
-<section id="featured">
-    <div class="jumbotron jumbotron-fluid text-center mb-0" [style.background]="'linear-gradient(#000000, #434343)'">
+<section id="featured text-light">
+    <div class="jumbotron border-top jumbotron-fluid text-center mb-0"
+        [style.background]="'linear-gradient(#434343, #000000)'">
         <div class="container">
             <div class="row">
                 <div class="p-4 text-center col-md-3 bg-light mx-4 border-top animate" data-aos="flip-down"
@@ -46,7 +47,7 @@
                                 </ul>
                             </div>
                             <div class="mbr-section-btn text-center py-4 pb-5"><button
-                                    (click)="openModal(signUpContent)" class="btn btn-warning display-4">TRY
+                                    (click)="openModal(signUpContent)" class="btn btn-primary display-3">TRY
                                     NOW</button>
                             </div>
                         </div>
@@ -80,7 +81,7 @@
                                 </ul>
                             </div>
                             <div class="mbr-section-btn text-center py-4 pb-5"><button
-                                    (click)="openModal(signUpContent)" class="btn btn-warning display-4">BUY
+                                    (click)="openModal(signUpContent)" class="btn btn-primary display-4">BUY
                                     NOW</button>
                             </div>
                         </div>
@@ -114,7 +115,7 @@
                                 </ul>
                             </div>
                             <div class="mbr-section-btn text-center py-4 pb-5"><button
-                                    (click)="openModal(signUpContent)" class="btn btn-warning display-4">BUY
+                                    (click)="openModal(signUpContent)" class="btn btn-primary display-4">BUY
                                     NOW</button>
                             </div>
                         </div>

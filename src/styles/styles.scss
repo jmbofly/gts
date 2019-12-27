@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 // Core variables and mixins
+@import "variables.scss";
 @import "~bootstrap/scss/bootstrap.scss";
 @import "~hover.css/scss/hover.scss";
 @import '~aos/dist/aos.css';
 @import '~animate.css/animate.css';
 @import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
-@import "variables.scss";
 @import "mixins.scss";
 // Global CSS
 @import "global.scss";
@@ -16,6 +16,9 @@
 @import "masthead.scss";
 @import "showcase.scss";
 @import "icons.scss";
+@import "about.scss";
+@import "contact.scss";
+@import "featured.scss";
 @import "testimonials.scss";
 @import "call-to-action.scss";
 @import "footer.scss";

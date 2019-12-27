@@ -19,10 +19,12 @@ export class UserData {
 })
 export class DataService {
   userCollection: AngularFirestoreCollection<User>;
+  contactCollection: AngularFirestoreCollection<any>;
   prizeEntryCollection: AngularFirestoreCollection<any>;
 
   constructor(public afs: AngularFirestore, public http: HttpClient) {
     this.userCollection = this.afs.collection<User>('users');
+    this.contactCollection = this.afs.collection<any>('contacts');
     this.prizeEntryCollection = this.afs.collection<any>('prize-entries');
   }
 
@@ -35,5 +37,10 @@ export class DataService {
   prizeEntrySignUp(data: any) {
     data.timestamp = new Date();
     return this.prizeEntryCollection.add(data);
+  }
+
+  newContact(data: any) {
+    data.timestamp = new Date();
+    return this.contactCollection.add(data);
   }
 }

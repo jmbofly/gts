@@ -10,11 +10,12 @@ export class HomeComponent implements OnInit {
     main: 'Your Technology Solution',
     sub: 'Want updates on our technology?',
     cta: true,
-    bg: 'assets/img/bg-masthead.jpg',
+    bg: 'assets/img/bg-masthead-2.jpg',
     action: 'signup',
     overlay: {
       src: 'assets/img/gts_logo_alt_short_2.png',
-      alt: 'Global Technology Services LLC logo'
+      alt: 'Global Technology Services LLC logo',
+      width: 300
     }
   }
   constructor() { }

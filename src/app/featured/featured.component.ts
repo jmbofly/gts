@@ -13,12 +13,13 @@ export class FeaturedComponent implements OnInit {
     main: 'Featured Partner',
     sub: 'Want to know more about this partner?',
     cta: true,
-    bg: 'assets/img/bg-masthead-2.jpg',
+    bg: 'assets/img/bg-masthead-4.jpg',
     action: 'redirect',
     redirectURL: 'https://xstreamingtv.com/dump/aff/go/kevin',
     overlay: {
       src: 'https://xstreamingtv.com/assets/images/xstreamingtv-logo-5000x1659.png',
-      alt: 'Xstreaming tv logo'
+      alt: 'Xstreaming tv logo',
+      width: 300
     }
   }
 

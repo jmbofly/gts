@@ -7,11 +7,12 @@
             <div class="col-xl-9 mx-auto">
                 <h1 class="mb-5" [style.font-size]="'2.5rem'">{{title.main}}</h1>
             </div>
-            <div class="col-xl-9 mx-auto">
-                <img class="mb-4 img-fluid" [src]="title?.overlay?.src" [alt]="title?.overlay?.alt">
+            <div class="col-xl-9 mx-auto" *ngIf="title?.overlay">
+                <img class="mb-4 img-fluid" [width]="title?.overlay?.width" [src]="title?.overlay?.src"
+                    [alt]="title?.overlay?.alt">
             </div>
             <div class="col-xl-9 mx-auto">
-                <h3 class="mb-5">{{title?.sub}}</h3>
+                <h3 class="mb-5" [innerHTML]="title?.sub"></h3>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto" *ngIf="title?.cta">
                 <div class="row">

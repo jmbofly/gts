@@ -26,24 +26,27 @@ const APP_NAME = 'Global Technology Services, LLC';
  * method for sending email to verify prize-drawing entry 
  */
 exports.sendEntryEmail = functions.firestore
-.document('prize-entries/{entryId}')
-.onCreate((snap, context) => {
-    let user: any;
-    if (snap.exists) {
-        user = snap.data();
-        return sendNewEntryEmail(user.email, user.name).then(() =>
-                sendAdminNotice({ ...user, type: 'Prize Entry' })
+    .document('prize-entries/{entryId}')
+    .onCreate((snap, context) => {
+        let user: any;
+        if (snap.exists) {
+            user = snap.data();
+            return sendNewEntryEmail(user.email, user.name).then(() =>
+                sendNewSubscriberEmail(user.email)
+                    .then(() => sendAdminNotice({ ...user, type: 'Prize Entry' })
+                        .then(() => console.log('entry and newsletter')))
+
             );
-    } else {
-        return null;
-    }
-})
+        } else {
+            return null;
+        }
+    })
 
 async function sendNewEntryEmail(email: string, name: string) {
     const mailOptions: nodemailer.SendMailOptions = {
-        from: `"Global Technology Services, LLC" info@medtelplus.com`,
+        from: `"no-reply Global Technology Services LLC" info@medtelplus.com`,
         to: email,
-        html: `Hey, ${name}!<br/><br/><br/>Thanks for your entry!<br/> Remember, sign-up or purchase from featured partner is required to win.<br/>Purchase/Signup must be done <b>within 7 days</b> of submitting entry.<br/>  GTS will automatically verify sign-up and/or purchase with featured partner.<br/><br/>GOOD LUCK!<br/><br/><br/><a href="https://trygts.com"><img src="https://trygts.com/assets/img/gts_logo_alt_short_2.png"></img></a><br/>Global Technology Services, LLC<br/>Digital Marketing and Sales`
+        html: `<div style="padding: 15px;"> <h3>Hey, ${name}!</h3><br/><h4>Thanks for your entry!</h4><p>Remember, sign-up or purchase from featured partner is required to win.<br/>Purchase/Signup must be done <b>within 7 days</b> of submitting entry.<br/>  GTS will automatically verify sign-up and/or purchase with featured partner.<br/><br/>GOOD LUCK!<br/><br/><br/><a href="https://trygts.com"><img width="150" src="https://trygts.com/assets/img/gts_logo_alt_short_2.png"></img></a><br/>Global Technology Services, LLC<br/><small>Digital Marketing and Sales</small></p></div>`
     };
 
     // The user submitted entry.
@@ -74,7 +77,7 @@ exports.sendNewsletterToSubscriber = functions.firestore
 
 async function sendNewSubscriberEmail(email: string) {
     const mailOptions: nodemailer.SendMailOptions = {
-        from: `"Global Technology Services, LLC" info@medtelplus.com`,
+        from: `"no-reply Global Technology Services LLC" info@medtelplus.com`,
         to: email,
         html: template,
         // attachments: [
@@ -121,7 +124,7 @@ async function sendWelcomeToContact(
     subject?: string
 ) {
     const mailOptions: nodemailer.SendMailOptions = {
-        from: `"Global Technology Services, LLC" info@medtelplus.com`,
+        from: `"no-reply Global Technology Services LLC" info@medtelplus.com`,
         to: email,
         html: template,
         // attachments: [

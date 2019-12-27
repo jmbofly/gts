@@ -10,12 +10,16 @@ import { environment } from '../environments/environment';
 import { FeaturedComponent } from './featured/featured.component';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from './shared/shared.module';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FeaturedComponent,
     HomeComponent,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
