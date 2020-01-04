@@ -1,19 +1,33 @@
 <!-- Navigation -->
-<nav #navbar class="default-header navbar navbar-fixed-top" style="background-color: #151719">
+<nav #navbar id="top" class="default-header navbar navbar-fixed-top" style="background-color: #151719">
   <div class="container">
     <div class="header-wrap" style="width: 100%;">
       <div class="header-top d-flex justify-content-between align-items-center">
         <div class="logo" style="cursor: pointer;" (click)="navigateTo('home')">
           <img src="../assets/img/gts_logo_alt_short.png" width="100" class="" alt="global technology services logo">
         </div>
-        <div class="main-menubar d-flex align-items-center justify-content-end">
-          <nav [ngClass]="{'show': showMenuBar || navbar.clientWidth > 760, 'hide': !showMenuBar}">
-            <button class="btn btn-link" (click)="navigateTo('home')">Home</button>
-            <button class="btn btn-link" (click)="navigateTo('featured')">Featured</button>
-            <button class="btn btn-link" (click)="navigateTo('about')">About</button>
-            <button class="btn btn-link" (click)="navigateTo('contact')">Contact</button>
+        <div class="main-menubar d-flex align-items-center align-content-end">
+          <nav class="animated" [ngClass]="{'show': showMenuBar || navbar.clientWidth > 760, 'hide': !showMenuBar}">
+            <button id="home" class="btn btn-link hvr hvr-underline-from-left"
+              (click)="navigateTo('home')">Home</button>
+            <button id="featured" class="btn btn-link hvr hvr-underline-from-left"
+              (click)="navigateTo('featured')">Featured</button>
+            <div ngbDropdown class="d-inline-block">
+              <button id="services" class="btn btn-link" ngbDropdownToggle>Services</button>
+              <div ngbDropdownMenu aria-labelledby="services">
+                <button class="dropdown-item" (click)="navigateTo('services', 'digital-marketing')">Digital
+                  Marketing</button>
+                <button class="dropdown-item" (click)="navigateTo('services', 'store')">Tech Store</button>
+                <button class="dropdown-item" (click)="navigateTo('services', 'logistics-and-infrastructure')">Logistics
+                  & Infrastructure</button>
+              </div>
+            </div>
+            <button id="about" class="btn btn-link hvr hvr-underline-from-left"
+              (click)="navigateTo('about')">About</button>
+            <button id="contact" class="btn btn-link hvr hvr-underline-from-left"
+              (click)="navigateTo('contact')">Contact</button>
           </nav>
-          <div [hidden]="navbar.clientWidth > 760" class="menu-bar text-light mr-3" (click)="toggleMenuBar()"><i
+          <div *ngIf="navbar.clientWidth < 760" class="menu-bar text-light mr-2" (click)="toggleMenuBar()"><i
               class="fa fa-bars"></i></div>
         </div>
       </div>
@@ -21,10 +35,9 @@
   </div>
 </nav>
 <!-- End Navigation Area -->
-
-
 <router-outlet></router-outlet>
-
+<div class="back-to-top btn btn-primary btn-rounded" title="Back To Top" data-aos="fade-up" data-aos-offset="500"
+  (click)="animateScroll('top')"><i class="fa fa-chevron-up fa-2x"></i></div>
 <!-- Footer -->
 <footer class="footer bg-light">
   <div class="container">
@@ -40,11 +53,11 @@
           </li>
           <li class="list-inline-item">&sdot;</li> -->
           <li class="list-inline-item">
-            <a href="#">Terms of Use</a>
+            <a href="../assets/tos.html" target="_blank">Terms of Use</a>
           </li>
           <li class="list-inline-item">&sdot;</li>
           <li class="list-inline-item">
-            <a href="#">Privacy Policy</a>
+            <a href="../assets/tos.html" target="_blank">Privacy Policy</a>
           </li>
         </ul>
         <p class="text-muted small mb-4 mb-lg-0">&copy; Global Technology Services, LLC 2019. All Rights
@@ -72,29 +85,3 @@
     </div>
   </div>
 </footer>
-
-<!-- Sign up Modal -->
-<ng-template #content let-modal>
-  <div class="modal-header">
-    <h4 class="modal-title">Sign up</h4>
-    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    <div class="form-group">
-      <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Email">
-    </div>
-    <div class="form-group">
-      <input type="text" class="form-control" name="first" id="first" aria-describedby="firstHelpId"
-        placeholder="First Name">
-    </div>
-    <div class="form-group">
-      <input type="text" class="form-control" name="last" id="last" aria-describedby="lastHelpId"
-        placeholder="Last Name">
-    </div>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-success" (click)="modal.close('Close click')">Go</button>
-  </div>
-</ng-template>

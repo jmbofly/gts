@@ -1,27 +1,36 @@
 <app-masthead [title]="title" *ngIf="isPage"></app-masthead>
 <!-- Featured -->
 <section id="featured text-light">
-    <div class="jumbotron border-top jumbotron-fluid text-center mb-0"
+    <div class="jumbotron border-top jumbotron-fluid text-center m-0"
         [style.background]="'linear-gradient(#434343, #000000)'">
         <div class="container">
-            <div class="row">
-                <div class="p-4 text-center col-md-3 bg-light mx-4 border-top animate" data-aos="flip-down"
-                    style="top: -80px;">
-                    <h3 class="text-dark">Enter to win a Samsung 50" 4k tv or a Samsung Galaxy Tab A</h3>
-                    <button class="btn btn-block btn-primary my-4" (click)="openModal(signUpContent)">Learn
+            <div class="card m-2 animate" data-aos="flip-down">
+                <div class="card-body">
+                    <h3 class="text-center">Win a <b>Samsung 50" 4k TV</b> or <b>Galaxy Tab A</b></h3>
+                    <hr>
+                    <div class="row">
+                        <div class="container">
+                            <img src="../assets/img/samsung_tv.png" style="max-width: 50%;"
+                                class="img-thumbnail border-0" alt="Samsung Product Image">
+                            <img src="../assets/img/samsung_tab.png" style="max-width: 50%;"
+                                class="img-thumbnail border-0" alt="Samsung Product Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn mx-auto btn-primary my-4" (click)="openModal(signUpContent)">Learn
                         more</button>
                 </div>
-                <div class="p-4 col-md-4"><img src="../assets/img/samsung_tv.png" width="250" alt=""></div>
-                <div class="p-4 col-md-4"><img src="../assets/img/samsung_tab.png" width="250" alt=""></div>
-
             </div>
+        </div>
+        <div class="container">
             <hr class="bg-light">
             <h3 class="my-4 text-light">
                 Check out these fantastic packages!
                 <br>
             </h3>
 
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row justify-content-center">
 
                     <div class="card col-12 mx-2 my-2 justify-content-center col-lg-3">
@@ -173,19 +182,19 @@
             <br>
             <hr class="bg-light">
             <br>
-            <ul class="list-group">
-                <li class="list-group-item border-0 list-group-item-info"><i class="fa fa-wrench"></i> &nbsp;Service
+            <ul class="list-group text-light">
+                <li class="list-group-item list-group-item-primary"><i class="fa fa-wrench"></i> &nbsp;Service
                     includes:
                 </li>
-                <li class="list-group-item border-0"><i class="fa fa-mobile-phone"></i> &nbsp;500+ Channels on your
+                <li class="list-group-item"><i class="fa fa-mobile-phone"></i> &nbsp;500+ Channels on your
                     phone</li>
-                <li class="list-group-item border-0"><i class="fas fa-football-ball"></i> &nbsp;Watch TV/Sports on our
+                <li class="list-group-item"><i class="fas fa-football-ball"></i> &nbsp;Watch TV/Sports on our
                     Web Player
                 </li>
-                <li class="list-group-item border-0"><i class="fas fa-stream"></i> &nbsp;Stream your favorite channels
+                <li class="list-group-item"><i class="fas fa-stream"></i> &nbsp;Stream your favorite channels
                 </li>
-                <li class="list-group-item border-0"><i class="fas fa-location-arrow"></i> &nbsp;5 Devices anywhere</li>
-                <li class="list-group-item border-0"><i class="fas fa-thumbs-up"></i> &nbsp;Works on your android
+                <li class="list-group-item"><i class="fas fa-location-arrow"></i> &nbsp;5 Devices anywhere</li>
+                <li class="list-group-item"><i class="fas fa-thumbs-up"></i> &nbsp;Works on your android
                     tablet, phone
                     and
                     android
@@ -240,19 +249,37 @@
             </div>
         </div>
         <hr>
-        <p>Please provide your Name and Email.<br>
+        <!-- <div class="container">
+            <h5 class="text-center">
+                Sign-up using Facebook <small><b class="text-danger">(Recommended)</b></small>
+            </h5>
+            <button role="button" class="btn btn-block" style="background: #4267b2;"><i
+                    class="fab fa-facebook-f fa-2x text-light" (click)="fbLoginAndRedirect()"></i></button>
+        </div>
+        <hr> -->
+        <!-- <h5 class="text-center">-OR-</h5>
+        <hr> -->
+        <p>Please provide your Name, Email, and Phone Number.<br>
             Fields with( <b class="text-danger">*</b> ) are required
         </p>
         <form class="py-4">
             <div class="form-group">
+                <label for="name">Name <b class="text-danger">*</b></label>
                 <input #name [(ngModel)]="signUp.name" type="text" [maxLength]="30" class="form-control" name="name"
                     id="name" aria-describedby="emailHelpId" placeholder="Name">
                 <small id="emailHelpId" class="form-text text-muted">{{name.value.length}}/25</small>
             </div>
             <div class="form-group">
+                <label for="name">Email <b class="text-danger">*</b></label>
                 <input #email [(ngModel)]="signUp.email" type="email" [maxLength]="30" class="form-control" name="email"
                     id="email" aria-describedby="emailHelpId" placeholder="Email">
                 <small id="emailHelpId" class="form-text text-muted">{{email.value.length}}/30</small>
+            </div>
+<div class="form-group">
+                <label for="phone">Phone <b class="text-danger">*</b></label>
+                <input #phone [(ngModel)]="signUp.phone" type="phone" [maxLength]="30" class="form-control" name="phone"
+                    id="phone" aria-describedby="phoneHelpId" placeholder="Phone">
+                <small id="phoneHelpId" class="form-text text-muted"><em>###-###-####</em></small>
             </div>
             <div class="form-check">
                 <label class="form-check-label">
@@ -261,12 +288,14 @@
                     No thanks, just take me to their website
                 </label>
             </div>
+
         </form>
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" (click)="modal.dismiss('Cancel click')">Cancel</button>
-        <button type="button" class="btn btn-success" (click)="signupAndRedirect(signUp, title.redirectURL)"
-            [disabled]="(!signUp.name || !signUp.email) && !signUp.optedOut">Submit</button>
+        <button role="button" class="btn btn-secondary" (click)="modal.dismiss('Cancel click')">Cancel</button>
+        <button role="button" class="btn btn-success" (click)="signupAndRedirect(signUp, title.redirectURL)"
+            [disabled]="(!signUp.name || !signUp.email || !signUp.phone) && !signUp.optedOut">Submit</button>
+
         <div class="mx-3">
             <hr>
             <small class="text-muted">

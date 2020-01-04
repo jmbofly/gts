@@ -12,7 +12,7 @@ body {
 }
 
 .menu-bar {
-    cursor: pointer;
+    cursor: pointer !important;
 
     span {
         color: $black;
@@ -25,9 +25,10 @@ body {
 }
 
 nav {
-    margin-right: 70px;
+    // margin-right: 70px;
 
     @include media-breakpoint-down (sm) {
+        @include transition(all, .25s, ease);
         margin-right: 0;
         position: absolute;
         right: 0;
@@ -35,7 +36,7 @@ nav {
         text-align: right;
         padding: 20px;
         z-index: 5;
-        background: $white;
+        background: $gray-700;
 
         a {
             color: $primary !important;
@@ -46,7 +47,6 @@ nav {
         }
     }
 
-    @include transition();
     transform-origin: 100% 50%;
 
     &.hide {
@@ -55,12 +55,11 @@ nav {
 
     &.show {
         transform: scale(1);
-
     }
 
-    a {
-        color: $black;
-        font-size: 12px;
+    .btn-link {
+        // color: $black;
+        // font-size: 12px;
         font-weight: 500;
         text-transform: uppercase;
         margin: 0 25px;
@@ -70,8 +69,10 @@ nav {
             margin: 5px 25px;
         }
 
-        &:hover {
-            color: $primary;
+        &:hover,
+        &.active {
+            text-decoration: none !important;
+            color: $light;
         }
     }
 

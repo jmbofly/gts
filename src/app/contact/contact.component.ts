@@ -14,13 +14,15 @@ export class ContactComponent implements OnInit {
     message: ''
   };
 
+  success = false;
+
   constructor(private data: DataService) { }
 
   ngOnInit() {
   }
 
   async addNewContact(data: { name: string, email: string, message: string }) {
-    return await this.data.newContact(data).then(res => console.log(res));
+    return await this.data.newContact(data).then(res => this.success = true);
   }
 
 }

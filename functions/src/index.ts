@@ -33,7 +33,7 @@ exports.sendEntryEmail = functions.firestore
             user = snap.data();
             return sendNewEntryEmail(user.email, user.name).then(() =>
                 sendNewSubscriberEmail(user.email)
-                    .then(() => sendAdminNotice({ ...user, type: 'Prize Entry' })
+                    .then(() => sendAdminNotice({ user: user, type: 'Prize Entry' })
                         .then(() => console.log('entry and newsletter')))
 
             );
@@ -68,7 +68,7 @@ exports.sendNewsletterToSubscriber = functions.firestore
         if (snap.exists) {
             user = snap.data();
             return sendNewSubscriberEmail(user.email).then(() =>
-                sendAdminNotice({ ...user, type: 'Subscriber' })
+                sendAdminNotice({ user: user, type: 'Subscriber' })
             );
         } else {
             return null;
@@ -110,7 +110,13 @@ exports.sendNewContactEmail = functions.firestore
                 contact.email,
                 contact.name,
                 contact.subject
-            ).then(() => sendAdminNotice({ ...contact, type: 'Contact' }));
+            ).then(() => sendAdminNotice({
+                email: contact.email,
+                name: contact.name,
+                message: contact.message,
+                subject: contact.subject,
+                type: 'Contact'
+            }));
         } else {
             console.log(`failed to send contact email on ${resource}`, snap, context);
             return null;
@@ -145,8 +151,7 @@ async function sendWelcomeToContact(
 
 async function sendAdminNotice(message?: any) {
     const type = message.type;
-    const keys = Object.keys(message);
-    const body: any = keys.map(val => Object.create(message[val]));
+
     const mailOptions: nodemailer.SendMailOptions = {
         from: `"GTS ADMIN NOTICE" info@medtelplus.com`,
         to: 'jimi@medtelplus.com',
@@ -154,7 +159,7 @@ async function sendAdminNotice(message?: any) {
 
     // The notice type.
     mailOptions.subject = `New ${type || 'Notification'} added to ${APP_NAME} DB`;
-    mailOptions.text = JSON.stringify(body);
+    mailOptions.text = JSON.stringify(message.data);
     await mailTransport.sendMail(mailOptions);
     console.log('New Notice');
     return null;

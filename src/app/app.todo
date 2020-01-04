@@ -1,15 +1,15 @@
 TODO: Sitemap: @critical 
-        ☐ Home
-        ☐ Featured
-        ☐ Services
+        ✔ Home @done(19-12-28 23:26)
+        ✔ Featured @done(19-12-28 23:26)
+        ☐ Services @started(19-12-28 23:26)
             ☐ Digital Marketing
             ☐ Telemedicine
             ☐ Video Streaming
-        ☐ About
-        ☐ Contact
+        ✔ About @done(19-12-28 23:26)
+        ✔ Contact @done(19-12-28 23:26)
 
 TODO: Features: @high
-        ☐ Forms
+        ✔ Forms @done(19-12-28 23:26)
             ☐ Signup
                 ☐ Newsletter
                     ☐ collect email
@@ -29,3 +29,7 @@ TODO: Image Slider: @low
         ☐ testamonial
             ☐ data list input
     
+TODO: Facebook Integration: @critical 
+        ☐ get user login status
+        ☐ capture currentuser id
+        ☐ api call for user data

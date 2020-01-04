@@ -412,7 +412,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                         <!-- post -->
                                                         <tr>
                                                             <td class="img-flex"><img
-                                                                    src="https://trygts.com/assets/img/dawson_transformer.jpg"
+                                                                    src="https://trygts.com/assets/img/bg-masthead-4.jpg"
                                                                     style="vertical-align:top;" width="300" height="203"
                                                                     alt="" /></td>
                                                         </tr>
@@ -433,8 +433,8 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                                                         data-link-style="text-decoration:none; color:#fff;"
                                                                                         class="title-2" align="right"
                                                                                         style="font:bold 15px/23px Arial, Helvetica, sans-serif; color:#fff; padding:0 0 6px;">
-                                                                                        Dawson Racing <br />
-                                                                                        D3+Transformer
+                                                                                        TBD <br />
+                                                                                        TBD
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -446,10 +446,8 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                                                         align="right"
                                                                                         style="font:15px/23px Arial, Helvetica, sans-serif; color:#fff;">
                                                                                         We are in the process of
-                                                                                        becoming a sponsor for Dawson
-                                                                                        Racing. Some of their current
-                                                                                        sponsors include Microsoft,
-                                                                                        Samsung, And Xbox.
+                                                                                        becoming a sponsor for a
+                                                                                        Motorsport Racing Team. Keep an eye out in the near future for the official announcement.
                                                                                     </td>
                                                                                 </tr>
                                                                             </table>

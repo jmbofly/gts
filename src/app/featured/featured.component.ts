@@ -1,7 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
 import { DataService } from '../data.service';
-
+import { GoogleAnalyticsService } from "../google-analytics.service";
+// import { FacebookService, LoginOptions } from 'ngx-facebook';
 @Component({
   selector: 'app-featured',
   templateUrl: './featured.component.html',
@@ -9,6 +10,7 @@ import { DataService } from '../data.service';
 })
 export class FeaturedComponent implements OnInit {
   @Input() isPage = true;
+
   title = {
     main: 'Featured Partner',
     sub: 'Want to know more about this partner?',
@@ -26,17 +28,19 @@ export class FeaturedComponent implements OnInit {
   signUp = {
     name: null,
     email: null,
+    phone: null,
     optedOut: false
   }
 
 
-  constructor(public modal: NgbModal, private data: DataService) { }
+  constructor(public modal: NgbModal, private data: DataService, public ga: GoogleAnalyticsService) { }
 
   ngOnInit() {
   }
 
-  openModal(content) {
-    const modalRef = this.modal.open(content);
+  openModal(content, config: NgbModalConfig | any = { size: 'xl', ariaLabelledBy: 'sign-up-modal' }) {
+    const modalRef = this.modal.open(content, config);
+    // this.ga.eventEmitter('')
     // modalRef.result.then(results => {
     //   const data = {
     //     name: results.name,
@@ -48,13 +52,15 @@ export class FeaturedComponent implements OnInit {
     // })
   }
 
-  signupAndRedirect(data: any, redirectURL: string) {
+
+  signupAndRedirect(data: any, redirectURL: string, ga = {}) {
     if (data.optedOut) {
       this.modal.dismissAll();
       return window.open(redirectURL, '_blank');
     } else {
       return this.data.prizeEntrySignUp(data)
         .then(res => {
+          this.ga.eventEmitter('send', 'click', 'new-prize-entry');
           this.modal.dismissAll();
           window.open(redirectURL, '_blank')
         }).catch(err => console.log('ERROR Signup', err))

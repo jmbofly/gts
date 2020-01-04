@@ -32,7 +32,7 @@
                     <div class="features-icons-icon d-flex">
                         <i class="fa fa-area-chart m-auto text-primary"></i>
                     </div>
-                    <h3>eMarketing</h3>
+                    <h3>Marketing</h3>
                     <p class="lead mb-0">Provides customized digital marketing services that include website and app
                         development, SEO, branding, data analytics, and much more.</p>
                 </div>
@@ -55,6 +55,19 @@
             </h1>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12 mb-4">
+            <hr>
+            <h4 class="text-center mb-4 pb-4">We work with dozens of companies to bring our customers the best services
+                possible.
+                Every Month, Global
+                Technology Services chooses one of those companies to be our Featured Partner.<br /><br />Featured
+                Partners
+                are highlighted on our featured page, and customers who signup with the featured partner will qualify to
+                particiapate in the Featured Partner Prize Drawing. Prizes depend on the services or products offered by
+                the featured partner, and are available while supplies last.</h4>
+        </div>
+    </div>
 </div>
 
 
@@ -62,81 +75,7 @@
 
 
 <!-- Image Showcases -->
-<section id="about" class="showcase">
-    <div class="container-fluid p-0 text-center">
-        <div class="p-4 mb-0 text-center" [style.min-height]="'500px'" [style.background-color]="'#000000'">
-            <div class="container">
-                <div class="row">
-
-                    <div class="card mb-2 animate" data-aos="fade">
-                        <div class="card-body">
-                            <h4><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                    class="fa fa-star"></i><i class="fa fa-star"></i></h4>
-                            <hr>
-                            <h4 class="my-4">We provide a full service integration of technology in many industries, and
-                                in
-                                several
-                                ways,
-                                whatever
-                                you need.</h4>
-                        </div>
-                    </div>
-                    <div class="card animate" data-aos="fade" data-aos-delay="250">
-                        <div class="card-body">
-                            <h4><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                    class="fa fa-star"></i><i class="fa fa-star"></i></h4>
-                            <hr>
-                            <h4 class="my-4">Founded by an American disabled veteran, we set out to offer our services
-                                with
-                                understanding and
-                                care. Not all
-                                businesses are alike, and we take the time to learn what it is our customers need, and
-                                implement
-                                our
-                                services
-                                with empathy and efficiency.</h4>
-                            <img class="img-fluid" width="200" src="../assets/img/sdv3.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img animate" data-aos="flip-left"
-                style="background-image: url('../assets/img/bg-showcase-1.jpg');">
-            </div>
-            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                <h2>Digital Marketing</h2>
-                <p class="lead mb-0">From S.E.O. to branding, GTS offers expert marketing and consulting, giving
-                    businesses
-                    the winning edge needed to reach your customers.</p>
-            </div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-lg-6 text-white showcase-img animate" data-aos="flip-right"
-                style="background-image: url('../assets/img/bg-showcase-2.jpg');">
-            </div>
-            <div class="col-lg-6 my-auto showcase-text">
-                <h2>Research &amp; Development</h2>
-                <p class="lead mb-0">Technology can change lives, and better our planet. GTS puts the advancment of
-                    green
-                    technology as our number one priority. Through fundraising, followed by research and
-                    development, we can help provide solutions to some of the worlds toughest problems.</p>
-            </div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img animate" data-aos="flip-left"
-                style="background-image: url('../assets/img/bg-showcase-3.jpg');">
-            </div>
-            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                <h2>Empathy &amp; Accessability</h2>
-                <p class="lead mb-0">Technology should be available for everyone, allowing the convenience and benefits
-                    to
-                    better all who integrate it into their lives.</p>
-            </div>
-        </div>
-    </div>
-</section>
+<app-about [isPage]="false"></app-about>
 
 <!-- Testimonials -->
 <section class="testimonials text-center bg-light">
