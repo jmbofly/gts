@@ -18,6 +18,7 @@ import { ServicesComponent } from './services/services.component';
 import { LoginComponent } from './login/login.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogModule } from './blog/blog.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { BlogModule } from './blog/blog.module';
     ServicesComponent,
     LoginComponent,
     BlogComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

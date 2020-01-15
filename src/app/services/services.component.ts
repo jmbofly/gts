@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Masthead } from '../interface/masthead';
-import { Service } from '../interface/service.interface';
+import { Service } from '../interface/service';
 import { Services } from '../models/services.const';
 import { Router, ActivatedRoute, NavigationStart, NavigationEnd, UrlTree } from '@angular/router';
 
@@ -13,13 +13,14 @@ import { Router, ActivatedRoute, NavigationStart, NavigationEnd, UrlTree } from 
 export class ServicesComponent implements OnInit {
   @Input() isPage = true;
   currentTitle: Masthead = {
-    main: 'Ready. Set. Grow.',
-    sub: 'Get details about all of our Services',
+    main: 'Ready & Reliable',
+    sub: 'Get details about all Services',
     bg: './assets/img/bg-masthead-3.jpg',
     action: 'signup',
     cta: true,
   };
   services: Service[] = Services;
+  activeService = false;
   constructor(private router: Router, private route: ActivatedRoute, public modal: NgbModal) {
 
   }
@@ -47,6 +48,12 @@ export class ServicesComponent implements OnInit {
       left: 0
     });
     // console.log('scrolled', { top, id, anchor });
+  }
+
+  toggleService(id) {
+    const serviceToggled = this.services.filter(service => service.id === id)[0].toggled;
+    // this.services.map(service => service.toggled = false);
+    this.services.filter(service => service.id === id)[0].toggled = !serviceToggled;
   }
 
 }

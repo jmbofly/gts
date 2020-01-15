@@ -1,5 +1,6 @@
 body {
   @include body-font;
+  font-weight: 100;
 }
 
 h1,
@@ -8,6 +9,14 @@ h3,
 h4,
 h5,
 h6 {
-  @include body-font;
-  font-weight: 700;
+  // font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+
+.border-bottom-dashed {
+  border-bottom: .5px dashed white;
+}
+
+.border-top-dashed {
+  border-top: .5px dashed white;
 }

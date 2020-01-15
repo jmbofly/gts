@@ -1,14 +1,21 @@
 <app-masthead [title]="currentTitle" *ngIf="isPage"></app-masthead>
 <section class="services-section border-top" [style.background]="'linear-gradient(#434343,#000000)'">
-    <div *ngFor="let service of services" class="jumbotron jumbotron text-center bg-transparent text-light mb-0 border-bottom" [id]="service.id">
+    <div *ngFor="let service of services" class="jumbotron jumbotron text-center bg-transparent text-light mb-0"
+        [id]="service.id" style="border-bottom: .5px dashed white;">
+        <!-- <hr class="my-2 bg-transparent"> -->
         <div class="container">
-            <h1 class="display-4">{{service.title}}</h1>
+            <h1 class="text-primary text-uppercase">{{service.title}}</h1>
             <p class="lead">{{ service.subtitle }}</p>
-            <hr class="my-2 bg-light">
             <div [innerHTML]="service.overview"></div>
             <p class="lead">
-                <button class="btn btn-primary btn-lg" [disabled]="service.id === 'store'">{{service.name}}</button>
+                <button class="btn btn-primary btn-lg" [disabled]="service.id === 'store'"
+                    (click)="toggleService(service.id)">{{service.name}}</button>
             </p>
+            <div class="card animated collapse" [ngClass]="service.toggled ? 'show ZoomInDown': 'ZoomOutUp'">
+                <div class="card-body text-dark" [innerHTML]="service?.content">
+                </div>
+            </div>
         </div>
     </div>
 </section>
+<app-call-to-action></app-call-to-action>

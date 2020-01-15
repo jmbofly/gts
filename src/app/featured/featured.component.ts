@@ -32,6 +32,7 @@ export class FeaturedComponent implements OnInit {
     optedOut: false
   }
 
+  phoneRegEx = `^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$`;
 
   constructor(public modal: NgbModal, private data: DataService, public ga: GoogleAnalyticsService) { }
 
@@ -58,6 +59,7 @@ export class FeaturedComponent implements OnInit {
       this.modal.dismissAll();
       return window.open(redirectURL, '_blank');
     } else {
+
       return this.data.prizeEntrySignUp(data)
         .then(res => {
           this.ga.eventEmitter('send', 'click', 'new-prize-entry');

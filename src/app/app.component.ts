@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
         if (url.includes('?fbclid')) {
           const idIdx = url.indexOf('=') + 1;
           fbclid = url.slice(idIdx);
-          // console.log('fb client found', fbclid);
+          console.log('fb client found', fbclid);
         }
       }
     });
@@ -52,24 +52,27 @@ export class AppComponent implements OnInit {
 
     // fb.init(initParams);
     // const cookies = this.cookieService.getAll();
-    // console.log('cookies', cookies);
+    // const memberCookie = this.cookieService.get('amember_aff_id');
+    // console.log('cookies', cookies, memberCookie);
   }
 
-  // private getCookies() {
-  //   const pairs = document.cookie.split(";");
-  //   const cookies = {};
-  //   for (var i = 0; i < pairs.length; i++) {
-  //     const pair = pairs[i].split("=");
-  //     cookies[(pair[0] + '').trim()] = unescape(pair.slice(1).join('='));
-  //   }
-  //   return cookies;
-  // }
+  private getCookies() {
+    const pairs = document.cookie.split(";");
+    const cookies = {};
+    for (var i = 0; i < pairs.length; i++) {
+      const pair = pairs[i].split("=");
+      cookies[(pair[0] + '').trim()] = unescape(pair.slice(1).join('='));
+    }
+    return cookies;
+  }
 
   ngOnInit() {
     AOS.init({
       useClassNames: true,
       once: false,
+      initClassName: null,
       duration: 800,
+      animatedClassName: 'animated',
     })
 
 
@@ -85,6 +88,14 @@ export class AppComponent implements OnInit {
     });
     this.showMenuBar = false;
     // console.log('scrolled', { top, id, anchor });
+  }
+
+  checkScrollTop(navEl: HTMLElement) {
+    if (navEl.classList.contains('aos-animate')) {
+      return '../assets/img/gts_logo_alt_short.png';
+    } else {
+      return '../assets/img/gts_logo_alt_short_2.png'
+    }
   }
 
   async navigateTo(url: string, params = null) {

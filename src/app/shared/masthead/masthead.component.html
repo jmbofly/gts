@@ -1,7 +1,11 @@
 <!-- Masthead -->
-<header id="home" class="masthead text-white text-center pt-4" [style.margin-top]="'74px'"
+<header #header id="home" class="masthead text-white text-center pt-4" [style.margin-top]="'124px'"
     [style.background-image]="'url(' + title?.bg + ')'">
-    <div class="overlay"></div>
+    <div class="overlay">
+        <div class="stars" [hidden]="header.clientWidth < 760"></div>
+        <div class="twinkling" [hidden]="header.clientWidth < 760"></div>
+        <div class="clouds" [hidden]="header.clientWidth < 760"></div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-xl-9 mx-auto">

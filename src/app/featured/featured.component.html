@@ -1,13 +1,13 @@
 <app-masthead [title]="title" *ngIf="isPage"></app-masthead>
 <!-- Featured -->
 <section id="featured text-light">
-    <div class="jumbotron border-top jumbotron-fluid text-center m-0"
+    <div class="jumbotron border-bottom-dashed jumbotron-fluid text-center m-0"
         [style.background]="'linear-gradient(#434343, #000000)'">
         <div class="container">
             <div class="card m-2 animate" data-aos="flip-down">
                 <div class="card-body">
                     <h3 class="text-center">Win a <b>Samsung 50" 4k TV</b> or <b>Galaxy Tab A</b></h3>
-                    <hr>
+                    <!-- <hr> -->
                     <div class="row">
                         <div class="container">
                             <img src="../assets/img/samsung_tv.png" style="max-width: 50%;"
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="container">
-            <hr class="bg-light">
+            <!-- <hr class="bg-light"> -->
             <h3 class="my-4 text-light">
                 Check out these fantastic packages!
                 <br>
@@ -180,11 +180,11 @@
                 </div>
             </div>
             <br>
-            <hr class="bg-light">
             <br>
             <ul class="list-group text-light">
-                <li class="list-group-item list-group-item-primary"><i class="fa fa-wrench"></i> &nbsp;Service
-                    includes:
+                <li style="font-size: 2rem;" class="list-group-item list-group-item-primary"><i
+                        class="fa fa-wrench"></i> &nbsp;<b>Service
+                        includes:</b>
                 </li>
                 <li class="list-group-item"><i class="fa fa-mobile-phone"></i> &nbsp;500+ Channels on your
                     phone</li>
@@ -275,10 +275,10 @@
                     id="email" aria-describedby="emailHelpId" placeholder="Email">
                 <small id="emailHelpId" class="form-text text-muted">{{email.value.length}}/30</small>
             </div>
-<div class="form-group">
+            <div class="form-group">
                 <label for="phone">Phone <b class="text-danger">*</b></label>
                 <input #phone [(ngModel)]="signUp.phone" type="phone" [maxLength]="30" class="form-control" name="phone"
-                    id="phone" aria-describedby="phoneHelpId" placeholder="Phone">
+                    [pattern]="phoneRegEx" id="phone" aria-describedby="phoneHelpId" placeholder="Phone">
                 <small id="phoneHelpId" class="form-text text-muted"><em>###-###-####</em></small>
             </div>
             <div class="form-check">

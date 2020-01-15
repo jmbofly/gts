@@ -1,6 +1,10 @@
 <!-- Call to Action -->
-<section id="contact" class="call-to-action text-white text-center">
-    <div class="overlay"></div>
+<section #cta id="contact" class="call-to-action text-white text-center">
+    <div class="overlay">
+        <div class="stars" [hidden]="cta.clientWidth < 760"></div>
+        <div class="twinkling" [hidden]="cta.clientWidth < 760"></div>
+        <div class="clouds" [hidden]="cta.clientWidth < 760"></div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-xl-9 mx-auto">
@@ -16,6 +20,10 @@
                         <div class="col-12 col-md-3">
                             <button type="button" (click)="signUpWithEmail(signup.value, {})"
                                 class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                        </div>
+                        <div *ngIf="signUpSuccess" class="text-success text-bolder p-3">
+                            <i class="fa fa-check"></i>Success! Check your email.
+                            inbox!
                         </div>
                     </div>
                 </form>

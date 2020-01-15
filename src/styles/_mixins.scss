@@ -16,3 +16,7 @@
 @mixin box-shadow-far($x, $y, $z, $color) {
   box-shadow: $x $y $z rgba(0, 0, 0, .3);
 }
+
+.box-shadow-far {
+  @include box-shadow-far(0, 10px, 16px, rgba(0, 0, 0, .33));
+}
