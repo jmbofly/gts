@@ -20,3 +20,12 @@ h6 {
 .border-top-dashed {
   border-top: .5px dashed white;
 }
+
+[data-aos]:not(.navbar),
+.showcase-img {
+  opacity: 0;
+
+  &.aos-animate {
+    opacity: 1;
+  }
+}

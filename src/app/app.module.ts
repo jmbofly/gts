@@ -5,7 +5,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FacebookModule } from 'ngx-facebook';
+// import { FacebookModule } from 'ngx-facebook';
 import { CookieService } from 'ngx-cookie-service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +20,7 @@ import { ServicesModule } from './services/services.module';
 import { NotFoundModule } from './not-found/not-found.module';
 import { LoginModule } from './login/login.module';
 import { CoreModule } from './core/core.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { CoreModule } from './core/core.module';
     AngularFirestoreModule,
     AngularFireStorageModule,
     NgbModule,
-    FacebookModule.forRoot(),
+    // FacebookModule.forRoot(),
     SharedModule,
     BlogModule,
     AboutModule,
@@ -42,8 +43,9 @@ import { CoreModule } from './core/core.module';
     ServicesModule,
     NotFoundModule,
     LoginModule,
-    AppRoutingModule,
     CoreModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    AppRoutingModule,
   ],
   providers: [CookieService],
   bootstrap: [AppComponent],

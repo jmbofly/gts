@@ -59,6 +59,7 @@ export class DataService {
   }
 
   getImage(name: string) {
+    // return `assets/img/${name}`;
     return `https://firebasestorage.googleapis.com/v0/b/gts-site-80a8a.appspot.com/o/img%2F${name}?alt=media&token=137c99b9-6dd2-443e-933c-ae29c15198be`;
   }
 

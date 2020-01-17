@@ -12,7 +12,7 @@ export class MastheadComponent implements OnInit {
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.data.readImageList();
+    // this.data.readImageList();
   }
 
   public getImage(name: string) {

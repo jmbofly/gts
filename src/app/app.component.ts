@@ -7,10 +7,10 @@ import { Observable, BehaviorSubject } from 'rxjs';
 import { switchMap, map } from 'rxjs/operators';
 import * as AOS from 'aos';
 import { Router, ActivatedRoute, NavigationEnd, NavigationStart } from '@angular/router';
-import { FacebookService, InitParams, AuthResponse, LoginResponse, UIParams, LoginOptions } from 'ngx-facebook';
+// import { FacebookService, InitParams, AuthResponse, LoginResponse, UIParams, LoginOptions } from 'ngx-facebook';
 import { DataService } from './core/data.service';
 import { GoogleAnalyticsService } from "./core/google-analytics.service";
-import { CookieService } from 'ngx-cookie-service';
+// import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-root',
@@ -24,20 +24,20 @@ export class AppComponent implements OnInit {
   activeLink = null;
   alerts = [];
 
-  constructor(private cookieService: CookieService, private router: Router, private route: ActivatedRoute, public data: DataService, public modal: NgbModal, public ga: GoogleAnalyticsService, public fb: FacebookService) {
+  constructor(private router: Router, private route: ActivatedRoute, public data: DataService, public modal: NgbModal, public ga: GoogleAnalyticsService) {
 
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.ga.eventEmitter('set', 'page', event.urlAfterRedirects);
         this.ga.eventEmitter('send', 'pageview', `${event.id}`);
       } else if (event instanceof NavigationStart) {
-        const url = event.url;
-        let fbclid = '';
-        if (url.includes('?fbclid')) {
-          const idIdx = url.indexOf('=') + 1;
-          fbclid = url.slice(idIdx);
-          console.log('fb client found', fbclid);
-        }
+        // const url = event.url;
+        // let fbclid = '';
+        // if (url.includes('?fbclid')) {
+        //   const idIdx = url.indexOf('=') + 1;
+        //   fbclid = url.slice(idIdx);
+        //   console.log('fb client found', fbclid);
+        // }
       }
     });
 
@@ -57,15 +57,15 @@ export class AppComponent implements OnInit {
     // console.log('cookies', cookies, memberCookie);
   }
 
-  private getCookies() {
-    const pairs = document.cookie.split(";");
-    const cookies = {};
-    for (var i = 0; i < pairs.length; i++) {
-      const pair = pairs[i].split("=");
-      cookies[(pair[0] + '').trim()] = unescape(pair.slice(1).join('='));
-    }
-    return cookies;
-  }
+  // private getCookies() {
+  //   const pairs = document.cookie.split(";");
+  //   const cookies = {};
+  //   for (var i = 0; i < pairs.length; i++) {
+  //     const pair = pairs[i].split("=");
+  //     cookies[(pair[0] + '').trim()] = unescape(pair.slice(1).join('='));
+  //   }
+  //   return cookies;
+  // }
 
   ngOnInit() {
     AOS.init({
