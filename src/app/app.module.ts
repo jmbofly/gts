@@ -10,28 +10,20 @@ import { CookieService } from 'ngx-cookie-service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
-import { FeaturedComponent } from './featured/featured.component';
-import { HomeComponent } from './home/home.component';
 import { SharedModule } from './shared/shared.module';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { ServicesComponent } from './services/services.component';
-import { LoginComponent } from './login/login.component';
-import { BlogComponent } from './blog/blog.component';
 import { BlogModule } from './blog/blog.module';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { AboutModule } from './about/about.module';
+import { ContactModule } from './contact/contact.module';
+import { FeaturedModule } from './featured/featured.module';
+import { HomeModule } from './home/home.module';
+import { ServicesModule } from './services/services.module';
+import { NotFoundModule } from './not-found/not-found.module';
+import { LoginModule } from './login/login.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FeaturedComponent,
-    HomeComponent,
-    AboutComponent,
-    ContactComponent,
-    ServicesComponent,
-    LoginComponent,
-    BlogComponent,
-    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,8 +34,16 @@ import { NotFoundComponent } from './not-found/not-found.component';
     NgbModule,
     FacebookModule.forRoot(),
     SharedModule,
-    AppRoutingModule,
     BlogModule,
+    AboutModule,
+    ContactModule,
+    FeaturedModule,
+    HomeModule,
+    ServicesModule,
+    NotFoundModule,
+    LoginModule,
+    AppRoutingModule,
+    CoreModule,
   ],
   providers: [CookieService],
   bootstrap: [AppComponent],

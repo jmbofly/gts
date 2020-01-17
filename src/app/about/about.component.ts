@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Masthead } from '../interface/masthead';
-import { DataService } from '../data.service';
+import { DataService } from '../core/data.service';
 
 @Component({
   selector: 'app-about',

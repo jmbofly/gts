@@ -15,7 +15,7 @@ export class ServicesComponent implements OnInit {
   currentTitle: Masthead = {
     main: 'Ready & Reliable',
     sub: 'Get details about all Services',
-    bg: './assets/img/bg-masthead-3.jpg',
+    bg: 'bg-masthead-3.jpg',
     action: 'signup',
     cta: true,
   };

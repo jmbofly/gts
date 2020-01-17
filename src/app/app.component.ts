@@ -8,8 +8,8 @@ import { switchMap, map } from 'rxjs/operators';
 import * as AOS from 'aos';
 import { Router, ActivatedRoute, NavigationEnd, NavigationStart } from '@angular/router';
 import { FacebookService, InitParams, AuthResponse, LoginResponse, UIParams, LoginOptions } from 'ngx-facebook';
-import { DataService } from './data.service';
-import { GoogleAnalyticsService } from "./google-analytics.service";
+import { DataService } from './core/data.service';
+import { GoogleAnalyticsService } from "./core/google-analytics.service";
 import { CookieService } from 'ngx-cookie-service';
 
 @Component({

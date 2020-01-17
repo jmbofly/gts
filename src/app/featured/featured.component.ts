@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
-import { DataService } from '../data.service';
-import { GoogleAnalyticsService } from "../google-analytics.service";
+import { DataService } from '../core/data.service';
+import { GoogleAnalyticsService } from "../core/google-analytics.service";
 // import { FacebookService, LoginOptions } from 'ngx-facebook';
 @Component({
   selector: 'app-featured',

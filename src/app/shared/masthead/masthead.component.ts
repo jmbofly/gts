@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { DataService } from 'src/app/data.service';
+import { DataService } from 'src/app/core/data.service';
 import { Masthead } from 'src/app/interface/masthead';
 @Component({
   selector: 'app-masthead',
