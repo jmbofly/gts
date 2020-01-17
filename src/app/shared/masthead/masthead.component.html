@@ -1,6 +1,6 @@
 <!-- Masthead -->
 <header #header id="home" class="masthead text-white text-center pt-4" [style.margin-top]="'124px'"
-    [style.background-image]="'url(' + title?.bg + ')'">
+    [style.background-image]="'url(' + getImage(title.bg) + ')'">
     <div class="overlay">
         <div class="stars" [hidden]="header.clientWidth < 760"></div>
         <div class="twinkling" [hidden]="header.clientWidth < 760"></div>
@@ -12,7 +12,7 @@
                 <h1 class="mb-5" [style.font-size]="'2.5rem'">{{title.main}}</h1>
             </div>
             <div class="col-xl-9 mx-auto" *ngIf="title?.overlay">
-                <img class="mb-4 img-fluid" [width]="title?.overlay?.width" [src]="title?.overlay?.src"
+                <img class="mb-4 img-fluid" [width]="title?.overlay?.width" [src]="getImage(title.overlay.src)"
                     [alt]="title?.overlay?.alt">
             </div>
             <div class="col-xl-9 mx-auto">

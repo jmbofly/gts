@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-home',
@@ -10,17 +11,21 @@ export class HomeComponent implements OnInit {
     main: 'Your Technology Solution',
     sub: 'Want updates on our technology?',
     cta: true,
-    bg: 'assets/img/bg-masthead-2.jpg',
+    bg: 'bg-masthead-2.jpg',
     action: 'signup',
     overlay: {
-      src: 'assets/img/gts_logo_alt_short_2.png',
+      src: 'gts_logo_alt_short_2.png',
       alt: 'Global Technology Services LLC logo',
       width: 300
     }
   }
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+  }
+
+  getImage(name: string) {
+    return this.data.getImage(name);
   }
 
 }

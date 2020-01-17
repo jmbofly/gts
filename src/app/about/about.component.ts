@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Masthead } from '../interface/masthead';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-about',
@@ -11,18 +12,22 @@ export class AboutComponent implements OnInit {
   title: Masthead = {
     main: 'Your Link to Technology',
     sub: 'A Disabled Veteran Founded Company<br/><br/>Get Updates From Our Newsletter',
-    bg: '../assets/img/bg-masthead.jpg',
+    bg: 'bg-masthead.jpg',
     cta: true,
     action: 'signup',
     overlay: {
-      src: '../assets/img/sdv3.png',
+      src: 'sdv3.png',
       alt: 'Service Disabled Veteran Owned Small Business Logo',
       width: 300
     }
   }
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+  }
+
+  getImage(name: string) {
+    return this.data.getImage(name);
   }
 
 }

@@ -1,4 +1,4 @@
-<app-masthead [title]="title" *ngIf="isPage"></app-masthead>
+<app-masthead #masthead [title]="title" *ngIf="isPage"></app-masthead>
 <!-- Marketing messaging and featurettes
       ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -67,7 +67,7 @@
                                     services
                                     with precision and empathy.</h5>
                             </div>
-                            <img class="img-fluid" width="200" src="../assets/img/sdv3.png" alt="">
+                            <img class="img-fluid" width="200" [src]="getImage('sdv3.png')" alt="">
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
         </div>
         <div class="row no-gutters">
             <div class="col-lg-6 order-lg-2 text-white showcase-img animate" data-aos="fade-right"
-                style="background-image: url('../assets/img/bg-showcase-1.jpg');">
+                [style.background-image]="'url(' +  getImage('bg-showcase-1.jpg') + ')'">
             </div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                 <h2>Digital Marketing</h2>
@@ -86,7 +86,7 @@
         </div>
         <div class="row no-gutters">
             <div class="col-lg-6 text-white showcase-img animate" data-aos="fade-right"
-                style="background-image: url('../assets/img/bg-showcase-2.jpg');">
+                [style.background-image]="'url(' +  getImage('bg-showcase-2.jpg') + ')'">
             </div>
             <div class="col-lg-6 my-auto showcase-text">
                 <h2>Research &amp; Development</h2>
@@ -98,7 +98,7 @@
         </div>
         <div class="row no-gutters">
             <div class="col-lg-6 order-lg-2 text-white showcase-img animate" data-aos="fade-right"
-                style="background-image: url('../assets/img/bg-showcase-3.jpg');">
+                [style.background-image]="'url(' +  getImage('bg-showcase-3.jpg') + ')'">
             </div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                 <h2>Empathy &amp; Accessability</h2>

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FacebookModule } from 'ngx-facebook';
 import { CookieService } from 'ngx-cookie-service';
@@ -37,6 +38,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
+    AngularFireStorageModule,
     NgbModule,
     FacebookModule.forRoot(),
     SharedModule,

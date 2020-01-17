@@ -182,7 +182,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                             <td style="line-height:0;">
                                                                 <a target="_blank" style="text-decoration:none;"
                                                                     href="https://www.trygts.com/"><img
-                                                                        src="https://trygts.com/assets/img/gts_logo_alt_short_2.png"
+                                                                        src="https://firebasestorage.googleapis.com/v0/b/gts-site-80a8a.appspot.com/o/img%2Fgts_logo_alt_short_2.png?alt=media&token=137c99b9-6dd2-443e-933c-ae29c15198be"
                                                                         border="0"
                                                                         style="font:bold 12px/12px Arial, Helvetica, sans-serif; color:#606060;"
                                                                         align="left" vspace="0" hspace="0" width="200"
@@ -229,7 +229,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                             <table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0"
                                 cellspacing="0">
                                 <tr>
-                                    <td class="img-flex"><img src="https://trygts.com/assets/img/bg-masthead-3.jpg"
+                                    <td class="img-flex"><img src="https://firebasestorage.googleapis.com/v0/b/gts-site-80a8a.appspot.com/o/img%2Fbg-masthead-3.jpg?alt=media&token=137c99b9-6dd2-443e-933c-ae29c15198be"
                                             style="vertical-align:top;" width="600" height="306" alt="" /></td>
                                 </tr>
                                 <tr>
@@ -302,7 +302,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                             <table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0"
                                 cellspacing="0">
                                 <tr>
-                                    <td class="img-flex"><img src="https://trygts.com/assets/img/handshake.jpg"
+                                    <td class="img-flex"><img src="https://firebasestorage.googleapis.com/v0/b/gts-site-80a8a.appspot.com/o/img%2Fhandshake.jpg?alt=media&token=137c99b9-6dd2-443e-933c-ae29c15198be"
                                             style="vertical-align:top;" width="600" height="249" alt="" /></td>
                                 </tr>
                                 <tr>
@@ -412,7 +412,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                         <!-- post -->
                                                         <tr>
                                                             <td class="img-flex"><img
-                                                                    src="https://trygts.com/assets/img/bg-masthead-4.jpg"
+                                                                    src="https://firebasestorage.googleapis.com/v0/b/gts-site-80a8a.appspot.com/o/img%2Fbg-masthead-4.jpg?alt=media&token=137c99b9-6dd2-443e-933c-ae29c15198be"
                                                                     style="vertical-align:top;" width="300" height="203"
                                                                     alt="" /></td>
                                                         </tr>
@@ -459,7 +459,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                         <!-- post -->
                                                         <tr>
                                                             <td class="img-flex"><img
-                                                                    src="https://trygts.com/assets/img/teamwork.jpg"
+                                                                    src="https://firebasestorage.googleapis.com/v0/b/gts-site-80a8a.appspot.com/o/img%2Fteamwork.jpg?alt=media&token=137c99b9-6dd2-443e-933c-ae29c15198be"
                                                                     style="vertical-align:top;" width="300" height="203"
                                                                     alt="" /></td>
                                                         </tr>
@@ -557,7 +557,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                         </tr>
                                                         <tr>
                                                             <td class="img-flex"><img
-                                                                    src="https://trygts.com/assets/img/medical_group.jpg"
+                                                                    src="https://firebasestorage.googleapis.com/v0/b/gts-site-80a8a.appspot.com/o/img%2Fmedical_group.jpg?alt=media&token=137c99b9-6dd2-443e-933c-ae29c15198be"
                                                                     style="vertical-align:top;" width="300" height="200"
                                                                     alt="" /></td>
                                                         </tr>
@@ -607,7 +607,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                         </tr>
                                                         <tr>
                                                             <td class="img-flex"><img
-                                                                    src="https://trygts.com/assets/img/homeless.jpg"
+                                                                    src="https://firebasestorage.googleapis.com/v0/b/gts-site-80a8a.appspot.com/o/img%2Fhomeless.jpg?alt=media&token=137c99b9-6dd2-443e-933c-ae29c15198be"
                                                                     style="vertical-align:top;" width="300" height="200"
                                                                     alt="" /></td>
                                                         </tr>
@@ -905,7 +905,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                                 style="line-height:0; padding:3px 0 0;">
                                                                 <a target="_blank" style="text-decoration:none;"
                                                                     href="https://www.facebook.com/GlobalTechnologyServicesLLC"><img
-                                                                        src="https://trygts.com/assets/img/ico-facebook.png"
+                                                                        src="https://firebasestorage.googleapis.com/v0/b/gts-site-80a8a.appspot.com/o/img%2Fico-facebook.png?alt=media&token=137c99b9-6dd2-443e-933c-ae29c15198be"
                                                                         border="0"
                                                                         style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;"
                                                                         align="left" vspace="0" hspace="0" width="6"
@@ -916,7 +916,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                                 style="line-height:0; padding:3px 0 0;">
                                                                 <a target="_blank" style="text-decoration:none;"
                                                                     href="#"><img
-                                                                        src="https://trygts.com/assets/img/ico-twitter.png"
+                                                                        src="https://firebasestorage.googleapis.com/v0/b/gts-site-80a8a.appspot.com/o/img%2Fico-twitter.png?alt=media&token=137c99b9-6dd2-443e-933c-ae29c15198be"
                                                                         border="0"
                                                                         style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;"
                                                                         align="left" vspace="0" hspace="0" width="13"
@@ -927,7 +927,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                                 style="line-height:0; padding:3px 0 0;">
                                                                 <a target="_blank" style="text-decoration:none;"
                                                                     href="#"><img
-                                                                        src="https://trygts.com/assets/img/ico-google-plus.png"
+                                                                        src="https://firebasestorage.googleapis.com/v0/b/gts-site-80a8a.appspot.com/o/img%2Fico-google-plus.png?alt=media&token=137c99b9-6dd2-443e-933c-ae29c15198be"
                                                                         border="0"
                                                                         style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;"
                                                                         align="left" vspace="0" hspace="0" width="19"
@@ -938,7 +938,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                                 style="line-height:0; padding:3px 0 0;">
                                                                 <a target="_blank" style="text-decoration:none;"
                                                                     href="#"><img
-                                                                        src="https://trygts.com/assets/img/ico-linkedin.png"
+                                                                        src="https://firebasestorage.googleapis.com/v0/b/gts-site-80a8a.appspot.com/o/img%2Fico-linkedin.png?alt=media&token=137c99b9-6dd2-443e-933c-ae29c15198be"
                                                                         border="0"
                                                                         style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;"
                                                                         align="left" vspace="0" hspace="0" width="13"

@@ -8,20 +8,15 @@ import { Masthead } from 'src/app/interface/masthead';
 })
 export class MastheadComponent implements OnInit {
   @Input() title: Masthead;
-  // defaults: Masthead = {
-  //   main: 'Your Technology Solution',
-  //   sub: 'Bringing Technology to People, Families, and Businesses',
-  //   bg: '../assets/img/bg-masthead.jpg',
-  //   cta: true,
-  //   action: 'signup',
-  //   overlay: {
-  //     width: 300
-  //   },
-  // }
   emailSuccess = false;
   constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.readImageList();
+  }
+
+  public getImage(name: string) {
+    return this.data.getImage(name);
   }
 
   async mastheadAction(email?: string, redirectURL?: string) {
@@ -32,5 +27,4 @@ export class MastheadComponent implements OnInit {
     }
 
   }
-
 }

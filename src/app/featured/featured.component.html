@@ -10,9 +10,9 @@
                     <!-- <hr> -->
                     <div class="row">
                         <div class="container">
-                            <img src="../assets/img/samsung_tv.png" style="max-width: 50%;"
+                            <img [src]="getImage('samsung_tv.png')" style="max-width: 50%;"
                                 class="img-thumbnail border-0" alt="Samsung Product Image">
-                            <img src="../assets/img/samsung_tab.png" style="max-width: 50%;"
+                            <img [src]="getImage('samsung_tab.png')" style="max-width: 50%;"
                                 class="img-thumbnail border-0" alt="Samsung Product Image">
                         </div>
                     </div>
@@ -236,7 +236,7 @@
                     <p>Signup for a 3 month package and get a chance to win a Samsung 50" 4k TV!</p>
                 </div>
                 <div class="p-2 col-6">
-                    <img src="../assets/img/samsung_tv.png" width="200" alt="">
+                    <img [src]="getImage('samsung_tv.png')" width="200" alt="">
                 </div>
 
             </div>
@@ -245,7 +245,7 @@
                 <div class="col-6 p-2">
                     <p>Signup for a 1 month package and get a chance to win a Samsung Galaxy Tab A!</p>
                 </div>
-                <div class="p-2 col-6"><img src="../assets/img/samsung_tab.png" width="200" alt=""></div>
+                <div class="p-2 col-6"><img [src]="getImage('samsung_tab.png')" width="200" alt=""></div>
             </div>
         </div>
         <hr>
@@ -277,8 +277,9 @@
             </div>
             <div class="form-group">
                 <label for="phone">Phone <b class="text-danger">*</b></label>
-                <input #phone [(ngModel)]="signUp.phone" type="phone" [maxLength]="30" class="form-control" name="phone"
-                    [pattern]="phoneRegEx" id="phone" aria-describedby="phoneHelpId" placeholder="Phone">
+                <input #phone [(ngModel)]="signUp.phone" type="phone" [maxLength]="10" class="form-control" name="phone"
+                    pattern="(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}" id="phone" aria-describedby="phoneHelpId"
+                    placeholder="Phone">
                 <small id="phoneHelpId" class="form-text text-muted"><em>###-###-####</em></small>
             </div>
             <div class="form-check">

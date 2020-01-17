@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
   alerts = [];
 
   constructor(private cookieService: CookieService, private router: Router, private route: ActivatedRoute, public data: DataService, public modal: NgbModal, public ga: GoogleAnalyticsService, public fb: FacebookService) {
+
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.ga.eventEmitter('set', 'page', event.urlAfterRedirects);
@@ -74,8 +75,6 @@ export class AppComponent implements OnInit {
       duration: 800,
       animatedClassName: 'animated',
     })
-
-
   }
 
   animateScroll(id: string) {
@@ -92,10 +91,14 @@ export class AppComponent implements OnInit {
 
   checkScrollTop(navEl: HTMLElement) {
     if (navEl.classList.contains('aos-animate')) {
-      return '../assets/img/gts_logo_alt_short.png';
+      return this.getImage('gts_logo_alt_short.png');
     } else {
-      return '../assets/img/gts_logo_alt_short_2.png'
+      return this.getImage('gts_logo_alt_short_2.png')
     }
+  }
+
+  getImage(name: string) {
+    return this.data.getImage(name);
   }
 
   async navigateTo(url: string, params = null) {

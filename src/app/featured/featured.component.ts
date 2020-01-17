@@ -15,11 +15,11 @@ export class FeaturedComponent implements OnInit {
     main: 'Featured Partner',
     sub: 'Want to know more about this partner?',
     cta: true,
-    bg: 'assets/img/bg-masthead-4.jpg',
+    bg: 'bg-masthead-4.jpg',
     action: 'redirect',
     redirectURL: 'https://xstreamingtv.com/dump/aff/go/kevin',
     overlay: {
-      src: 'https://xstreamingtv.com/assets/images/xstreamingtv-logo-5000x1659.png',
+      src: 'xstreamingtv-logo.png',
       alt: 'Xstreaming tv logo',
       width: 300
     }
@@ -32,7 +32,7 @@ export class FeaturedComponent implements OnInit {
     optedOut: false
   }
 
-  phoneRegEx = `^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$`;
+  phoneRegEx = '(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}';
 
   constructor(public modal: NgbModal, private data: DataService, public ga: GoogleAnalyticsService) { }
 
@@ -51,6 +51,10 @@ export class FeaturedComponent implements OnInit {
     //   this.signupAndRedirect(data, redirectURL);
     //   console.log('modal results complete', results);
     // })
+  }
+
+  getImage(name: string) {
+    return this.data.getImage(name);
   }
 
 
