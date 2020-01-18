@@ -18,12 +18,23 @@ h6 {
   color: #212529;
 }
 
+.card {
+  background: rgba(67, 67, 67, 0.3) !important;
+  border-bottom: .5px dashed $orange;
+  border-top: .5px dashed $orange;
+  @include box-shadow-far(0, 14px, 16px, rgba(0, 0, 0, .3))
+}
+
 .border-bottom-dashed {
-  border-bottom: .5px dashed white;
+  border-bottom: .5px dashed $orange;
 }
 
 .border-top-dashed {
-  border-top: .5px dashed white;
+  border-top: .5px dashed $orange;
+}
+
+.list-group-dashed {
+  border-top: .5px dashed $orange !important;
 }
 
 [data-aos]:not(.navbar),

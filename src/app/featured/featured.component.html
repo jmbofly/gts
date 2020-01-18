@@ -1,26 +1,26 @@
 <app-masthead [title]="title" *ngIf="isPage"></app-masthead>
 <!-- Featured -->
-<section id="featured text-light" data-aos="fade-up">
-    <div class="jumbotron bg-dark border-bottom-dashed jumbotron-fluid text-center m-0"
-        [style.background]="'rgba(67, 67, 67, 0.3)'">
-        <div class="container">
-            <div class="card m-2">
-                <div class="card-body">
-                    <h3 class="text-center">Win a <b>Samsung 50" 4k TV</b> or <b>Galaxy Tab A</b></h3>
-                    <!-- <hr> -->
-                    <div class="row">
-                        <div class="container">
-                            <img [src]="getImage('samsung_tv.png')" style="max-width: 50%;"
-                                class="img-thumbnail border-0" alt="Samsung Product Image">
-                            <img [src]="getImage('samsung_tab.png')" style="max-width: 50%;"
-                                class="img-thumbnail border-0" alt="Samsung Product Image">
-                        </div>
+<section id="featured text-light" data-aos="fade">
+    <div class="container">
+        <h2 class="text-center text-primary my-4" data-aos="fade-right" data-aos-delay="250">
+            Get an amazing service <em><b class="text-white text-uppercase">plus</b></em>
+        </h2>
+        <div class="card text-light animated slowest text-center">
+            <div class="card-body">
+                <h3 class="text-center">Win a <b>Samsung 50" 4k TV</b> or <b>Galaxy Tab A</b></h3>
+                <!-- <hr> -->
+                <div class="row">
+                    <div class="container">
+                        <img [src]="getImage('samsung_tv.png')" style="max-width: 50%;" class="img-fluid border-0"
+                            alt="Samsung Product Image">
+                        <img [src]="getImage('samsung_tab.png')" style="max-width: 50%;" class="img-fluid border-0"
+                            alt="Samsung Product Image">
                     </div>
                 </div>
-                <div class="card-footer">
-                    <button class="btn mx-auto btn-primary my-4" (click)="openModal(signUpContent)">Learn
-                        more</button>
-                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn mx-auto btn-primary my-4" (click)="openModal(signUpContent)">Learn
+                    more</button>
             </div>
         </div>
         <div class="container">
@@ -33,7 +33,8 @@
             <div class="container-fluid">
                 <div class="row justify-content-center">
 
-                    <div class="card col-12 mx-2 my-2 justify-content-center col-lg-3">
+                    <div
+                        class="card text-light mx-auto animated slowest col-12 mx-2 my-2 justify-content-center col-lg-3">
                         <div class="card-header text-center pt-5">
                             <h3 class="card-title mbr-fonts-style display-5">
                                 3 Day Trial</h3>
@@ -63,7 +64,8 @@
                         </div>
                     </div>
 
-                    <div class="card col-12 mx-2 my-2 justify-content-center col-lg-3">
+                    <div
+                        class="card text-light mx-auto animated slowest col-12 mx-2 my-2 justify-content-center col-lg-3">
                         <div class="card-header text-center pt-5">
                             <h3 class="card-title mbr-fonts-style display-5">
                                 Monthly</h3>
@@ -98,7 +100,8 @@
                         </div>
                     </div>
 
-                    <div class="card col-12 mx-2 my-2 justify-content-center col-lg-3">
+                    <div
+                        class="card text-light mx-auto animated slowest col-12 mx-2 my-2 justify-content-center col-lg-3">
                         <div class="card-header text-center pt-5">
                             <h3 class="card-title mbr-fonts-style display-5">
                                 3 Months</h3>
@@ -183,10 +186,10 @@
             </div>
             <br>
             <br>
-            <ul class="list-group text-light">
-                <li style="font-size: 1.5rem;" class="list-group-item text-primary"><b>Service
-                        includes:</b>
-                </li>
+            <h3 style="font-size: 1.5rem;" class="lead text-primary"><b>Service
+                    includes:</b>
+            </h3>
+            <ul class="list-group text-light list-group-dashed">
                 <li class="list-group-item"><i class="fa fa-mobile-phone"></i> &nbsp;500+ Channels on your
                     phone</li>
                 <li class="list-group-item"><i class="fa fa-football-ball"></i> &nbsp;Watch TV/Sports on our
@@ -201,7 +204,7 @@
                     android
                     tv box using our APP</li>
             </ul>
-            <div class="card mt-2">
+            <div class="card text-light mt-2">
                 <div class="card-body">
                     <p class="blockquote">
                         Apple users, please use Safari or Chrome for best experience.

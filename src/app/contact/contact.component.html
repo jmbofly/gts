@@ -1,7 +1,7 @@
 <section class="text-light mt-4" [style.background]="'rgba(67, 67, 67, 0.3)'">
-    <div class="container">
+    <div class="container" style="margin-top: 8rem">
         <div class="row">
-            <div class="col-md-8" style="margin: 8rem auto">
+            <div class="col-md-8 mt-4">
                 <div class="well well-sm">
                     <div class="row">
                         <div class="col-md-9">
@@ -50,8 +50,8 @@
                                 <div class="col-md-9">
                                     <button type="button"
                                         [disabled]="!contactData.name || !contactData.email || !contactData.message"
-                                        class="btn btn-primary btn-block btn-lg"
-                                        (click)="addNewContact(contactData)">Submit</button>
+                                        class="btn btn-primary btn-block btn-lg" (click)="addNewContact(contactData)"><i
+                                            class="fa fa-paper-plane"></i> Submit</button>
                                 </div>
                                 <div *ngIf="success" class="text-success text-bolder p-3">
                                     <i class="fa fa-check"></i>Success! Message Sent!
@@ -60,6 +60,19 @@
                         </fieldset>
                     </form>
                 </div>
+            </div>
+            <div class="col-md-4 mx-auto mt-4" style="margin-bottom: 8rem">
+                <h3>Email</h3>
+                <h5>Alternatively you can click <a href="mailto:info@medtelplus.com">Here <b class="text-primary"><i
+                                class="fa fa-envelope"></i></b></a> or the button below to send Global Technology
+                    Services LLc an
+                    email</h5>
+                <br />
+                <a type="button" href="mailto:info@medtelplus.com" class="mb-2 btn btn-primary btn-block btn-lg"><i
+                        class="fa fa-envelope"></i> Email
+                </a>
+                <br>
+                <h5>Thanks!</h5>
             </div>
         </div>
     </div>

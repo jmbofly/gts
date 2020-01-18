@@ -1,11 +1,11 @@
 <!-- Masthead -->
 <app-masthead #masthead [title]="title"></app-masthead>
 <!-- Icons Grid -->
-<section class="features-icons text-center text-light" data-aos="fade-up" [style.background]="'#151719'">
+<section class="features-icons text-center text-light" data-aos="fade" [style.background]="'#151719'">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 animate" data-aos="fade-in">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" data-aos="flip-right">
                     <div class="features-icons-icon d-flex">
                         <i class="fa fa-medkit m-auto text-primary"></i>
                     </div>
@@ -16,8 +16,9 @@
                         technology!</p>
                 </div>
             </div>
-            <div class="col-lg-4 animate" data-aos="fade-in" data-aos-delay="150">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" data-aos="flip-right"
+                    data-aos-delay="250">
                     <div class="features-icons-icon d-flex">
                         <i class="fa fa-chain m-auto text-primary"></i>
                     </div>
@@ -26,8 +27,8 @@
                         Including Internet, video streaming, mobile and more!</p>
                 </div>
             </div>
-            <div class="col-lg-4 animate" data-aos="fade-in" data-aos-delay="300">
-                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3" data-aos="flip-right" data-aos-delay="350">
                     <div class="features-icons-icon d-flex">
                         <i class="fa fa-area-chart m-auto text-primary"></i>
                     </div>
@@ -42,32 +43,37 @@
 
 
 <!-- Featured -->
-<div class="container-fluid border-top-dashed border-bottom-dashed">
+<div class="container-fluid border-top-dashed">
     <div class="row">
         <div class="col-12">
-            <h1 class="text-primary text-center my-4">
+            <h1 class="text-primary text-center my-4 display-4">
                 <i class="fa fa-handshake-o"></i> Featured Partner
                 <br>
-                <img width="250" class="img-thumbnail bg-dark my-4 box-shadow-far"
-                    src="https://xstreamingtv.com/assets/images/xstreamingtv-logo-5000x1659.png"
-                    alt="xstreamingtv logo">
+                <a href="https://xstreamingtv.com/dump/aff/go/kevin">
+                    <img width="250" class="img-thumbnail bg-dark my-4 box-shadow-far"
+                        src="https://xstreamingtv.com/assets/images/xstreamingtv-logo-5000x1659.png"
+                        alt="xstreamingtv logo">
+                </a>
             </h1>
         </div>
     </div>
     <div class="row">
         <div class="col-md-8 mb-4 mx-auto">
-            <h2 class="text-center mb-4 pb-4 text-light">We work with dozens of companies to bring our customers the
-                best
+            <h5 class="text-center mb-4 pb-4 text-light">Global Technology Services LLC works with dozens of companies
+                to bring our customers and clients the
+                best technology and
                 services
-                possible.
-                Every Month, Global
-                Technology Services chooses one of those companies to be our Featured Partner.<br /><br />Featured
+                available.
+                Global
+                Technology Services chooses one of those companies to be our Featured Partner every
+                month.<br /><br />Featured
                 Partners
                 are highlighted on our featured page, and customers who signup with the featured partner will
                 qualify to
-                particiapate in the Featured Partner Prize Drawing. Prizes depend on the services or products
+                particiapate in the Global Technology Services LLC Featured Partner Prize Drawing. Prizes depend on the
+                services or products
                 offered by
-                the featured partner, and are available while supplies last.</h2>
+                the featured partner, and are available while inventory last.</h5>
         </div>
     </div>
 </div>
@@ -80,31 +86,34 @@
 <app-about [isPage]="false"></app-about>
 
 <!-- Testimonials -->
-<section class="testimonials text-center bg-light">
+<section class="testimonials text-center text-light bg-dark">
     <div class="container">
         <h2 class="mb-5">What people are saying...</h2>
         <div class="row">
             <div class="col-lg-4">
-                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0" data-aos="flip-left" data-aos-delay="0">
                     <img class="img-fluid rounded-circle mb-3" [src]="getImage('avatar.png')" alt="">
                     <h5>Margaret E.</h5>
-                    <p class="font-weight-light mb-0">"XStreamingTv is fantastic! Thanks so much guys!"</p>
+                    <p class="font-weight-light mb-0 text-primary">"My website is fantastic! Thank you so much!"</p>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0" data-aos="flip-left" data-aos-delay="250">
                     <img class="img-fluid rounded-circle mb-3" [src]="getImage('avatar.png')" alt="">
                     <h5>Fred S.</h5>
-                    <p class="font-weight-light mb-0">"GTS is amazing. Their insight and technology has helped my
+                    <p class="font-weight-light mb-0 text-primary">"GTS is amazing. Their insight and technology has
+                        helped my
                         business grow so
                         fast!"</p>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0" data-aos="flip-left" data-aos-delay="350">
                     <img class="img-fluid rounded-circle mb-3" [src]="getImage('avatar.png')" alt="">
                     <h5>Sarah W.</h5>
-                    <p class="font-weight-light mb-0">"Thanks so much for making the world a better place!"</p>
+                    <p class="font-weight-light mb-0 text-primary">"Your friendly employees made the process interesting
+                        and
+                        informative with positive results."</p>
                 </div>
             </div>
         </div>
