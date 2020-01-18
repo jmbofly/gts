@@ -38,10 +38,13 @@
 }
 
 nav {
-    // margin-right: 70px;
-
-    @include media-breakpoint-down (sm) {
-        @include transition(all, .25s, ease);
+    
+    @include media-breakpoint-down (md) {
+        @include transition(all, .25s, ease-out);
+            &:not(.navbar) {
+                right: -50px;
+                width: 300px;
+            }
         margin-right: 0;
         position: absolute;
         right: 0;
@@ -63,11 +66,11 @@ nav {
     transform-origin: 100% 50%;
 
     &.hide {
-        transform: scale(0);
+        opacity: 0;
     }
 
     &.show {
-        transform: scale(1);
+        opacity: 1;
     }
 
     .btn-link {

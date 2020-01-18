@@ -1,5 +1,5 @@
 <!-- Masthead -->
-<header #header id="home" class="masthead text-white text-center pt-4" [style.margin-top]="'124px'"
+<header #header class="masthead text-white text-center pt-4" [style.margin-top]="'124px'"
     [style.background-image]="'url(' + getImage(title.bg) + ')'">
     <div class="overlay">
         <div class="stars" [hidden]="header.clientWidth < 760"></div>
@@ -8,15 +8,15 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-xl-9 mx-auto">
-                <h1 class="mb-5" [style.font-size]="'2.5rem'">{{title.main}}</h1>
+            <div class="col-xl-9 mx-auto" data-aos="fade-right" data-aos-delay="500">
+                <h1 class="mb-5 text-primary" [style.font-size]="'2.5rem'">{{title.main}}</h1>
             </div>
             <div class="col-xl-9 mx-auto" *ngIf="title?.overlay">
                 <img class="mb-4 img-fluid" [width]="title?.overlay?.width" [src]="getImage(title.overlay.src)"
                     [alt]="title?.overlay?.alt">
             </div>
             <div class="col-xl-9 mx-auto">
-                <h3 class="mb-5" [innerHTML]="title?.sub"></h3>
+                <h2 class="mb-5" [innerHTML]="title?.sub"></h2>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto" *ngIf="title?.cta">
                 <div class="row">
@@ -29,6 +29,7 @@
                 <form *ngIf="title.action === 'signup'">
                     <div class="form-row">
                         <div class="col-12 col-md-9 mb-2 mb-md-0">
+                            <label title="Enter email" for="email" aria-label="email" hidden></label>
                             <input type="email" #email class="form-control form-control-lg"
                                 placeholder="Enter your email...">
                         </div>

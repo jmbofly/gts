@@ -5,30 +5,37 @@
     <div class="header-wrap" style="width: 100%;">
       <div class="header-top d-flex justify-content-between align-items-center">
         <div class="logo" style="cursor: pointer;" (click)="navigateTo('home')">
-          <img [src]="checkScrollTop(navbar)" class="img-fluid" alt="global technology services logo">
+          <h1>
+            <img [src]="checkScrollTop(navbar)" class="img-fluid" alt="global technology services logo">
+          </h1>
         </div>
         <div class="main-menubar d-flex align-items-center align-content-end">
-          <nav class="animated" [ngClass]="{'show': showMenuBar || navbar.clientWidth > 760, 'hide': !showMenuBar}">
-            <button id="home" class="btn btn-link hvr hvr-underline-from-left"
+          <nav role="menubar" class="animated"
+            [ngClass]="{'show': showMenuBar || navbar.clientWidth > 997, 'hide': !showMenuBar, 'slideInRight': showMenuBar || navbar.clientWidth > 997}">
+            <button role="menuitem" id="home" class="btn btn-link hvr hvr-underline-from-left"
               (click)="navigateTo('home')">Home</button>
-            <button id="featured" class="btn btn-link hvr hvr-underline-from-left"
+            <button role="menuitem" id="featured" class="btn btn-link hvr hvr-underline-from-left"
               (click)="navigateTo('featured')">Featured</button>
             <div ngbDropdown class="d-inline-block">
-              <button id="services" class="btn btn-link" ngbDropdownToggle>Services</button>
+              <button role="menuitem" id="services" class="btn btn-link hvr hvr-underline-from-left"
+                ngbDropdownToggle>Services</button>
               <div ngbDropdownMenu aria-labelledby="services">
-                <button class="dropdown-item" (click)="navigateTo('services', 'digital-marketing')">Digital
+                <button role="menuitem" class="dropdown-item"
+                  (click)="navigateTo('services', 'digital-marketing')">Digital
                   Marketing</button>
-                <button class="dropdown-item" (click)="navigateTo('services', 'store')">Tech Store</button>
-                <button class="dropdown-item" (click)="navigateTo('services', 'logistics-and-infrastructure')">Logistics
+                <button role="menuitem" class="dropdown-item" (click)="navigateTo('services', 'store')">Tech
+                  Store</button>
+                <button role="menuitem" class="dropdown-item"
+                  (click)="navigateTo('services', 'logistics-and-infrastructure')">Logistics
                   & Infrastructure</button>
               </div>
             </div>
-            <button id="about" class="btn btn-link hvr hvr-underline-from-left"
+            <button role="menuitem" id="about" class="btn btn-link hvr hvr-underline-from-left"
               (click)="navigateTo('about')">About</button>
-            <button id="contact" class="btn btn-link hvr hvr-underline-from-left"
+            <button role="menuitem" id="contact" class="btn btn-link hvr hvr-underline-from-left"
               (click)="navigateTo('contact')">Contact</button>
           </nav>
-          <div *ngIf="navbar.clientWidth < 760" class="menu-bar text-light mr-2" (click)="toggleMenuBar()"><i
+          <div *ngIf="navbar.clientWidth < 997" class="menu-bar text-light mr-2" (click)="toggleMenuBar()"><i
               class="fa fa-bars"></i></div>
         </div>
       </div>
@@ -36,11 +43,14 @@
   </div>
 </nav>
 <!-- End Navigation Area -->
-<router-outlet></router-outlet>
-<div class="back-to-top btn btn-primary btn-rounded box-shadow-far" title="Back To Top" data-aos="fade-up"
+
+<main class="main">
+  <router-outlet></router-outlet>
+</main>
+<div class="back-to-top btn btn-primary btn-rounded box-shadow-far fast" title="Back To Top" data-aos="fade-up"
   data-aos-offset="500" (click)="animateScroll('top')"><i class="fa fa-chevron-up fa-2x"></i></div>
 <!-- Footer -->
-<footer class="footer bg-light">
+<footer class="footer bg-dark">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
@@ -61,7 +71,7 @@
             <a href="../assets/tos.html" target="_blank">Privacy Policy</a>
           </li>
         </ul>
-        <p class="text-muted small mb-4 mb-lg-0">&copy; Global Technology Services, LLC 2019. All Rights
+        <p class="small mb-4 mb-lg-0 text-light">&copy; Global Technology Services, LLC 2019. All Rights
           Reserved.</p>
       </div>
       <div class="col-lg-6 h-100 text-center text-lg-right my-auto">

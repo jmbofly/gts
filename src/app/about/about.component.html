@@ -2,8 +2,7 @@
 <!-- Marketing messaging and featurettes
       ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
-<section class="features-icons text-center text-light" id="about"
-    [style.background]="'linear-gradient(#434343,#000000)'">
+<section class="features-icons text-center text-light" [style.background]="'rgba(67, 67, 67, 0.3)'" data-aos="fade-up">
     <div class="container marketing">
 
         <!-- Three columns of text below the carousel -->
@@ -14,8 +13,10 @@
                         <i class="fa fa-handshake-o m-auto text-primary"></i>
                     </div>
                     <h3>Partners</h3>
-                    <p class="lead mb-0">Partnering with businesses that are like minded gives us the ability to provide
-                        unmatchable services, and an amazing perspective. We have partners around the globe, in dozens
+                    <p class="lead mb-0">Partnering with businesses that are like minded gives us the ability to
+                        provide
+                        unmatchable services, and an amazing perspective. We have partners around the globe, in
+                        dozens
                         of industries.</p>
                 </div>
             </div>
@@ -42,9 +43,9 @@
         </div><!-- /.row -->
     </div>
 </section>
-<section id="about" class="showcase">
+<section class="showcase border-top-dashed border-bottom-dashed">
     <div class="container-fluid p-0 text-center">
-        <div class="p-4 mb-0 text-center" [style.background]="'#000000'">
+        <div class="p-4 mb-0 text-center" [style.background]="'transparent'">
             <div class="container">
                 <div class="row">
                     <div class="border-white card bg-transparent text-light mx-auto animated slowest"
@@ -52,7 +53,8 @@
                         <div class="card-body">
                             <div>
                                 <h4 class="my-1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h4>
+                                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </h4>
                             </div>
                             <hr class="bg-light">
                             <div>
@@ -74,7 +76,7 @@
             </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img animate" data-aos="fade-right"
+            <div class="col-lg-6 order-lg-2 showcase-img animate" data-aos="fade-right"
                 [style.background-image]="'url(' +  getImage('bg-showcase-1.jpg') + ')'">
             </div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
@@ -85,7 +87,7 @@
             </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-lg-6 text-white showcase-img animate" data-aos="fade-right"
+            <div class="col-lg-6 showcase-img animate" data-aos="fade-right"
                 [style.background-image]="'url(' +  getImage('bg-showcase-2.jpg') + ')'">
             </div>
             <div class="col-lg-6 my-auto showcase-text">
@@ -97,12 +99,13 @@
             </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img animate" data-aos="fade-right"
+            <div class="col-lg-6 order-lg-2 showcase-img animate" data-aos="fade-right"
                 [style.background-image]="'url(' +  getImage('bg-showcase-3.jpg') + ')'">
             </div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                 <h2>Empathy &amp; Accessability</h2>
-                <p class="lead mb-0">Technology should be available for everyone, allowing the convenience and benefits
+                <p class="lead mb-0">Technology should be available for everyone, allowing the convenience and
+                    benefits
                     to
                     better all who integrate it into their lives.</p>
             </div>

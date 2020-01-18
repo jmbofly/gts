@@ -1,5 +1,5 @@
 .features-icons {
-  background-color: $gray-200;
+  background-color: $gray-700;
   padding-top: 7rem;
   padding-bottom: 7rem;
 
@@ -29,7 +29,7 @@
     &:hover {
       .features-icons-icon {
         i {
-          color: $orange;
+          color: $primary;
         }
       }
     }

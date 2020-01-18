@@ -1,10 +1,10 @@
 <app-masthead [title]="title" *ngIf="isPage"></app-masthead>
 <!-- Featured -->
-<section id="featured text-light">
-    <div class="jumbotron border-bottom-dashed jumbotron-fluid text-center m-0"
-        [style.background]="'linear-gradient(#434343, #000000)'">
+<section id="featured text-light" data-aos="fade-up">
+    <div class="jumbotron bg-dark border-bottom-dashed jumbotron-fluid text-center m-0"
+        [style.background]="'rgba(67, 67, 67, 0.3)'">
         <div class="container">
-            <div class="card m-2 animate" data-aos="flip-down">
+            <div class="card m-2">
                 <div class="card-body">
                     <h3 class="text-center">Win a <b>Samsung 50" 4k TV</b> or <b>Galaxy Tab A</b></h3>
                     <!-- <hr> -->
@@ -51,12 +51,13 @@
                                 <ul class="list-group list-group-flush mbr-fonts-style display-7">
                                     <li class="list-group-item">
                                         $3
-                                        to try our Web Player and APP for Android for 3 days of all access use of our
+                                        to try our Web Player and APP for Android for 3 days of all access use of
+                                        our
                                         list.</li>
                                 </ul>
                             </div>
                             <div class="mbr-section-btn text-center py-4 pb-5"><button
-                                    (click)="openModal(signUpContent)" class="btn btn-primary display-3">TRY
+                                    (click)="openModal(signUpContent)" class="btn btn-primary">TRY
                                     NOW</button>
                             </div>
                         </div>
@@ -79,7 +80,8 @@
                         <div class="card-body">
                             <div class="card-list align-center">
                                 <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                                    <li class="list-group-item"><span style="font-size: 1rem;">Access to our list to use
+                                    <li class="list-group-item"><span style="font-size: 1rem;">Access to our list to
+                                            use
                                             on ANY device,
                                             our
                                             Web
@@ -90,7 +92,7 @@
                                 </ul>
                             </div>
                             <div class="mbr-section-btn text-center py-4 pb-5"><button
-                                    (click)="openModal(signUpContent)" class="btn btn-primary display-4">BUY
+                                    (click)="openModal(signUpContent)" class="btn btn-primary">BUY
                                     NOW</button>
                             </div>
                         </div>
@@ -124,7 +126,7 @@
                                 </ul>
                             </div>
                             <div class="mbr-section-btn text-center py-4 pb-5"><button
-                                    (click)="openModal(signUpContent)" class="btn btn-primary display-4">BUY
+                                    (click)="openModal(signUpContent)" class="btn btn-primary">BUY
                                     NOW</button>
                             </div>
                         </div>
@@ -182,19 +184,18 @@
             <br>
             <br>
             <ul class="list-group text-light">
-                <li style="font-size: 2rem;" class="list-group-item list-group-item-primary"><i
-                        class="fa fa-wrench"></i> &nbsp;<b>Service
+                <li style="font-size: 1.5rem;" class="list-group-item text-primary"><b>Service
                         includes:</b>
                 </li>
                 <li class="list-group-item"><i class="fa fa-mobile-phone"></i> &nbsp;500+ Channels on your
                     phone</li>
-                <li class="list-group-item"><i class="fas fa-football-ball"></i> &nbsp;Watch TV/Sports on our
+                <li class="list-group-item"><i class="fa fa-football-ball"></i> &nbsp;Watch TV/Sports on our
                     Web Player
                 </li>
-                <li class="list-group-item"><i class="fas fa-stream"></i> &nbsp;Stream your favorite channels
+                <li class="list-group-item"><i class="fa fa-stream"></i> &nbsp;Stream your favorite channels
                 </li>
-                <li class="list-group-item"><i class="fas fa-location-arrow"></i> &nbsp;5 Devices anywhere</li>
-                <li class="list-group-item"><i class="fas fa-thumbs-up"></i> &nbsp;Works on your android
+                <li class="list-group-item"><i class="fa fa-location-arrow"></i> &nbsp;5 Devices anywhere</li>
+                <li class="list-group-item"><i class="fa fa-thumbs-up"></i> &nbsp;Works on your android
                     tablet, phone
                     and
                     android
@@ -202,7 +203,7 @@
             </ul>
             <div class="card mt-2">
                 <div class="card-body">
-                    <p class="blockquote text-muted">
+                    <p class="blockquote">
                         Apple users, please use Safari or Chrome for best experience.
                     </p>
                     <hr>
