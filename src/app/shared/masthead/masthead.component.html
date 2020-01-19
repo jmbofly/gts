@@ -8,15 +8,15 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-xl-9 mx-auto" data-aos="fade-right" data-aos-delay="500">
-                <h1 class="mb-5 text-primary" [style.font-size]="'2.5rem'">{{title.main}}</h1>
+            <div class="col-xl-9 mx-auto" data-aos="fade-right" data-aos-delay="250">
+                <h1 class="text-primary display-3">{{title.main}}</h1>
             </div>
             <div class="col-xl-9 mx-auto" *ngIf="title?.overlay">
-                <img class="mb-4 img-fluid" [width]="title?.overlay?.width" [src]="getImage(title.overlay.src)"
+                <img class="img-fluid" [width]="title?.overlay?.width" [src]="getImage(title.overlay.src)"
                     [alt]="title?.overlay?.alt">
             </div>
             <div class="col-xl-9 mx-auto">
-                <h2 class="mb-5" [innerHTML]="title?.sub"></h2>
+                <div class="mb-5" [innerHTML]="title?.sub | safeHtml"></div>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto" *ngIf="title?.cta">
                 <div class="row">

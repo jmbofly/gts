@@ -10,7 +10,7 @@
           </h1>
         </div>
         <div class="main-menubar d-flex align-items-center align-content-end">
-          <nav role="menubar" class="animated"
+          <nav role="menubar" class="animated slower"
             [ngClass]="{'show': showMenuBar || navbar.clientWidth > 997, 'hide': !showMenuBar, 'slideInRight': showMenuBar || navbar.clientWidth > 997}">
             <button role="menuitem" id="home" class="btn btn-link hvr hvr-underline-from-left"
               (click)="navigateTo('home')">Home</button>
@@ -26,8 +26,7 @@
                 <button role="menuitem" class="dropdown-item" (click)="navigateTo('services', 'store')">Tech
                   Store</button>
                 <button role="menuitem" class="dropdown-item"
-                  (click)="navigateTo('services', 'logistics-and-infrastructure')">Logistics
-                  & Infrastructure</button>
+                  (click)="navigateTo('services', 'medical-accessibilty')">Med & A11y</button>
               </div>
             </div>
             <button role="menuitem" id="about" class="btn btn-link hvr hvr-underline-from-left"

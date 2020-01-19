@@ -1,18 +1,35 @@
-<app-masthead [title]="currentTitle" *ngIf="isPage"></app-masthead>
-<section class="services-section border-top" [style.background]="'#151719'" data-aos="fade">
-    <div *ngFor="let service of services" class="jumbotron jumbotron text-center bg-transparent text-light mb-0"
-        [id]="service.id" style="border-bottom: .5px dashed white;">
+<app-masthead #masthead [title]="currentTitle" *ngIf="isPage"></app-masthead>
+<section class="services-section" [style.background]="'#151719'" data-aos="fade">
+    <div *ngFor="let service of services" class="jumbotron jumbotron bg-transparent text-center  text-light mb-0"
+        [id]="service.id">
         <!-- <hr class="my-2 bg-transparent"> -->
-        <div class="container">
+        <div class="container mx-xs-0 px-xs-0">
             <h1 class="text-primary text-uppercase">{{service.title}}</h1>
+            <hr class="style-seven">
             <p class="lead">{{ service.subtitle }}</p>
-            <div [innerHTML]="service.overview"></div>
+            <div [innerHTML]="service.overview | safeHtml"></div>
             <p class="lead">
                 <button class="btn btn-primary btn-lg" [disabled]="service.id === 'store'"
-                    (click)="toggleService(service.id)">{{service.name}}</button>
+                    (click)="toggleService(service.id)">{{service.name}} <i class="fa"
+                        [ngClass]="service?.toggled ? 'fa-chevron-up':'fa-chevron-down'"></i></button>
             </p>
-            <div class="card animated collapse" [ngClass]="service.toggled ? 'show ZoomInDown': 'ZoomOutUp'">
-                <div class="card-body text-dark" [innerHTML]="service?.content">
+            <div class="card animated" [ngClass]="service.toggled ? 'zoomInUp':'d-none zoomOutDown'">
+                <div class="card-body text-light">
+                    <div class="container">
+                        <div class="row">
+                            <div *ngFor="let img of service.images" class="col-md-4 mx-auto">
+                                <img class="img-thumbnail" [src]="getImage(img.src)" height="200" [alt]="img.alt">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-body" [innerHTML]="service?.content | safeHtml">
+
+                    </div>
+
+
                 </div>
             </div>
         </div>

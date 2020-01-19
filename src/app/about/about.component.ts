@@ -10,8 +10,8 @@ import { DataService } from '../core/data.service';
 export class AboutComponent implements OnInit {
   @Input() isPage = true;
   title: Masthead = {
-    main: 'Your Link to Technology',
-    sub: 'A Disabled Veteran Founded Company<br/><br/>Get Updates From Our Newsletter',
+    main: 'Our Journey To Success',
+    sub: '<h1 class="lead font-weight-bold">We\'re in it for the experience</h1><h3 class="text-primary my-4">Subscribe To Our Newsletter</h3>',
     bg: 'bg-masthead.jpg',
     cta: true,
     action: 'signup',

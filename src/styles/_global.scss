@@ -22,7 +22,23 @@ h6 {
   background: rgba(67, 67, 67, 0.3) !important;
   border-bottom: .5px dashed $orange;
   border-top: .5px dashed $orange;
-  @include box-shadow-far(0, 14px, 16px, rgba(0, 0, 0, .3))
+  @include box-shadow-far(0, 14px, 16px, rgba(0, 0, 0, .3));
+
+  .card-header {
+    color: $primary;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#343a40+0,212529+100 */
+    background: #343a40;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #343a40 0%, #212529 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #343a40 0%, #212529 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #343a40 0%, #212529 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#343a40', endColorstr='#212529', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+  }
 }
 
 .border-bottom-dashed {
@@ -44,4 +60,28 @@ h6 {
   &.aos-animate {
     opacity: 1;
   }
+}
+
+/* Flaired edges, by Tomas Theunissen */
+
+hr.style-seven {
+  overflow: visible;
+  /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: $primary;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+hr.style-seven:before {
+  /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: $primary;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
 }

@@ -3,38 +3,42 @@
 <!-- Icons Grid -->
 <section class="features-icons text-center text-light" data-aos="fade" [style.background]="'#151719'">
     <div class="container">
+        <h1 class="text-center mb-4 text-primary">
+            A Central Hub For All Your Tech Needs
+            <hr class="style-seven">
+        </h1>
         <div class="row">
             <div class="col-lg-4">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" data-aos="flip-right">
-                    <div class="features-icons-icon d-flex">
-                        <i class="fa fa-medkit m-auto text-primary"></i>
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 animate" data-aos="flip-right">
+                    <div class="features-icons-icon d-flex" (click)="navigateTo('services')">
+                        <i class="fa fa-wheelchair m-auto text-primary"></i>
                     </div>
-                    <h3>Medical</h3>
-                    <p class="lead mb-0">Partners with dozens of businesses focused on research and development of
-                        breakthrough
-                        medical
-                        technology!</p>
+                    <h3>Accessibility</h3>
+                    <p class="lead mb-0">Research and development of Accessible
+                        and Medical technology
+                    </p>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" data-aos="flip-right"
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 animate" data-aos="flip-right"
                     data-aos-delay="250">
-                    <div class="features-icons-icon d-flex">
+                    <div class="features-icons-icon d-flex" (click)="navigateTo('services')">
                         <i class="fa fa-chain m-auto text-primary"></i>
                     </div>
                     <h3>Connection</h3>
-                    <p class="lead mb-0">Developing new platforms offering multiple services with bundled packages.
-                        Including Internet, video streaming, mobile and more!</p>
+                    <p class="lead mb-0">Bundled packages including Mobile, Video Streaming, Telemedicine and more
+                    </p>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="features-icons-item mx-auto mb-0 mb-lg-3" data-aos="flip-right" data-aos-delay="350">
-                    <div class="features-icons-icon d-flex">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3 animate" data-aos="flip-right"
+                    data-aos-delay="350">
+                    <div class="features-icons-icon d-flex" (click)="navigateTo('services')">
                         <i class="fa fa-area-chart m-auto text-primary"></i>
                     </div>
                     <h3>Marketing</h3>
-                    <p class="lead mb-0">Provides customized digital marketing services that include website and app
-                        development, SEO, branding, data analytics, and much more.</p>
+                    <p class="lead mb-0">Customized Digital Marketing, Website/App
+                        Development and much more.</p>
                 </div>
             </div>
         </div>
@@ -43,38 +47,32 @@
 
 
 <!-- Featured -->
-<div class="container-fluid border-top-dashed">
-    <div class="row">
-        <div class="col-12">
-            <h1 class="text-primary text-center my-4 display-4">
-                <i class="fa fa-handshake-o"></i> Featured Partner
-                <br>
-                <a href="https://xstreamingtv.com/dump/aff/go/kevin">
-                    <img width="250" class="img-thumbnail bg-dark my-4 box-shadow-far"
-                        src="https://xstreamingtv.com/assets/images/xstreamingtv-logo-5000x1659.png"
-                        alt="xstreamingtv logo">
-                </a>
-            </h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 mb-4 mx-auto">
-            <h5 class="text-center mb-4 pb-4 text-light">Global Technology Services LLC works with dozens of companies
-                to bring our customers and clients the
-                best technology and
-                services
-                available.
-                Global
-                Technology Services chooses one of those companies to be our Featured Partner every
-                month.<br /><br />Featured
-                Partners
-                are highlighted on our featured page, and customers who signup with the featured partner will
-                qualify to
-                particiapate in the Global Technology Services LLC Featured Partner Prize Drawing. Prizes depend on the
-                services or products
-                offered by
-                the featured partner, and are available while inventory last.</h5>
-        </div>
+<div class="container">
+    <h2 class="text-light text-center my-4">
+        <i class="fa fa-handshake-o text-primary"></i> Featured Partner
+        <hr class="style-seven">
+
+        <a href="https://xstreamingtv.com/dump/aff/go/kevin">
+            <img width="250" class="img-thumbnail bg-dark my-4 box-shadow-far"
+                src="https://xstreamingtv.com/assets/images/xstreamingtv-logo-5000x1659.png" alt="xstreamingtv logo">
+        </a>
+    </h2>
+    <div class="col-md-8 mb-4 mx-auto">
+        <h5 class="text-center mb-4 pb-4 text-light">Global Technology Services LLC works with dozens of companies
+            to bring our customers and clients the
+            best technology and
+            services
+            available.
+            Global
+            Technology Services chooses one of those companies to be our Featured Partner every
+            month.<br /><br />Featured
+            Partners
+            are highlighted on our featured page, and customers who signup with the featured partner will
+            qualify to
+            particiapate in the Global Technology Services LLC Featured Partner Prize Drawing. Prizes depend on the
+            services or products
+            offered by
+            the featured partner, and are available while inventory last.</h5>
     </div>
 </div>
 

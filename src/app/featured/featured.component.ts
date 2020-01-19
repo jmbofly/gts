@@ -13,7 +13,7 @@ export class FeaturedComponent implements OnInit {
 
   title = {
     main: 'Featured Partner',
-    sub: 'Want to know more about this partner?',
+    sub: '<h1 class="lead font-weight-bold">For a limited time only</h1><h3 class="text-primary my-4">Want to know more about this partner?</h3>',
     cta: true,
     bg: 'bg-masthead-4.jpg',
     action: 'redirect',

@@ -4,6 +4,7 @@ import { Masthead } from '../interface/masthead';
 import { Service } from '../interface/service';
 import { Services } from '../models/services.const';
 import { Router, ActivatedRoute, NavigationStart, NavigationEnd, UrlTree } from '@angular/router';
+import { DataService } from '../core/data.service';
 
 @Component({
   selector: 'app-services',
@@ -14,14 +15,14 @@ export class ServicesComponent implements OnInit {
   @Input() isPage = true;
   currentTitle: Masthead = {
     main: 'Ready & Reliable',
-    sub: 'Get details about all Services',
+    sub: '<h1 class="lead font-weight-bold">Change Depends On Action</h1><h3 class="my-4  text-primary">Want to know more?</h3>',
     bg: 'bg-masthead-3.jpg',
     action: 'signup',
     cta: true,
   };
   services: Service[] = Services;
   activeService = false;
-  constructor(private router: Router, private route: ActivatedRoute, public modal: NgbModal) {
+  constructor(private data: DataService, private router: Router, private route: ActivatedRoute, public modal: NgbModal) {
 
   }
 
@@ -35,7 +36,8 @@ export class ServicesComponent implements OnInit {
           this.animateScroll(urlTree.fragment)
         }
       }, 0)
-    })
+    });
+    this.toggleService('digital-marketing');
   }
 
   animateScroll(id: string) {
@@ -48,6 +50,10 @@ export class ServicesComponent implements OnInit {
       left: 0
     });
     // console.log('scrolled', { top, id, anchor });
+  }
+
+  getImage(name: string) {
+    return this.data.getImage(name);
   }
 
   toggleService(id) {

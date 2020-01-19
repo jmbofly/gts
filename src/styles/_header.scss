@@ -38,21 +38,24 @@
 }
 
 nav {
-    
+
     @include media-breakpoint-down (md) {
         @include transition(all, .25s, ease-out);
-            &:not(.navbar) {
-                right: -50px;
-                width: 300px;
-            }
+
+        &:not(.navbar) {
+            right: -50px;
+            width: 300px;
+            border-bottom: .5px dashed $primary;
+        }
+
         margin-right: 0;
         position: absolute;
         right: 0;
-        top: 47px;
+        top: 45px;
         text-align: right;
         padding: 20px;
         z-index: 5;
-        background: $gray-700;
+        background: $gray-900;
 
         a {
             color: $primary !important;
