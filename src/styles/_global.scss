@@ -25,17 +25,19 @@ h6 {
   @include box-shadow-far(0, 14px, 16px, rgba(0, 0, 0, .3));
 
   .card-header {
+    margin-left: -14px;
+    margin-right: -14px;
     color: $primary;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#343a40+0,212529+100 */
     background: #343a40;
+    border-bottom: .5px solid rgba(255, 255, 255, .25);
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #343a40 0%, #212529 100%);
+    // background: -moz-linear-gradient(-45deg, #343a40 0%, #212529 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #343a40 0%, #212529 100%);
+    // background: -webkit-linear-gradient(-45deg, #343a40 0%, #212529 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #343a40 0%, #212529 100%);
+    // background: linear-gradient(135deg, #343a40 0%, #212529 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#343a40', endColorstr='#212529', GradientType=1);
+    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#343a40', endColorstr='#212529', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
 
   }

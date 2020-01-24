@@ -4,6 +4,7 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireFunctionsModule, FUNCTIONS_ORIGIN } from '@angular/fire/functions';
 import { CookieService } from 'ngx-cookie-service';
 // import { FacebookModule } from 'ngx-facebook';
 
@@ -14,6 +15,7 @@ import { CookieService } from 'ngx-cookie-service';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     AngularFireStorageModule,
+    AngularFireFunctionsModule,
     // FacebookModule.forRoot(),
   ],
   providers: [CookieService]

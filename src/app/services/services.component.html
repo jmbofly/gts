@@ -10,8 +10,8 @@
             <div [innerHTML]="service.overview | safeHtml"></div>
             <p class="lead">
                 <button class="btn btn-primary btn-lg" [disabled]="service.id === 'store'"
-                    (click)="toggleService(service.id)">{{service.name}} <i class="fa"
-                        [ngClass]="service?.toggled ? 'fa-chevron-up':'fa-chevron-down'"></i></button>
+                    (click)="toggleService(service.id)">{{service.name}} <i class="fa animated"
+                        [ngClass]="service?.toggled ? ' FadeIn fa-chevron-up':'fadeIn fa-chevron-down'"></i></button>
             </p>
             <div class="card animated" [ngClass]="service.toggled ? 'zoomInUp':'d-none zoomOutDown'">
                 <div class="card-body text-light">

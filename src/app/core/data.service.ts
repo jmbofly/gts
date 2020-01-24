@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
-import { HttpClient } from '@angular/common/http';
+import { AngularFireFunctions } from '@angular/fire/functions';
+import { HttpClient, HttpHeaders, HttpRequest } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { switchMap, map } from 'rxjs/operators';
 import { HostImage, ImageService } from './image.service';
@@ -23,9 +24,10 @@ export class DataService {
   private userCollection: AngularFirestoreCollection<User>;
   private contactCollection: AngularFirestoreCollection<any>;
   private prizeEntryCollection: AngularFirestoreCollection<any>;
+  data$: Observable<any>;
 
   public imageList: HostImage[] = [];
-  constructor(public afs: AngularFirestore, public http: HttpClient, public images: ImageService) {
+  constructor(public afs: AngularFirestore, public http: HttpClient, private fns: AngularFireFunctions, public images: ImageService) {
     this.userCollection = this.afs.collection<User>('users');
     this.contactCollection = this.afs.collection<any>('contacts');
     this.prizeEntryCollection = this.afs.collection<any>('prize-entries');
@@ -39,9 +41,27 @@ export class DataService {
     return this.userCollection.add(userData);
   }
 
+  getScrape() {
+    const url = 'https://us-central1-gts-site-80a8a.cloudfunctions.net/scrape';
+    const goto = 'https://www.zotac.com/us/product/graphics_card/all';
+    // const callable = this.fns.httpsCallable('scrape');
+    // this.data$ = callable({ goto });
+    this.data$ = this.http.get(url, { headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Headers': 'Accept' }, params: { goto } });
+    this.data$.subscribe(data => console.log('scrape called', data));
+  }
+
   prizeEntrySignUp(data: any) {
     data.timestamp = new Date();
     return this.prizeEntryCollection.add(data);
+  }
+
+  getStoreImageByCompany(companyName: string, subDir?: string | string[]) {
+    if (companyName && typeof subDir === 'string') {
+      const list = [];
+      // const headers: HttpHeaders = new HttpHeaders({ headers: 'Content-Type:application/json' })
+      const data$ = this.http.get('../../assets/data/zotac.json');
+      data$.subscribe(data => console.log('store img dir', data))
+    }
   }
 
   readImageList() {

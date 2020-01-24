@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { DataService } from 'src/app/core/data.service';
 import { Masthead } from 'src/app/interface/masthead';
+import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-masthead',
   templateUrl: './masthead.component.html',
@@ -9,7 +10,7 @@ import { Masthead } from 'src/app/interface/masthead';
 export class MastheadComponent implements OnInit {
   @Input() title: Masthead;
   emailSuccess = false;
-  constructor(private data: DataService) { }
+  constructor(public router: Router, private route: ActivatedRoute, private data: DataService) { }
 
   ngOnInit() {
     // this.data.readImageList();
@@ -26,5 +27,9 @@ export class MastheadComponent implements OnInit {
         .catch(err => console.log('ERROR! No Signup', err))
     }
 
+  }
+
+  navigateTo(url: string) {
+    return this.router.navigateByUrl(url, { relativeTo: this.route })
   }
 }

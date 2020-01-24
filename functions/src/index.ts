@@ -5,11 +5,12 @@ import * as nodemailer from 'nodemailer';
 import { newsletterTemplate as template } from './emailTemp.constant';
 
 admin.initializeApp(functions.config().firebase);
+// functions.region('us-central1');
 const mainEmail: any = functions.config().main.email;
 const mainPassword: any = functions.config().main.password;
 const mailTransport: nodemailer.Transporter = nodemailer.createTransport({
-    name: 'medtelplus.com',
-    host: 'gator3234.hostgator.com',
+    name: 'thenewgts.tech',
+    service: 'Zoho',
     port: 465,
     secure: true,
     debug: true,
@@ -44,14 +45,13 @@ exports.sendEntryEmail = functions.firestore
 
 async function sendNewEntryEmail(email: string, name: string) {
     const mailOptions: nodemailer.SendMailOptions = {
-        from: `"no-reply Global Technology Services LLC" info@medtelplus.com`,
+        from: `"no-reply Global Technology Services LLC" info@thenewgts.tech`,
         to: email,
-        html: `<div style="padding: 15px;"> <h3>Hey, ${name}!</h3><br/><h4>Thanks for your entry!</h4><p>Remember, sign-up or purchase from featured partner is required to win.<br/>Purchase/Signup must be done <b>within 7 days</b> of submitting entry.<br/>  GTS will automatically verify sign-up and/or purchase with featured partner.<br/><br/>GOOD LUCK!<br/><br/><br/><a href="https://trygts.com"><img width="150" src="https://trygts.com/assets/img/gts_logo_alt_short_2.png"></img></a><br/>Global Technology Services, LLC<br/><small>Digital Marketing and Sales</small></p></div>`
+        html: `<div style="padding: 15px;"> <h3>Hey, ${name}!</h3><br/><h4>Thanks for your entry!</h4><p>Remember, sign-up or purchase from featured partner is required to win.<br/>Purchase/Signup must be done <b>within 7 days</b> of submitting entry.<br/>  GTS will automatically verify sign-up and/or purchase with featured partner.<br/><br/>GOOD LUCK!<br/><br/><br/><a href="https://thenewgts.tech"><img width="150" src="https://thenewgts.tech/assets/img/gts_logo_alt_short_2.png"></img></a><br/>Global Technology Services, LLC<br/><small>Digital Marketing and Sales</small></p></div>`
     };
 
     // The user submitted entry.
     mailOptions.subject = `You're entered into ${APP_NAME} prize drawing!`;
-    // mailOptions.text = `Hey, ${name}! Thanks for your entry!<br/> Remember, sign-up or purchase from featured partner is required to win.<br/>Purchase/Signup must be done <b>within 7 days</b> of submitting entry.<br/>  GTS will automatically verify sign-up and/or purchase with featured partner.<br/> GOOD LUCK!`;
     await mailTransport.sendMail(mailOptions);
     console.log('New entry email sent to:', email);
     return null;
@@ -77,19 +77,9 @@ exports.sendNewsletterToSubscriber = functions.firestore
 
 async function sendNewSubscriberEmail(email: string) {
     const mailOptions: nodemailer.SendMailOptions = {
-        from: `"no-reply Global Technology Services LLC" info@medtelplus.com`,
+        from: `"no-reply Global Technology Services LLC" info@thenewgts.tech`,
         to: email,
         html: template,
-        // attachments: [
-        //     {
-        //         path: `https://medtelplus.com/assets/images/logo_full.png`,
-        //         filename: 'logo_full.png',
-        //     },
-        //     {
-        //         path: `https://medtelplus.com/assets/images/about-bg.jpg`,
-        //         filename: 'about-bg.jpg',
-        //     },
-        // ],
     };
 
     // The user subscribed.
@@ -130,15 +120,9 @@ async function sendWelcomeToContact(
     subject?: string
 ) {
     const mailOptions: nodemailer.SendMailOptions = {
-        from: `"no-reply Global Technology Services LLC" info@medtelplus.com`,
+        from: `"no-reply Global Technology Services LLC" info@thenewgts.tech`,
         to: email,
         html: template,
-        // attachments: [
-        //     {
-        //         path: `https://medtelplus.com/assets/images/about-bg.jpg`,
-        //         filename: 'about-bg.jpg',
-        //     },
-        // ],
     };
 
     // The user sent a contact form.
@@ -153,8 +137,8 @@ async function sendAdminNotice(message?: any) {
     const type = message.type;
 
     const mailOptions: nodemailer.SendMailOptions = {
-        from: `"GTS ADMIN NOTICE" info@medtelplus.com`,
-        to: 'jimi@medtelplus.com',
+        from: `"GTS ADMIN NOTICE" info@thenewgts.tech`,
+        to: 'jimi@thenewgts.tech',
     };
 
     // The notice type.

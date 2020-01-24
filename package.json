@@ -1,9 +1,10 @@
 {
   "name": "gts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "jimi flynn",
   "bugs": {
-    "email": "jimi@medtelplus.com"
+    "email": "jimi@thenewgts.tech",
+    "url": "https://github.com/jmbofly/gts/issues"
   },
   "scripts": {
     "ng": "ng",

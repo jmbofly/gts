@@ -181,7 +181,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                         <tr>
                                                             <td style="line-height:0;">
                                                                 <a target="_blank" style="text-decoration:none;"
-                                                                    href="https://www.trygts.com/"><img
+                                                                    href="https://www.thenewgts.tech/"><img
                                                                         src="https://firebasestorage.googleapis.com/v0/b/gts-site-80a8a.appspot.com/o/img%2Fgts_logo_alt_short_2.png?alt=media&token=137c99b9-6dd2-443e-933c-ae29c15198be"
                                                                         border="0"
                                                                         style="font:bold 12px/12px Arial, Helvetica, sans-serif; color:#606060;"
@@ -202,13 +202,13 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                                 style="font:bold 13px/15px Arial, Helvetica, sans-serif; color:#888;">
                                                                 <a target="_blank"
                                                                     style="text-decoration:none; color:#888;"
-                                                                    href="https://trygts.com">Home</a> &nbsp; &nbsp; <a
+                                                                    href="https://thenewgts.tech">Home</a> &nbsp; &nbsp; <a
                                                                     target="_blank"
                                                                     style="text-decoration:none; color:#888;"
-                                                                    href="https://trygts.com#about">About</a> &nbsp;
+                                                                    href="https://thenewgts.tech#about">About</a> &nbsp;
                                                                 &nbsp; <a target="_blank"
                                                                     style="text-decoration:none; color:#888;"
-                                                                    href="https://trygts.com#contact">Contact</a>
+                                                                    href="https://thenewgts.tech#contact">Contact</a>
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -278,7 +278,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                                 bgcolor="#7bb84f">
                                                                 <a target="_blank"
                                                                     style="text-decoration:none; color:#f8f9fb; display:block; padding:12px 10px 10px;"
-                                                                    href="https://www.trygts.com">Learn More</a>
+                                                                    href="https://www.thenewgts.tech">Learn More</a>
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -347,7 +347,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                                 bgcolor="#f5ba1c">
                                                                 <a target="_blank"
                                                                     style="text-decoration:none; color:#f8f9fb; display:block; padding:12px 10px 10px;"
-                                                                    href="https://trygts.com">Learn More</a>
+                                                                    href="https://thenewgts.tech">Learn More</a>
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -595,7 +595,7 @@ export const newsletterTemplate = `<!DOCTYPE html
                                                                                         to benefit those who have given
                                                                                         so much. Our veterans. Visit <a
                                                                                             target="_blank"
-                                                                                            href="https://trygts.com">GTS</a>
+                                                                                            href="https://thenewgts.tech">GTS</a>
                                                                                         to learn more.
                                                                                     </td>
                                                                                 </tr>

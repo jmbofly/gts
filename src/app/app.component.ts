@@ -28,6 +28,7 @@ export class AppComponent implements OnInit {
 
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
+        console.log('event', event)
         this.ga.eventEmitter('set', 'page', event.urlAfterRedirects);
         this.ga.eventEmitter('send', 'pageview', `${event.id}`);
       } else if (event instanceof NavigationStart) {
@@ -72,9 +73,10 @@ export class AppComponent implements OnInit {
       useClassNames: true,
       once: false,
       initClassName: null,
-      duration: 800,
       animatedClassName: 'animated',
     })
+
+    this.data.getStoreImageByCompany('zotac', 'Graphics');
   }
 
   animateScroll(id: string) {
@@ -102,7 +104,7 @@ export class AppComponent implements OnInit {
   }
 
   async navigateTo(url: string, params = null) {
-    console.log('navigating to :', url + '#' + params);
+    // console.log('navigating to :', url + '#' + params);
     const ids = [
       'home',
       'featured',

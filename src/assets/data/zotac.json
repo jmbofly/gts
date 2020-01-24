@@ -1,0 +1,1492 @@
+﻿{
+    "Graphics": [
+        {
+            "ZOTAC SKU#": "RTX 2080 Ti",
+            "MEMORY": " "
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20810C-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 Ti AMP Extreme Core",
+            "Price": "NA",
+            "MSRP": "$1,399.99",
+            "MEMORY": "11G GDDR6",
+            "MEMORY\r\nBUS": "352 bit",
+            "Core MHz / \r\nMemory MHz": "1755/14400",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "4352",
+            "EAN Code": "4895173617553",
+            "UPC Code": "816264019753"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20810H-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080Ti AMP Maxx",
+            "Price": "$1,196.00",
+            "MSRP": "$1,299.99",
+            "MEMORY": "11G GDDR6",
+            "MEMORY\r\nBUS": "352 bit",
+            "Core MHz / \r\nMemory MHz": "1665/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "4352",
+            "EAN Code": "4895173617560",
+            "UPC Code": "816264019760"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20810F-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 Ti Triple Fan",
+            "Price": "$1,150.00",
+            "MSRP": "$1,249.99",
+            "MEMORY": "11G GDDR6",
+            "MEMORY\r\nBUS": "352 bit",
+            "Core MHz / \r\nMemory MHz": "1605/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "4352",
+            "EAN Code": "4895173617072",
+            "UPC Code": "816264019401"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20810G-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 Ti Twin Fan",
+            "Price": "$1,104.00",
+            "MSRP": "$1,199.99",
+            "MEMORY": "11G GDDR6",
+            "MEMORY\r\nBUS": "352 bit",
+            "Core MHz / \r\nMemory MHz": "1545/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "4352",
+            "EAN Code": "4895173617195",
+            "UPC Code": "816264019449"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20810A-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 Ti Blower",
+            "Price": "$1,104.00",
+            "MSRP": "$1,199.99",
+            "MEMORY": "11G GDDR6",
+            "MEMORY\r\nBUS": "352 bit",
+            "Core MHz / \r\nMemory MHz": "1545/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "4352",
+            "EAN Code": "4895173617614",
+            "UPC Code": "816264019616"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20810J-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 Ti Blower",
+            "Price": "$1,104.00",
+            "MSRP": "$1,199.99",
+            "MEMORY": "11G GDDR6",
+            "MEMORY\r\nBUS": "352 bit",
+            "Core MHz / \r\nMemory MHz": "1545/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "4352",
+            "EAN Code": "4895173617843",
+            "UPC Code": "810012080064"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20810N-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 Ti Blower",
+            "Price": "$1,104.00",
+            "MSRP": "$1,199.99",
+            "MEMORY": "11G GDDR6",
+            "MEMORY\r\nBUS": "352 bit",
+            "Core MHz / \r\nMemory MHz": "1545/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "4352",
+            "EAN Code": "4895173618611",
+            "UPC Code": "81612080439"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20810P-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 Ti Blower",
+            "Price": "$1,184.00",
+            "MSRP": "$1,279.99",
+            "MEMORY": "11G GDDR6",
+            "MEMORY\r\nBUS": "352 bit",
+            "Core MHz / \r\nMemory MHz": "1545/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "4352",
+            "EAN Code": "4895173618628",
+            "UPC Code": "810012080446"
+        },
+        {
+            "ZOTAC SKU#": "RTX 2080 SUPER",
+            "MEMORY": " "
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20820D-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 SUPER AMP (Twin Fan)",
+            "Price": "$681.00",
+            "MSRP": "$739.99",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1845/15500",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "3072",
+            "EAN Code": "4895173618895",
+            "UPC Code": "810012080606"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20820A-10B",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 SUPER Blower",
+            "Price": "$644.00",
+            "MSRP": "NA",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1815/15500",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "3072",
+            "EAN Code": "NA",
+            "UPC Code": "NA"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20820H-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 SUPER Trip Fan",
+            "Price": "TBA",
+            "MSRP": "TBA",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1815/15500",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "3072",
+            "EAN Code": "4895173619915",
+            "UPC Code": "810012080934"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20820F-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 SUPER Dual Fan",
+            "Price": "$672.00",
+            "MSRP": "$729.99",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1815/15500",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "3072",
+            "EAN Code": "4895173618901",
+            "UPC Code": "810012080613"
+        },
+        {
+            "ZOTAC SKU#": "RTX 2080 ",
+            "MEMORY": " "
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20800B-10P ",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 AMP Extreme",
+            "Price": "$736.00",
+            "MSRP": "$799.99",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1905/14400",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "2944",
+            "EAN Code": "4895173617331",
+            "UPC Code": "816264019531"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20800D-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 AMP",
+            "Price": "$690.00",
+            "MSRP": "$749.99",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1830/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "2944",
+            "EAN Code": "4895173617041",
+            "UPC Code": "816264019340"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20800G-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 Twin Fan",
+            "Price": "$650.00",
+            "MSRP": "$699.99",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1710/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "2944",
+            "EAN Code": "4895173617201",
+            "UPC Code": "816264019456",
+            "undefined": " "
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20800J-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2080 Blower",
+            "Price": "$650.00",
+            "MSRP": "$699.99",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1710/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "2944",
+            "EAN Code": "4895173617850",
+            "UPC Code": "810012080071"
+        },
+        {
+            "ZOTAC SKU#": "RTX 2070 SUPER",
+            "MEMORY": " "
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20710F-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2070 SUPER (Twin Fan)",
+            "Price": "$460.00",
+            "MSRP": "$499.99",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1770/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "2560",
+            "EAN Code": "4895173618925",
+            "UPC Code": "810012080644"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20710E-10M",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2070 Super Mini ",
+            "Price": "$460.00",
+            "MSRP": "$499.99",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1770/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "2560",
+            "EAN Code": "4895173619861",
+            "UPC Code": "810012080897"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20710A-10B",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2070 Super Blower",
+            "Price": "$460.00",
+            "MSRP": "NA",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1770/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "2560",
+            "EAN Code": "NA",
+            "UPC Code": "NA"
+        },
+        {
+            "ZOTAC SKU#": "RTX 2070 ",
+            "MEMORY": " "
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20700B-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2070 AMP Extreme (Triple Fan)",
+            "Price": "$515.20",
+            "MSRP": "$559.99",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1860/14400",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "2304",
+            "EAN Code": "4895173617300",
+            "UPC Code": "816264019494"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20700E-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2070 Mini ",
+            "Price": "$368.00",
+            "MSRP": "$399.99",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1620/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "2304",
+            "EAN Code": "4895173617591",
+            "UPC Code": "816264019791"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20700A-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2070 Blower",
+            "Price": "$463.00",
+            "MSRP": "$499.99",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1620/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+Type C",
+            "CUDA \r\nCores": "2304",
+            "EAN Code": "4895173617584",
+            "UPC Code": "816264019784"
+        },
+        {
+            "ZOTAC SKU#": "RTX 2060 SUPER",
+            "MEMORY": " "
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20610B-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2060 SUPER AMP Extreme (Triple Fan)",
+            "Price": "$405.00",
+            "MSRP": "$439.99",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1710/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "2176",
+            "EAN Code": "4895173619007",
+            "UPC Code": "810012080651"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20610D-10P",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2060 SUPER AMP (Twin Fan)",
+            "Price": "$396.00",
+            "MSRP": "$429.99",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1680/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "2176",
+            "EAN Code": "4895173619014",
+            "UPC Code": "810012080668"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20610E-10M",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2060 SUPER Mini (Twin Fan) ",
+            "Price": "$368.00",
+            "MSRP": "$399.99",
+            "MEMORY": "8G GDDR6",
+            "MEMORY\r\nBUS": "256 bit",
+            "Core MHz / \r\nMemory MHz": "1650/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "2176",
+            "EAN Code": "4895173619021",
+            "UPC Code": "810012080675"
+        },
+        {
+            "ZOTAC SKU#": "RTX 2060",
+            "MEMORY": " ",
+            "DirectX": "12"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20600F-10M",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2060 (Twin Fan)",
+            "Price": "$327.00",
+            "MSRP": "$349.99",
+            "MEMORY": "6G GDDR6",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1680/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "1920",
+            "EAN Code": "4895173617812",
+            "UPC Code": "810012080002"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T20600H-10M",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC Gaming GeForce® RTX 2060 (Twin Fan)",
+            "Price": "$327.00",
+            "MSRP": "$349.99",
+            "MEMORY": "6G GDDR6",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1680/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "1920",
+            "EAN Code": "4895173618352",
+            "UPC Code": "810012080279"
+        },
+        {
+            "ZOTAC SKU#": "GTX 1660TI",
+            "Price": "",
+            "MEMORY": " "
+        },
+        {
+            "ZOTAC SKU#": "ZT-T16610D-10M",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GTX 1660TI AMP! Edition",
+            "Price": "$271.00",
+            "MSRP": "$289.99",
+            "MEMORY": "6G GDDR6",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1860/12000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "1536",
+            "EAN Code": "4895173618086",
+            "UPC Code": "810012080156"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T16610F-10L",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GTX 1660TI Twin Fan",
+            "Price": "$261.00",
+            "MSRP": "$279.99",
+            "MEMORY": "6G GDDR6",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1770/12000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "1536",
+            "EAN Code": "4895173618000",
+            "UPC Code": "810012080132"
+        },
+        {
+            "ZOTAC SKU#": "GTX 1660 Super",
+            "MEMORY": " "
+        },
+        {
+            "ZOTAC SKU#": "ZT-T16620D-10M",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GTX 1660 Super AMP! Edition",
+            "Price": "$230.00",
+            "MSRP": "$249.99",
+            "MEMORY": "6G GDDR6",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1845/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "1408",
+            "EAN Code": "4895173619960",
+            "UPC Code": "810012080965"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T16620F-10L",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GTX 1660 Super ",
+            "Price": "$224.00",
+            "MSRP": "$239.99",
+            "MEMORY": "6G GDDR6",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1785/14000",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "1408",
+            "EAN Code": "4895173619977",
+            "UPC Code": "810012080972"
+        },
+        {
+            "ZOTAC SKU#": "GTX 1660",
+            "MEMORY": " "
+        },
+        {
+            "ZOTAC SKU#": "ZT-T16600D-10M",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GTX 1660 AMP! Edition",
+            "Price": "$224.00",
+            "MSRP": "$239.99",
+            "MEMORY": "6G GDDR5",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1845/8002",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "1408",
+            "EAN Code": "4895173618109",
+            "UPC Code": "810012080187"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T16600F-10L",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GTX 1660 Twin Fan",
+            "Price": "$215.00",
+            "MSRP": "$229.99",
+            "MEMORY": "6G GDDR5",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1785/8002",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "1408",
+            "EAN Code": "4895173618116",
+            "UPC Code": "810012080194"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T16600K-10M ",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GTX 1660 Mini",
+            "Price": "$202.50",
+            "MSRP": "$219.99",
+            "MEMORY": "6G GDDR5",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1785/8002",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "1408",
+            "EAN Code": "4895173619878",
+            "UPC Code": "810012080903"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T16600K-10B",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GTX 1660 Mini Bulk Pack",
+            "Price": "$202.50",
+            "MSRP": "NA",
+            "MEMORY": "6G GDDR5",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1785/8002",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI",
+            "CUDA \r\nCores": "1408",
+            "EAN Code": "NA",
+            "UPC Code": "NA"
+        },
+        {
+            "ZOTAC SKU#": "GTX 1060",
+            "MEMORY": " "
+        },
+        {
+            "ZOTAC SKU#": "ZT-P10620A-10M",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GTX 1060 ",
+            "Price": "$258.00",
+            "MSRP": "$279.99",
+            "MEMORY": "6G GDDR5X",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1506-1708/8008",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+DVI",
+            "CUDA \r\nCores": "1280",
+            "EAN Code": "4895173617751",
+            "UPC Code": "816264019920"
+        },
+        {
+            "ZOTAC SKU#": "ZT-P10610A-10L",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GTX 1060 ",
+            "Price": "$202.50",
+            "MSRP": "$219.99",
+            "MEMORY": "3G GDDR5",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1506-1708/8008",
+            "DirectX": "12",
+            "Connectors": "3 DP+HDMI+DVI",
+            "CUDA \r\nCores": "1152",
+            "EAN Code": "4895173610172",
+            "UPC Code": "816264016936",
+            "undefined": " "
+        },
+        {
+            "ZOTAC SKU#": "GTX 1650 Super",
+            "MEMORY": " "
+        },
+        {
+            "ZOTAC SKU#": "ZT-T16510F-10L",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GTX 1650 Super Twin Fan ",
+            "Price": "$147.00",
+            "MSRP": "$159.99",
+            "MEMORY": "4G GDDR6",
+            "MEMORY\r\nBUS": "128 bit",
+            "Core MHz / \r\nMemory MHz": "TBA",
+            "DirectX": "12",
+            "Connectors": "DVI + DP + HDMI",
+            "CUDA \r\nCores": "1280",
+            "EAN Code": "4895173620263",
+            "UPC Code": "810012081047"
+        },
+        {
+            "ZOTAC SKU#": "GTX 1650",
+            "MEMORY": " "
+        },
+        {
+            "ZOTAC SKU#": "ZT-T16500F-10L",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GTX 1650 Single Fan OC",
+            "Price": "$138.00",
+            "MSRP": "$149.99",
+            "MEMORY": "4G GDDR5",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1695/8002",
+            "DirectX": "12",
+            "Connectors": "DP1.4+HDMI2.0+DVI-D",
+            "CUDA \r\nCores": "896",
+            "EAN Code": "4895173618604",
+            "UPC Code": "810012080422"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T16500H-10L",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GTX 1650 Twin Fan LP",
+            "Price": "$138.00",
+            "MSRP": "$149.99",
+            "MEMORY": "4G GDDR5",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1665/8002",
+            "DirectX": "12",
+            "Connectors": "DP1.4+HDMI2.0+DVI-D",
+            "CUDA \r\nCores": "896",
+            "EAN Code": "4895173618840",
+            "UPC Code": "810012080552"
+        },
+        {
+            "ZOTAC SKU#": "ZT-T16500G-10B",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GTX 1650 Single Fan",
+            "Price": "$135.00",
+            "MSRP": "NA",
+            "MEMORY": "4G GDDR5",
+            "MEMORY\r\nBUS": "192 bit",
+            "Core MHz / \r\nMemory MHz": "1665/8002",
+            "DirectX": "12",
+            "Connectors": "DP1.4+HDMI2.0+DVI-D",
+            "CUDA \r\nCores": "896",
+            "EAN Code": "NA",
+            "UPC Code": "NA"
+        },
+        {
+            "ZOTAC SKU#": "GT 1030 series"
+        },
+        {
+            "ZOTAC SKU#": "ZT-P10300A-10L",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GT 1030",
+            "Price": "$78.50",
+            "MSRP": "$84.99",
+            "MEMORY": "2G GDDR5",
+            "MEMORY\r\nBUS": "64 bit",
+            "Core MHz / \r\nMemory MHz": "1227-1468/6008",
+            "DirectX": "12",
+            "Connectors": "DVI-D + HDMI ",
+            "CUDA \r\nCores": "384",
+            "EAN Code": "4895173613272",
+            "UPC Code": "816264017957"
+        },
+        {
+            "ZOTAC SKU#": "GT 730 series"
+        },
+        {
+            "ZOTAC SKU#": "ZT-71115-20L",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GT 730 ZONE® Edition LP",
+            "Price": "$74.50",
+            "MSRP": "$79.99",
+            "MEMORY": "4GB DDR3",
+            "MEMORY\r\nBUS": "64 bit",
+            "Core MHz / \r\nMemory MHz": "902 / 1600",
+            "DirectX": "12",
+            "Connectors": "DVI + HDMI + VGA",
+            "CUDA \r\nCores": "384",
+            "EAN Code": "4895173605352",
+            "UPC Code": "816264015359"
+        },
+        {
+            "ZOTAC SKU#": "GT 710 series",
+            "undefined": " "
+        },
+        {
+            "ZOTAC SKU#": "ZT-71302-20L",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GT 710 ZONE® Edition ",
+            "Price": "$42.00",
+            "MSRP": "$44.99",
+            "MEMORY": "2GB DDR3",
+            "MEMORY\r\nBUS": "64 bit",
+            "Core MHz / \r\nMemory MHz": "954 / 5010",
+            "DirectX": "12",
+            "Connectors": "DVI + HDMI + VGA",
+            "CUDA \r\nCores": "192",
+            "EAN Code": "4895173613074",
+            "UPC Code": "816264017841"
+        },
+        {
+            "ZOTAC SKU#": "ZT-71304-20L",
+            "PRODUCT \r\nPCI -E x 16": "ZOTAC GeForce GT 710 ZONE® Edition PCIEx1",
+            "Price": "$37.00",
+            "MSRP": "$39.99",
+            "MEMORY": "1GB DDR3",
+            "MEMORY\r\nBUS": "64 bit",
+            "Core MHz / \r\nMemory MHz": "954 / 1600",
+            "DirectX": "12",
+            "Connectors": "DVI + HDMI + VGA",
+            "CUDA \r\nCores": "192",
+            "EAN Code": "4895173609121",
+            "UPC Code": "816264016400"
+        },
+        {
+            "Price": " ",
+            "MSRP": " "
+        },
+        {
+            "MSRP": " "
+        },
+        {
+            "MSRP": " "
+        }
+    ],
+    "Intel MB": [
+        {
+            "undefined": "Mini-ITX - Integrated Intel CPU"
+        },
+        {
+            "undefined": "UPC"
+        },
+        {
+            "undefined": "816264018428"
+        },
+        {
+            "undefined": " "
+        },
+        {
+            "undefined": " "
+        },
+        {
+            "undefined": " "
+        }
+    ],
+    "ZBOX Mini PC": [
+        {
+            "ZBOX Mini PC Intel i3, i5, i7 series": "SKU",
+            "undefined": "UPC"
+        },
+        {
+            "ZBOX Mini PC Intel i3, i5, i7 series": "ZBOX-EK3105T-U-W2B",
+            "undefined": "816264019180"
+        },
+        {
+            "ZBOX Mini PC Intel i3, i5, i7 series": "ZBOX-EK3105T-U",
+            "undefined": "816264019166"
+        },
+        {
+            "ZBOX Mini PC Intel i3, i5, i7 series": "ZBXO-EN72080V-U",
+            "undefined": "810012081153"
+        },
+        {
+            "ZBOX Mini PC Intel i3, i5, i7 series": "ZBOX-EN72070V-U-W2B",
+            "undefined": "810012080750"
+        },
+        {
+            "ZBOX Mini PC Intel i3, i5, i7 series": "ZBOX-EN72070V-U",
+            "undefined": "810012080743"
+        },
+        {
+            "ZBOX Mini PC Intel i3, i5, i7 series": "ZBOX-EN52060V-U-W2B",
+            "undefined": "810012080736"
+        },
+        {
+            "ZBOX Mini PC Intel i3, i5, i7 series": "ZBOX-EN52060V-U",
+            "undefined": "810012080729"
+        },
+        {
+            "ZBOX Mini PC Intel i3, i5, i7 series": "ZBOX-EN51660T-U",
+            "undefined": "810012081177"
+        },
+        {
+            "ZBOX Mini PC Intel i3, i5, i7 series": "ZBOX-EC72070S-U",
+            "undefined": "810012081221"
+        },
+        {
+            "ZBOX Mini PC Intel i3, i5, i7 series": "ZBOX-EC52070D-U",
+            "undefined": "810012080101"
+        },
+        {
+            "ZBOX Mini PC Intel i3, i5, i7 series": "ZBOX-MI572-U",
+            "undefined": "816264017650"
+        },
+        {
+            "ZBOX Mini PC Intel i3, i5, i7 series": "ZBOX-MI553-U",
+            "undefined": "816264018299"
+        },
+        {
+            "ZBOX Mini PC Intel i3, i5, i7 series": "ZBOX-MI546-U",
+            "undefined": "816264016493"
+        },
+        {
+            "undefined": " "
+        },
+        {
+            "undefined": " "
+        }
+    ],
+    "ZBOX Nano &amp; NanoXS Mini PC ": [
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "SKU",
+            "undefined": "UPC"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-MI662NANO-U",
+            "undefined": " 810012081115"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-MI642NANO-U",
+            "undefined": "810012081108"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-MI660NANO-P-U ",
+            "undefined": "816264018534"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-MI640NANO-P-U ",
+            "undefined": "816264018558"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-MI640NANO-U ",
+            "undefined": "816264018541"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-MI549NANO-U (Kaby Lake)",
+            "undefined": "816264017742"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-CI660NANO-U ",
+            "undefined": "NA"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-CI640NANO-U ",
+            "undefined": "NA"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-CI660NANO-P-U",
+            "undefined": "816264019975"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-CI640NANO-P-U",
+            "undefined": "816264019968"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-CI620NANO-P-U",
+            "undefined": "816264019951"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-CI329NANO-U-W2C with Win10 Pro",
+            "undefined": "810012081016"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-CI329NANO-P-U",
+            "undefined": "816264019012"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-CI329NANO-U",
+            "undefined": "816264019005"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-CI325NANO-U-W2C with Win10 Pro",
+            "undefined": "810012080835"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-CI325NANO-U-W2D with Win10",
+            "undefined": "810012080835"
+        },
+        {
+            "ZBOX Nano Mini PC Intel i3, i5, i7 series": "ZBOX-CI325NANO-U ",
+            "undefined": "816264017360"
+        },
+        {
+            "undefined": " "
+        },
+        {
+            "undefined": " "
+        },
+        {
+            "undefined": " "
+        },
+        {
+            "undefined": " "
+        },
+        {
+            "undefined": " "
+        }
+    ],
+    "ZBOX Sphere&amp;Pico": [
+        {
+            "SKU": "ZBOX Pico Mini PC Intel series"
+        },
+        {
+            "SKU": "ZBOX-PI335-GK-W2C",
+            "Price": "$230.00",
+            "MSRP": "$249.99",
+            "CPU": "Intel N4100",
+            "Chipset": "NA",
+            "Graphics": "Intel HD 600",
+            "Memory": "DDR4",
+            "SATA drive": "NA",
+            "Video out": "DP/HDMI",
+            "Wireless": "WiFiac, BT4.2",
+            "LAN": "GLAN",
+            "USB3.0": "2",
+            "USB3.0 Type-C": "1",
+            "Remote ": "NA",
+            "Plus version": "4GB/ 64G eMMC",
+            "EAN": "4895173620119",
+            "UPC": "810012080996"
+        },
+        {
+            "SKU": "ZBOX-PI225-GK-W2D",
+            "Price": "$230.00",
+            "MSRP": "$249.99",
+            "CPU": "Intel N4000",
+            "Chipset": "NA",
+            "Graphics": "Intel HD 600",
+            "Memory": "LPDDR4",
+            "SATA drive": "NA",
+            "Video out": "HDMI/USB C adapter",
+            "Wireless": "WiFiac, BT5",
+            "LAN": "GLAN",
+            "USB3.0": "2",
+            "USB3.0 Type-C": "1",
+            "Remote ": "NA",
+            "Plus version": "4GB/ 64G eMMC",
+            "EAN": "4895173619120",
+            "UPC": "810012080712  "
+        },
+        {
+            "SKU": "ZBOX-PI225-GK-W2C",
+            "Price": "$230.00",
+            "MSRP": "$249.99",
+            "CPU": "Intel N4000",
+            "Chipset": "NA",
+            "Graphics": "Intel HD 600",
+            "Memory": "LPDDR4",
+            "SATA drive": "NA",
+            "Video out": "HDMI/USB C adapter",
+            "Wireless": "WiFiac, BT5",
+            "LAN": "GLAN",
+            "USB3.0": "2",
+            "USB3.0 Type-C": "1",
+            "Remote ": "NA",
+            "Plus version": "4GB/ 64G eMMC",
+            "EAN": "4895173620133",
+            "UPC": "810012080989"
+        },
+        {
+            "SATA drive": " "
+        },
+        {
+            "Price": " "
+        },
+        {
+            "MSRP": " "
+        },
+        {
+            "LAN": " ",
+            "Remote ": " "
+        }
+    ],
+    "Accessory": [
+        {
+            "undefined": "UPC"
+        },
+        {
+            "undefined": "$35.00"
+        },
+        {
+            "undefined": "$35.00"
+        },
+        {
+            "undefined": "$45.00"
+        },
+        {
+            "undefined": "$80.00"
+        },
+        {
+            "undefined": "$65.00"
+        },
+        {
+            "undefined": "$18.00"
+        },
+        {
+            "undefined": "$19.99"
+        },
+        {
+            "undefined": "816264017223"
+        },
+        {
+            "undefined": "816264017230"
+        },
+        {
+            "undefined": "816264017247"
+        },
+        {
+            "undefined": "816264019869"
+        },
+        {
+            "undefined": "816264019876"
+        },
+        {
+            "undefined": " "
+        }
+    ],
+    "3D printer": [
+        {
+            "Item Code": "M-P2000-G",
+            "Product name": "MiniPrint 3D printer",
+            "Nozzle": "0.4mm \r\nsingle nozzle",
+            "Maxmium Bulid Volume": "10 (L) x 10 (W) x 10 (H) cm",
+            "Mimimum Print\r\n layer resolution": "0.13mm",
+            "Filament \r\nSupport": "1.75mm \r\nPLA",
+            "Connectivity": "USB, \r\nSD Card ",
+            "Accessories": "- 4GB SD Card (incl. Setup video and Manli3D conversion software)\r\n- 0.5kg PLA filament\r\n- Power supply",
+            "Product Weight \r\n(net weight)": "6.88kg",
+            "Product Dimension": "  309 (L) x 337 (W) x 326(H) mm  ",
+            "Price ": "$399.00",
+            "MSRP": "$449.00",
+            "EAN Code": "4897006076155",
+            "UPC Code": "842643100002"
+        },
+        {
+            "Item Code": "1KG 3D Printer Filament "
+        },
+        {
+            "Item Code": "Item Code",
+            "Product name": "Description",
+            "Nozzle": "Plastic Type",
+            "Maxmium Bulid Volume": "Color"
+        },
+        {
+            "Item Code": "M-PFMPLA-TS",
+            "Product name": "PLA Filament / 1.75mm Diameter / 200mm Spool / 1Kg - Transparency Color",
+            "Nozzle": "PLA",
+            "Maxmium Bulid Volume": "Transparency",
+            "Price ": "$18.50",
+            "MSRP": "$20.99",
+            "EAN Code": "4897006076254",
+            "UPC Code": "842643100019"
+        },
+        {
+            "Item Code": "M-PFMPLA-WH",
+            "Product name": "PLA Filament / 1.75mm Diameter / 200mm Spool / 1Kg - White Color",
+            "Nozzle": "PLA",
+            "Maxmium Bulid Volume": "White",
+            "Price ": "$18.50",
+            "MSRP": "$20.99",
+            "EAN Code": "4897006076261",
+            "UPC Code": "842643100026"
+        },
+        {
+            "Item Code": "M-PFMPLA-GN",
+            "Product name": "PLA Filament / 1.75mm Diameter / 200mm Spool / 1Kg - Green Color",
+            "Nozzle": "PLA",
+            "Maxmium Bulid Volume": "Green",
+            "Price ": "$18.50",
+            "MSRP": "$20.99",
+            "EAN Code": "4897006076407",
+            "UPC Code": "842643100033"
+        },
+        {
+            "Item Code": "M-PFMPLA-YE",
+            "Product name": "PLA Filament / 1.75mm Diameter / 200mm Spool / 1Kg - Yellow Color",
+            "Nozzle": "PLA",
+            "Maxmium Bulid Volume": "Yellow",
+            "Price ": "$18.50",
+            "MSRP": "$20.99",
+            "EAN Code": "4897006076285",
+            "UPC Code": "842643100040"
+        },
+        {
+            "Item Code": "M-PFMPLA-RA",
+            "Product name": "PLA Filament / 1.75mm Diameter / 200mm Spool /1Kg - Orange Color",
+            "Nozzle": "PLA",
+            "Maxmium Bulid Volume": "Orange",
+            "Price ": "$18.50",
+            "MSRP": "$20.99",
+            "EAN Code": "4897006076438",
+            "UPC Code": "842643100057"
+        },
+        {
+            "Item Code": "M-PFMPLA-RD",
+            "Product name": "PLA Filament / 1.75mm Diameter / 200mm Spool /1Kg - Red Color",
+            "Nozzle": "PLA",
+            "Maxmium Bulid Volume": "Red",
+            "Price ": "$18.50",
+            "MSRP": "$20.99",
+            "EAN Code": "4897006076445",
+            "UPC Code": "842643100064"
+        },
+        {
+            "Item Code": "M-PFMPLA-SL",
+            "Product name": "PLA Filament / 1.75mm Diameter / 200mm Spool /1Kg - Silver Color",
+            "Nozzle": "PLA",
+            "Maxmium Bulid Volume": "Silver",
+            "Price ": "$18.50",
+            "MSRP": "$20.99",
+            "EAN Code": "4897006076346",
+            "UPC Code": "842643100071"
+        },
+        {
+            "Item Code": "M-PFMPLA-BK",
+            "Product name": "PLA Filament / 1.75mm Diameter / 200mm Spool /1Kg - Black Color",
+            "Nozzle": "PLA",
+            "Maxmium Bulid Volume": "Black",
+            "Price ": "$18.50",
+            "MSRP": "$20.99",
+            "EAN Code": "4897006076360",
+            "UPC Code": "842643100088"
+        },
+        {
+            "Item Code": "M-PFMPLA-SG",
+            "Product name": "PLA Filament / 1.75mm Diameter / 200mm Spool /1kg - Dark Green Color",
+            "Nozzle": "PLA",
+            "Maxmium Bulid Volume": "Dark Green",
+            "Price ": "$18.50",
+            "MSRP": "$20.99",
+            "EAN Code": "4897006076377",
+            "UPC Code": "842643100101"
+        }
+    ],
+    "VR Go back pack and AMP Box": [
+        {
+            "SKU": "ZBOX-VR7N73-U-W2C",
+            "Description": "ZOTAC SFF, VR BACKPACK, i7-9750H, RTX2070 8G, 16GB DDR4, 240G SSD, WIN10 PRO, WIFI, BT, GLAN, 2x HDMI, DP, 2x BATTERY, CHARGE DOCK, US PLUG",
+            "Price": "$2,070.00",
+            "MSRP": "$2,299.99",
+            "EAN": "4895173620188",
+            "UPC": "810012080958"
+        },
+        {
+            "SKU": "ZBOX-VR7N70-W2B-U-VIVE (SW) ",
+            "Description": "ZOTAC SFF, VR BACKPACK, i7-6700T, GTX1070, 16GB DDR4 SODIMM, 240G SSD, WIN10 HOME, WIFI, BT, DUAL GLAN, USBDRV, 2x HDMI, 2x DP, 2x BATTERY, CHARGE DOCK, US PLUG, W/ HTC VIVE and Software",
+            "Price": "$2,520.00",
+            "MSRP": "$2,799.99",
+            "UPC": "816264017995"
+        },
+        {
+            "SKU": "ACC-CHARGE-DOCK2",
+            "Description": "CHARGE DOCKING 2X SLOT",
+            "Price": "$27.00",
+            "MSRP": "$29.99",
+            "EAN": "4895173611520",
+            "UPC": "816264017414"
+        },
+        {
+            "SKU": "ACC-BATT-4S3P",
+            "Description": "LITHIUM-ION BATTERY 14.4V 6.6AH, 95.04WH",
+            "Price": "$126.00",
+            "MSRP": "$139.99",
+            "EAN": "4895173611537",
+            "UPC": "816264017421"
+        },
+        {
+            "SKU": "ACC-BATT-4S2P (VR GO 2.0)",
+            "Description": "LITHIUM-ION BATTERY ACC-BATT-4S2P 14.4V 6AH 86.4WH",
+            "Price": "$135.00",
+            "MSRP": "$149.99",
+            "EAN": "4895173617645",
+            "UPC": "816264019821"
+        },
+        {
+            "SKU": "ACC-CHARGE-DOCK4S2P (VR GO 2.0)",
+            "Description": "CHARGE DOCKING FOR 4S2P",
+            "Price": "$36.00",
+            "MSRP": "$39.99",
+            "EAN": "4895173617652",
+            "UPC": "816264019838"
+        },
+        {
+            "SKU": "251-09100-4600F",
+            "Description": "Delta ADP-108MB KD AC/DC Adapter Power Supply 180W 19.5V/9.23A, PLUG OD=5.5MM, ID=2.5MM, L=12MM, 155X76X30MM for VR GO.",
+            "Price": "$41.00",
+            "MSRP": "$44.99",
+            "undefined": "For VR GO Power Supply"
+        },
+        {
+            "SKU": "G1107TK700B-U",
+            "Description": "ZOTAC Gaming PC bundled KB&MS US i7 7700+GEFORCE GTX1070TI 8GB (B250 16G_DDR4 240G_M.2_SSD 1TB_HDD M.2_WIFI)",
+            "Price": "$1,480.00",
+            "MSRP": "$1,599.99",
+            "EAN": "4895173615238",
+            "UPC": "816264018619"
+        },
+        {
+            "SKU": "ZT-TBT3M-180-BB-US",
+            "Description": "ZOTAC AMP BOX Mini, Intel Alpine Ridge DP DSL6540,1xTBT3,1xPCIE SLOT,4xUSB3.0,180W,US PLUG",
+            "Price": "$198.00",
+            "MSRP": "$219.99",
+            "EAN": "4895173615153",
+            "UPC": "816264018596"
+        },
+        {
+            "Description": " "
+        },
+        {
+            "UPC": " "
+        },
+        {
+            "MSRP": " "
+        },
+        {
+            "UPC": " "
+        }
+    ],
+    "ZBOX Q series": [
+        {
+            "SKU": "ZBOX-QX3P5000-U",
+            "Price": "$2,800.00",
+            "MSRP": "NA",
+            "CPU": "Intel Xeon E-2136",
+            "Chipset": "Intel C246",
+            "Graphics": "Quadra P5000 w/ 16G GDDR5",
+            "Memory": "ECC DDR4-2666, Optane M.2",
+            "Plus Version": "NA",
+            "SATA drive": "SATA  6.0Gps,  M.2 SSD",
+            "Video out": "4x HDMI2.0",
+            "Wireless": "WIFI ac, BT5",
+            "LAN": "1x GLAN, 1x 2.5GLAN",
+            "USB ": "6xUSB3.1",
+            "EAN": "4895173619526",
+            "UPC": "810012080767"
+        },
+        {
+            "SKU": "ZBOX-QX3P3000-U",
+            "Price": "$1,500.00",
+            "MSRP": "NA",
+            "CPU": "Intel Xeon E-2136",
+            "Chipset": "Intel C246",
+            "Graphics": "Quadra P3000 w/ 6G GDDR5",
+            "Memory": "ECC DDR4-2666, Optane M.2",
+            "Plus Version": "NA",
+            "SATA drive": "SATA  6.0Gps,  M.2 SSD",
+            "Video out": "4x HDMI2.0",
+            "Wireless": "WIFI ac, BT5",
+            "LAN": "1x GLAN, 1x 2.5GLAN",
+            "USB ": "6xUSB3.1",
+            "EAN": "4895173619588",
+            "UPC": "810012080774"
+        },
+        {
+            "SKU": "ZBOX-QK5P1000-U",
+            "Price": "$720.00",
+            "MSRP": "$799.99",
+            "CPU": "7thGEN Intel i5-7200U",
+            "Chipset": "NA",
+            "Graphics": "Quadra P1000 w/ 4G GDDR5",
+            "Memory": "DDR4-2133",
+            "Plus Version": "NA",
+            "SATA drive": "SATA  6.0Gps,  M.2 SATA SSD",
+            "Video out": "4x HDMI2.0",
+            "Wireless": "WIFI ac, BT4.2",
+            "LAN": "2 GLAN",
+            "USB ": "3 x USB 3.0",
+            "EAN": "4895173615566",
+            "UPC": "816264018855"
+        },
+        {
+            "SKU": "ZBOX-QK7P3000-U",
+            "Price": "$1,260.00",
+            "MSRP": "$1,399.99",
+            "CPU": "7thGEN Intel i7-7700T",
+            "Chipset": "Intel B150",
+            "Graphics": "Quadra P3000 w/ 6G GDDR5",
+            "Memory": "DDR4-2400",
+            "Plus Version": "NA",
+            "SATA drive": "SATA  6.0Gps,  M.2 SSD",
+            "Video out": "2x DP, 2x HDMI2.0",
+            "Wireless": "WIFI ac, BT4.2",
+            "LAN": "2 GLAN",
+            "USB ": "2 x USB3.0, 2 x USB3.1",
+            "EAN": "4895173615610",
+            "UPC": "816264018862"
+        },
+        {
+            "SKU": "ZBOX-QK7P3000-P-U",
+            "Price": "$1,404.00",
+            "MSRP": "$1,559.99",
+            "CPU": "7thGEN Intel i7-7700T",
+            "Chipset": "Intel B150",
+            "Graphics": "Quadra P3000 w/ 6G GDDR5",
+            "Memory": "DDR4-2400",
+            "Plus Version": "8G DDR4 120G SSD/1TB HDD",
+            "SATA drive": "SATA  6.0Gps,  M.2 SSD",
+            "Video out": "2x DP, 2x HDMI2.0",
+            "Wireless": "WIFI ac, BT4.2",
+            "LAN": "2 GLAN",
+            "USB ": "2 x USB3.0, 2 x USB3.1",
+            "EAN": "4895173617720",
+            "UPC": "816264019906"
+        },
+        {
+            "SKU": "ZBOX-QK7P5000-U",
+            "Price": "$2,700.00",
+            "MSRP": "$2,999.99",
+            "CPU": "7thGEN Intel i7-7700T",
+            "Chipset": "Intel B150",
+            "Graphics": "Quadra P5000 w/ 16G GDDR5",
+            "Memory": "DDR4-2400",
+            "Plus Version": "NA",
+            "SATA drive": "SATA  6.0Gps,  M.2 SSD",
+            "Video out": "2x DP, 2x HDMI2.0",
+            "Wireless": "WIFI ac, BT4.2",
+            "LAN": "2 GLAN",
+            "USB ": "2 x USB3.0, 2 x USB3.1",
+            "EAN": "4895173615665",
+            "UPC": "816264018879"
+        },
+        {
+            "Video out": " "
+        },
+        {
+            "Price": " "
+        },
+        {
+            "undefined": " "
+        },
+        {
+            "LAN": " "
+        }
+    ],
+    "MEK Ultra&amp;Mini": [
+        {
+            "SKU": "GU208TC702B-U-W2B",
+            "CPU": "Intel Core i7-8700K (6 cores 3.7GHz, up to 4.7GHz)",
+            "Graphic": "RTX2080Ti",
+            "Memory": "32GB DDR4",
+            "Storage": "500 GB M.2 NVMe SSD/ 2TB HDD",
+            "USB": "2x2.0, 2x3.1, 6x3.0",
+            "LAN": "GLAN",
+            "Audio": "7.1",
+            "Wireless": "Killer WiFi, BT 5",
+            "PS": "1000W",
+            "Price": "$2,685.00",
+            "MSRP": "$2,899.99",
+            "UPC": "816264019678"
+        },
+        {
+            "SKU": "GM206SC5R1B-U-W2B ",
+            "CPU": "Intel Core i5-9400",
+            "Graphic": "RTX2060 Super 8G",
+            "Memory": "16GB DDR4",
+            "Storage": "240 GB M.2 PCIe x4 SSD/ 1TB HDD",
+            "USB": "4x3.1, 2x3.0 (1xType-C)",
+            "LAN": "GLAN",
+            "Audio": "7.1",
+            "Wireless": "Killer WiFi, BT 5",
+            "PS": "2x230W",
+            "Price": "$1,170.00",
+            "MSRP": "$1,299.99",
+            "UPC": "810012080811"
+        },
+        {
+            "SKU": "GM207SC7R1B-U-W2B",
+            "CPU": "Intel Core i7-9700",
+            "Graphic": "RTX2070 Super 8G",
+            "Memory": "16GB DDR4",
+            "Storage": "240 GB M.2 PCIe x4 SSD/ 2TB HDD",
+            "USB": "4x3.1, 2x3.0 (1xType-C)",
+            "LAN": "GLAN",
+            "Audio": "7.1",
+            "Wireless": "Killer WiFi, BT 5",
+            "PS": "2x230W",
+            "Price": "$1,564.00",
+            "MSRP": "$1,699.99",
+            "UPC": "'810012080866"
+        },
+        {
+            "Price": " "
+        },
+        {
+            "Wireless": " "
+        },
+        {
+            "Price": " "
+        }
+    ],
+    "ZBOX PRO Series": [
+        {
+            "SKU": "ZP-PI335GK-BT",
+            "Price": "$250.00",
+            "MSRP": "NA",
+            "Processor": "Intel Celeron N4100, Quad-core\r\n1.1Ghz/2.4Ghz, 4MB cache",
+            "System Memory": "Onboard 4GB LPDDR3",
+            "Graphics Engine": "Intel UHD Graphics 600",
+            "HD Video Capability": "HDMI 2.0: 4096x2160@60Hz\r\nDisplayPort 1.2: 4096x2160@60Hz",
+            "Mass Storage": "Onboard 64GB eMMC flash",
+            "Video Output": "1x HDMI 2.0\r\n1x DisplayPort 1.2",
+            "USB Port": "2 x USB3.0 Type-A\r\n1 x USB3.0 type-C",
+            "Wired Network": "1 x Gigabit LAN",
+            "Wireless Network": "IEEE 802.11ac/a/b/g/n\r\nBluetooth 5.0",
+            "Legacy I/O": "None",
+            "Expansion": "None",
+            "Hardwre Watchdog": "Yes",
+            "Power Supply": "Universal AC adapter\r\nOutput: DC 5V/20W",
+            "Cooling system": "Passive-cooling",
+            "Ambient temperature": "Main unit: -20°C ~ +45°C\r\nAC adapter: +0°C ~ +40°C",
+            "Physical Dimension": "115.0mm x 76.0mm x 26.7mm",
+            "Mounting Options": "Pre-installed: L-shape mount",
+            "Supported OS": "Windows 10, Ubuntu 18.04 LTS"
+        },
+        {
+            "SKU": "ZP-CI329NANO-BU",
+            "Price": "$220.00",
+            "MSRP": "NA",
+            "Processor": "Intel Celeron N4100, Quad-core 1.1GHz/2.4Ghz, 4MB cache",
+            "System Memory": "2 x DDR4-2400 SO-DIMM slot, Max 8GB",
+            "Graphics Engine": "Intel UHD Graphics 600",
+            "HD Video Capability": "HDMI 2.0: 4096x2160@60Hz\r\nDisplayPort 1.2: 4096x2160@60Hz\r\nVGA: 1920x1200@60 Hz",
+            "Mass Storage": "1 x SATA-III 2.5\" HDD/SSD bay\r\n1 x M.2 2242/2260 key-M socket for SSD",
+            "Video Output": "1x HDMI 2.0\r\n1x DisplayPort 1.2\r\n1x VGA",
+            "USB Port": "1 x USB 3.0 Type-C\r\n3 x USB 3.0 Type-A",
+            "Wired Network": "2 x Gigabit LAN",
+            "Wireless Network": "IEEE 802.11ac/a/b/g/n",
+            "Legacy I/O": "1 x RS232 serial port",
+            "Expansion": "1 x M.2 2230 key-E socket for WIFI module",
+            "Hardwre Watchdog": "Yes",
+            "Power Supply": "Universal AC Adapter\r\nOutput: DC 19V/40W",
+            "Cooling system": "Passive-cooling",
+            "Ambient temperature": "Main unit: -20°C ~ +45°C (SSD/HDD)\r\nAC adapter: +0°C ~ +40°C",
+            "Physical Dimension": "160.0mm x 126.7mm x 58.7mm",
+            "Mounting Options": "Pre-installed: Rubber feet\r\nBundled: L-shape mount, VESA mount kit\r\nSupport: DIN-rail screw hole",
+            "Supported OS": "Windows 10, Ubuntu 16.04 LTS"
+        },
+        {
+            "SKU": "ZP-CI330NANO-BU",
+            "Price": "$170.00",
+            "MSRP": "NA",
+            "Processor": "Intel Celeron N3160, Quad-core 1.6Ghz/2.24Ghz, 2MB cache",
+            "System Memory": "2 x DDR3L-1600 SO-DIMM slot, Max 8GB",
+            "Graphics Engine": "Intel HD Graphics 400",
+            "HD Video Capability": "HDMI 1.4: 3840x2160@30Hz, 2560x1600@60Hz\r\nVGA: 1920x1200@60 Hz",
+            "Mass Storage": "1 x SATA-III 2.5\" HDD/SSD bay\r\n1 x M.2 2242/2260 key-M socket for SSD",
+            "Video Output": "2x HDMI 1.4 with screw lock and display continuity switch\r\n1 x VGA",
+            "USB Port": "1 x USB 3.0 Type-A\r\n2 x USB 2.0 Type-A",
+            "Wired Network": "1 x Gigabit LAN",
+            "Wireless Network": "IEEE 802.11ac/a/b/g/n",
+            "Legacy I/O": "None",
+            "Expansion": "1 x M.2 2230 key-E socket for WIFI module",
+            "Hardwre Watchdog": "Yes",
+            "Power Supply": "Universal AC Adapter\r\nOutput: DC 19V/45W with screw lock",
+            "Cooling system": "Passive-cooling",
+            "Ambient temperature": "Main unit: -20°C - +40°C (SSD/HDD)\r\nAC adapter: +0°C ~ +40°C",
+            "Physical Dimension": "160.0mm x 126.7mm x 50.7 mm",
+            "Mounting Options": "Pre-installed: Rubber feet\r\nBundled: L-shape mount, VESA mount kit\r\nSupport: DIN-rail screw hole",
+            "Supported OS": "Windows 10, Ubuntu 16.04 LTS"
+        },
+        {
+            "SKU": "ZP-QK5P1000-MU",
+            "Price": "$870.00",
+            "MSRP": "NA",
+            "Processor": "7th gen Intel Core i5-7300U Dual-core 2.6GHz/3.5GHz, 3MB cache, 15W TDP",
+            "System Memory": "2 x DDR4L-2133 SO-DIMM slot, Max 32GB",
+            "Graphics Engine": "NVIDIA Quadro P1000 for Embedded GPU w/4GB GDDR5",
+            "HD Video Capability": "HDMI 2.0: 3840x2160@60Hz",
+            "Mass Storage": "1 x 2.5” SATA-III SSD/HDD bay\r\n1 x M.2 2242 key-M socket for SSD",
+            "Video Output": "4 x HDMI 2.0\r\nSupport software EDID emulation",
+            "USB Port": "3 x USB 3.0 Type-A",
+            "Wired Network": "2 x Gigabit LAN",
+            "Wireless Network": "IEEE 802.11ac/a/b/g/n\r\nBluetooth 4.2",
+            "Legacy I/O": "1 x RS232 serial port",
+            "Expansion": "1x M.2 2230 key-E socket for WIFI module",
+            "Hardwre Watchdog": "Yes",
+            "Power Supply": "Universal AC Adapter\r\nOutput: DC 19V/120W",
+            "Cooling system": "Active cooling",
+            "Ambient temperature": "Main unit: -20°C - +40°C (SSD/HDD)\r\nAC adapter: +5°C ~ +35°C",
+            "Physical Dimension": "210.0mm x 176.6mm x 44.4mm",
+            "Mounting Options": "Pre-installed: Rubber feet\r\nBundled: L-shape mount, VESA mount screws\r\nSupport: DIN-rail screw hole",
+            "Supported OS": "Windows 10, Ubuntu 16.04 LTS"
+        },
+        {
+            "SKU": "ZP-QK7P3000-MU",
+            "Price": "$1,430.00",
+            "MSRP": "NA",
+            "Processor": "7th gen Intel Core i7-7700T Quad-core 2.9GHz/3.8GHz, 6MB cache, 35W TDP",
+            "System Memory": "2 x DDR4-2133/2400 SO-DIMM slot, Max 32GB",
+            "Graphics Engine": "NVIDIA Quadro P3000 MXM w/6GB GDDR5",
+            "HD Video Capability": "HDMI 2.0: 3840x2160@60Hz",
+            "Mass Storage": "1 x 2.5” SATA-III SSD/HDD bay\r\n1 x M.2 2242/2260/2280 key-M socket for SSD",
+            "Video Output": "4 x HDMI 2.0\r\nSupport hardware EDID emulation",
+            "USB Port": "2 x USB 3.1 Type-A\r\n2 x USB 3.0 Type-A\r\n2 x USB 2.0 Type-A",
+            "Wired Network": "2 x Gigabit LAN",
+            "Wireless Network": "IEEE 802.11ac/a/b/g/n",
+            "Legacy I/O": "1 x RS232 serial port",
+            "Expansion": "1x M.2 2230 key-E socket for WIFI module",
+            "Hardwre Watchdog": "Yes",
+            "Power Supply": "Universal AC Adapter\r\nOutput: DC 19.5V/180W",
+            "Cooling system": "Active cooling",
+            "Ambient temperature": "Main unit: -20°C - +40°C (SSD/HDD)\r\nAC adapter: +0°C ~ +40°C",
+            "Physical Dimension": "227.0mm x 202.5mm x 62.5mm",
+            "Mounting Options": "Pre-installed: Rubber feet\r\nBundled: L-shape mount, VESA mount screws\r\nSupport: DIN-rail screw hole",
+            "Supported OS": "Windows 10, Ubuntu 16.04 LTS"
+        }
+    ]
+}
