@@ -1,0 +1,92 @@
+<nav #navbar class="navbar navbar-expand navbar-dark bg-secondary box-shadow-far" data-aos="fade-down" data-aos-offset="1400" [hidden]="navbar.clientWidth < 760">
+    <div class="container">
+        <ul class="nav navbar-nav" style="width: calc(100% - 16px);">
+            <ul class="d-inline-flex">
+                <ul class="navbar-nav mr-auto">
+                    <div ngbDropdown class="d-inline-block">
+                        <button role="menuitem" id="filter-brand" class="btn btn-link hvr hvr-underline-from-left"
+                            ngbDropdownToggle>Brand</button>
+                        <div ngbDropdownMenu aria-labelledby="filter-brand">
+                            <button role="menuitem" class="dropdown-item"> Zotac</button>
+                            <button role="menuitem" class="dropdown-item"> Access Able Designs</button>
+                        </div>
+                    </div>
+                    <div ngbDropdown class="d-inline-block">
+                        <button role="menuitem" id="filter-category" class="btn btn-link hvr hvr-underline-from-left"
+                            ngbDropdownToggle>Category</button>
+                        <div ngbDropdownMenu aria-labelledby="filter-category">
+                            <button *ngFor="let cat of ZOTAC_BRAND.categories" role="menuitem" class="dropdown-item">
+                                {{cat}}</button>
+                        </div>
+                    </div>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0 ml-auto align-end">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0"><i class="fa fa-search"></i></button>
+                </form>
+            </ul>
+        </ul>
+
+    </div>
+</nav>
+<app-masthead [images]="images" [title]="title">
+</app-masthead>
+<!-- Page Content -->
+<section class="main" style="margin-top: 12rem;">
+    <div class="container">
+        <div class="navbar navbar-expand-md navbar-dark bg-dark mb-4" role="navigation" data-aos="fade-up"
+            style="z-index: 2;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <div ngbDropdown class="d-inline-block">
+                        <button role="menuitem" id="filter-brand" class="btn btn-link hvr hvr-underline-from-left"
+                            ngbDropdownToggle>Brand</button>
+                        <div ngbDropdownMenu aria-labelledby="filter-brand">
+                            <button role="menuitem" class="dropdown-item"> Zotac</button>
+                            <button role="menuitem" class="dropdown-item"> Access Able Designs</button>
+                        </div>
+                    </div>
+                    <div ngbDropdown class="d-inline-block">
+                        <button role="menuitem" id="filter-category" class="btn btn-link hvr hvr-underline-from-left"
+                            ngbDropdownToggle>Category</button>
+                        <div ngbDropdownMenu aria-labelledby="filter-category">
+                            <button *ngFor="let cat of ZOTAC_BRAND.categories" role="menuitem" class="dropdown-item">
+                                {{cat}}</button>
+                        </div>
+                    </div>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0 ml-auto">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <app-shop-list *ngIf="list$ | async" [results]="list$ | async" (productSelected)="openModal(details, $event)">
+        </app-shop-list>
+        <hr class="bg-primary">
+        <ngb-pagination class="d-flex justify-content-center" [collectionSize]="70" [(page)]="filterState.activePage">
+        </ngb-pagination>
+
+    </div>
+
+
+</section>
+<ng-template #details let-modal class="animated slow">
+    <div class="modal-header">
+
+        <h4 class="modal-title">{{selectedProduct?.SKU}}</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <app-shop-item *ngIf="selectedProduct" [selectedProduct]="selectedProduct"></app-shop-item>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
+    </div>
+</ng-template>
