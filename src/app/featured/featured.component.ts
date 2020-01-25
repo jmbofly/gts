@@ -10,7 +10,7 @@ import { GoogleAnalyticsService } from "../core/google-analytics.service";
 })
 export class FeaturedComponent implements OnInit {
   @Input() isPage = true;
-
+  images = ['https://www.douglassdigital.com/wp-content/uploads/2017/06/Woocommerce-Ecommerce-Solution-From-Douglass-Digital.png', 'https://www.indiafilings.com/learn/wp-content/uploads/2017/09/GST-for-Ecommerce.jpg', 'https://s3-us-west-2.amazonaws.com/puntoapunto.com.ar/wp-content/uploads/2018/12/05163539/E-commerce.jpg', 'https://iaidea.com/wp-content/uploads/2014/12/ventajas-del-comercio-electronico.jpg'];
   title = {
     main: 'Featured Partner',
     sub: '<h1 class="lead font-weight-bold">For a limited time only</h1><h3 class="text-primary my-4">Want to know more about this partner?</h3>',

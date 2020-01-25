@@ -10,12 +10,14 @@
           </h1>
         </div>
         <div class="main-menubar d-flex align-items-center align-content-end">
-          <nav role="menubar" class="animated"
+          <nav role="menubar" class="animated fast"
             [ngClass]="{'show': showMenuBar || navbar.clientWidth > 997, 'hide': !showMenuBar, 'slideInRight': showMenuBar || navbar.clientWidth > 997}">
             <button role="menuitem" id="home" class="btn btn-link hvr hvr-underline-from-left"
               (click)="navigateTo('home')">Home</button>
             <button role="menuitem" id="featured" class="btn btn-link hvr hvr-underline-from-left"
               (click)="navigateTo('featured')">Featured</button>
+            <button role="menuitem" id="store" class="btn btn-link hvr hvr-underline-from-left"
+              (click)="navigateTo('store')">Store</button>
             <div ngbDropdown class="d-inline-block">
               <button role="menuitem" id="services" class="btn btn-link hvr hvr-underline-from-left"
                 ngbDropdownToggle>Services</button>

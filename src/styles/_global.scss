@@ -57,10 +57,10 @@ h6 {
 
 [data-aos]:not(.navbar),
 .showcase-img {
-  opacity: 0;
+  display: none;
 
   &.aos-animate {
-    opacity: 1;
+    display: block;
   }
 }
 

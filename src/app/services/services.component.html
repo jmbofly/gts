@@ -1,4 +1,4 @@
-<app-masthead #masthead [title]="currentTitle" *ngIf="isPage"></app-masthead>
+<app-masthead #masthead [images]="images" [title]="currentTitle" *ngIf="isPage"></app-masthead>
 <section class="services-section" [style.background]="'#151719'" data-aos="fade">
     <div *ngFor="let service of services" class="jumbotron jumbotron bg-transparent text-center  text-light mb-0"
         [id]="service.id">

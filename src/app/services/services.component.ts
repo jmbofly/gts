@@ -13,6 +13,7 @@ import { DataService } from '../core/data.service';
 })
 export class ServicesComponent implements OnInit {
   @Input() isPage = true;
+  images = ['https://www.douglassdigital.com/wp-content/uploads/2017/06/Woocommerce-Ecommerce-Solution-From-Douglass-Digital.png', 'https://www.indiafilings.com/learn/wp-content/uploads/2017/09/GST-for-Ecommerce.jpg', 'https://s3-us-west-2.amazonaws.com/puntoapunto.com.ar/wp-content/uploads/2018/12/05163539/E-commerce.jpg', 'https://iaidea.com/wp-content/uploads/2014/12/ventajas-del-comercio-electronico.jpg'];
   currentTitle: Masthead = {
     main: 'Ready & Reliable',
     sub: '<h1 class="lead font-weight-bold">Change Depends On Action</h1><h3 class="my-4  text-primary">Want to know more?</h3>',

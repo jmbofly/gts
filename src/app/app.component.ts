@@ -10,6 +10,7 @@ import { Router, ActivatedRoute, NavigationEnd, NavigationStart } from '@angular
 // import { FacebookService, InitParams, AuthResponse, LoginResponse, UIParams, LoginOptions } from 'ngx-facebook';
 import { DataService } from './core/data.service';
 import { GoogleAnalyticsService } from "./core/google-analytics.service";
+import { StoreService } from './core/store.service';
 // import { CookieService } from 'ngx-cookie-service';
 
 @Component({
@@ -24,7 +25,7 @@ export class AppComponent implements OnInit {
   activeLink = null;
   alerts = [];
 
-  constructor(private router: Router, private route: ActivatedRoute, public data: DataService, public modal: NgbModal, public ga: GoogleAnalyticsService) {
+  constructor(private router: Router, private route: ActivatedRoute, public store: StoreService, public data: DataService, public modal: NgbModal, public ga: GoogleAnalyticsService) {
 
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
@@ -76,7 +77,6 @@ export class AppComponent implements OnInit {
       animatedClassName: 'animated',
     })
 
-    this.data.getStoreImageByCompany('zotac', 'Graphics');
   }
 
   animateScroll(id: string) {
@@ -110,13 +110,14 @@ export class AppComponent implements OnInit {
       'featured',
       'services',
       'about',
+      'store',
       'contact',
     ].map(id => {
       this.activeLink = url;
       document.getElementById(id).classList.remove('active');
     })
     document.getElementById(url).classList.toggle('active')
-    const res = await this.router.navigate([`${url}`], { relativeTo: this.route, fragment: params ? params : null });
+    const res = await this.router.navigate([`${url}`], { relativeTo: this.route, fragment: params && typeof params === 'string' ? params : null });
     window.scrollTo({
       top: 0,
       behavior: 'auto',

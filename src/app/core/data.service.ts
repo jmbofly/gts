@@ -26,7 +26,6 @@ export class DataService {
   private prizeEntryCollection: AngularFirestoreCollection<any>;
   data$: Observable<any>;
 
-  public imageList: HostImage[] = [];
   constructor(public afs: AngularFirestore, public http: HttpClient, private fns: AngularFireFunctions, public images: ImageService) {
     this.userCollection = this.afs.collection<User>('users');
     this.contactCollection = this.afs.collection<any>('contacts');
@@ -41,52 +40,22 @@ export class DataService {
     return this.userCollection.add(userData);
   }
 
-  getScrape() {
-    const url = 'https://us-central1-gts-site-80a8a.cloudfunctions.net/scrape';
-    const goto = 'https://www.zotac.com/us/product/graphics_card/all';
-    // const callable = this.fns.httpsCallable('scrape');
-    // this.data$ = callable({ goto });
-    this.data$ = this.http.get(url, { headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Headers': 'Accept' }, params: { goto } });
-    this.data$.subscribe(data => console.log('scrape called', data));
-  }
-
   prizeEntrySignUp(data: any) {
     data.timestamp = new Date();
     return this.prizeEntryCollection.add(data);
   }
 
-  getStoreImageByCompany(companyName: string, subDir?: string | string[]) {
-    if (companyName && typeof subDir === 'string') {
-      const list = [];
-      // const headers: HttpHeaders = new HttpHeaders({ headers: 'Content-Type:application/json' })
-      const data$ = this.http.get('../../assets/data/zotac.json');
-      data$.subscribe(data => console.log('store img dir', data))
-    }
+  formatImgURL(nameOrId: string, args?: string[]) {
+    const upper = String(nameOrId).toLowerCase();
+    const formatJpg = upper + `_image1.jpg`;
+    console.log('format img', formatJpg)
+    return formatJpg;
   }
 
-  readImageList() {
-    this.imagesCollection
-      .valueChanges()
-      .subscribe(res => {
-        res.sort((a, b) => a.name !== b.name ? a.name < b.name ? -1 : 1 : 0);
-        res.map(img => {
-          if (this.imageList.filter(i => i.name === img.name).length) { return }
-          else {
-            this.imageList.push({ name: img.name, url: this.images.getImage(img.name) });
-          }
-        })
-      });
-  }
-
-  getImage(name: string) {
+  getImage(name: string): string {
     // return `assets/img/${name}`;
     return `https://firebasestorage.googleapis.com/v0/b/gts-site-80a8a.appspot.com/o/img%2F${name}?alt=media&token=137c99b9-6dd2-443e-933c-ae29c15198be`;
   }
-
-  addToImageList(obj) {
-    this.imagesCollection.add(obj);
-  }
-
   newContact(data: any) {
     data.timestamp = new Date();
     return this.contactCollection.add(data);

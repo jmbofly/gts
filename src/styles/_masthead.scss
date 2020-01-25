@@ -14,16 +14,31 @@ header.masthead {
     width: 100%;
     top: 0;
     left: 0;
-    opacity: 0.75;
+    opacity: 0.3;
+
+    .carousel {
+      height: 500px;
+
+      [ngbSlide] {
+        transition: .1s;
+      }
+
+      .carousel-img-wrapper {
+        img {
+          height: 500px;
+          width: 100%;
+        }
+      }
+    }
   }
 
   h1 {
     font-size: 2rem;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 990px) {
     padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-bottom: 5rem;
 
     h1 {
       font-size: 3rem;

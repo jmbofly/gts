@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { StoreComponent } from './store/store.component';
 
 // TODO: Add routes ==> home, about, featured, services, contact, (account: after auth service and implementation is wired-up)
 const routes: Routes = [

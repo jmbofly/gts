@@ -16,14 +16,9 @@ export class ImageService {
   constructor(public storage: AngularFireStorage) {
     this.imgRef = this.storage.ref('img');
   }
-  getImage(name: string) {
-    const ref = this.imgRef.child(name);
+  getImage(dir: string, name: string) {
+    const ref = this.storage.ref(`${dir}${name}`);
     return ref.getDownloadURL();
   }
 
-  getAll(list: any[]) {
-    return list.map(img => {
-      return { name: img.name, url: this.getImage(img.name) }
-    })
-  }
 }

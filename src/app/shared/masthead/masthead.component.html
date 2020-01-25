@@ -1,10 +1,34 @@
 <!-- Masthead -->
-<header #header class="masthead text-white text-center pt-4" [style.margin-top]="'124px'"
-    [style.background-image]="'url(' + getImage(title.bg) + ')'">
+<header #header class="masthead text-white text-center pt-4" [style.margin-top]="'124px'">
     <div class="overlay">
-        <div class="stars" [hidden]="header.clientWidth < 760"></div>
+        <!-- <div class="stars" [hidden]="header.clientWidth < 760"></div>
         <div class="twinkling" [hidden]="header.clientWidth < 760"></div>
-        <div class="clouds" [hidden]="header.clientWidth < 760"></div>
+        <div class="clouds" [hidden]="header.clientWidth < 760"></div> -->
+        <ngb-carousel #carousel *ngIf="images" class="mb-4">
+            <ng-template *ngFor="let img of images ? images : defaultImages" ngbSlide class="animated slideInDown"
+                let-images>
+                <div class="carousel-img-wrapper">
+                    <img [src]="img" alt="Random first slide">
+                </div>
+            </ng-template>
+            <!-- <ng-template ngbSlide>
+                <div class="carousel-img-wrapper">
+                    <img [src]="images[1]" alt="GTS second slide">
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="carousel-img-wrapper">
+                    <img [src]="images[2]" alt="Random third slide">
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="carousel-img-wrapper">
+                    <img [src]="images[3]" alt="Random fourth slide">
+                </div>
+            </ng-template> -->
+        </ngb-carousel>
+
+
     </div>
     <div class="container">
         <div class="row">
