@@ -1,4 +1,5 @@
-<nav #navbar class="navbar navbar-expand navbar-dark bg-secondary box-shadow-far" data-aos="fade-down" data-aos-offset="1400" [hidden]="navbar.clientWidth < 760">
+<!-- <nav #nav [hidden]="nav.clientWidth < 760" class="navbar navbar-expand navbar-dark bg-secondary box-shadow-far animated"
+    data-aos="store-header" data-aos-offset="1400" data-aos-id="super-duper">
     <div class="container">
         <ul class="nav navbar-nav" style="width: calc(100% - 16px);">
             <ul class="d-inline-flex">
@@ -20,56 +21,55 @@
                         </div>
                     </div>
                 </ul>
-                <form class="form-inline mt-2 mt-md-0 ml-auto align-end">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary my-2 my-sm-0"><i class="fa fa-search"></i></button>
+                <form name="storeSearchBarTop" class="align-end">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary input-group-addon"><i class="fa fa-search"></i></button>
+
+                    </div>
                 </form>
             </ul>
         </ul>
 
     </div>
-</nav>
-<app-masthead [images]="images" [title]="title">
+</nav> -->
+<app-masthead [title]="title" *ngIf="isPage">
 </app-masthead>
 <!-- Page Content -->
-<section class="main" style="margin-top: 12rem;">
+<section class="main" style="">
+    <div class="container">
+        <h1 class="text-center text-primary font-weight-bold mt-4">Shop for the best technology on the market.</h1>
+        <!-- <hr class="bg-primary"> -->
+    </div>
     <div class="container">
         <div class="navbar navbar-expand-md navbar-dark bg-dark mb-4" role="navigation" data-aos="fade-up"
-            style="z-index: 2;">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <div ngbDropdown class="d-inline-block">
-                        <button role="menuitem" id="filter-brand" class="btn btn-link hvr hvr-underline-from-left"
-                            ngbDropdownToggle>Brand</button>
-                        <div ngbDropdownMenu aria-labelledby="filter-brand">
-                            <button role="menuitem" class="dropdown-item"> Zotac</button>
-                            <button role="menuitem" class="dropdown-item"> Access Able Designs</button>
-                        </div>
-                    </div>
-                    <div ngbDropdown class="d-inline-block">
-                        <button role="menuitem" id="filter-category" class="btn btn-link hvr hvr-underline-from-left"
-                            ngbDropdownToggle>Category</button>
-                        <div ngbDropdownMenu aria-labelledby="filter-category">
-                            <button *ngFor="let cat of ZOTAC_BRAND.categories" role="menuitem" class="dropdown-item">
-                                {{cat}}</button>
-                        </div>
-                    </div>
-                </ul>
-                <form class="form-inline mt-2 mt-md-0 ml-auto">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary my-2 my-sm-0"><i class="fa fa-search"></i></button>
-                </form>
+            data-aos-delay="500" style="z-index: 2;">
+            <div class="collapse navbar-collapse d-flex">
+                <select class="selectpicker custom-select d-block w-100 show-tick">
+                    <option value>Fliter Products...</option>
+                    <optgroup label="Zotac">
+                        <option>Graphics Cards</option>
+                        <option>Mini Pc</option>
+                        <option>Gaming</option>
+                    </optgroup>
+                    <optgroup label="Access Able Designs">
+                        <option>Bathroom Benches</option>
+                        <option>Dressing Benches</option>
+                        <option>Toilet Benches</option>
+                        <option>Wheelchairs</option>
+                        <option>Pool/Spa Access</option>
+                        <option>Grab Bars</option>
+                    </optgroup>
+                </select>
             </div>
         </div>
-        <app-shop-list *ngIf="list$ | async" [results]="list$ | async" (productSelected)="openModal(details, $event)">
+        <app-shop-list *ngIf="list$ | async" [limit]="productDisplayCount - 1" [results]="list$ | async"
+            (productSelected)="openModal(details, $event)">
         </app-shop-list>
-        <hr class="bg-primary">
-        <ngb-pagination class="d-flex justify-content-center" [collectionSize]="70" [(page)]="filterState.activePage">
-        </ngb-pagination>
+        <!-- <hr class="bg-primary"> -->
+        <!-- <ngb-pagination class="d-flex justify-content-center" [collectionSize]="17"
+            [(page)]="filterState.activePage" [pageSize]="6">
+        </ngb-pagination> -->
 
     </div>
 

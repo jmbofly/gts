@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { StoreService } from 'src/app/core/store.service';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselConfig, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 import { Router, ActivatedRoute } from '@angular/router';
 import { map, switchMap } from 'rxjs/operators';
 import { Observable, BehaviorSubject } from 'rxjs';
@@ -13,11 +13,15 @@ import { Observable, BehaviorSubject } from 'rxjs';
 export class ShopListComponent implements OnInit {
   @Input() results: any[];
   @Output() productSelected = new EventEmitter<number>();
+  @Input() limit: number;
   defaults = {
     itemsPerPage: 5,
     placeholderImg: 'http://placehold.it/700x400'
   }
-  constructor(private store: StoreService, config: NgbCarouselConfig, private router: Router, private route: ActivatedRoute) { }
+  constructor(private store: StoreService, config: NgbCarouselConfig, private router: Router, private route: ActivatedRoute, public rating: NgbRatingConfig) {
+    rating.max = 5;
+    rating.readonly = true;
+  }
 
   ngOnInit() {
   }

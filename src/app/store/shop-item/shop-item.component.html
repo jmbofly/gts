@@ -16,8 +16,11 @@
                     praesentium animi perspiciatis molestias iure, ducimus!</p>
             </div>
             <div class="card-footer">
-                <span class="text-warning float-left">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
-                4.0 stars
+                <ngb-rating [(rate)]="selectedProduct.rating" class="mt-2">
+                    <ng-template let-fill="fill" let-index="index">
+                        <span class="star" [class.filled]="fill === 100" [class.bad]="index < 3">&#9733;</span>
+                    </ng-template>
+                </ngb-rating>
                 <button class="btn btn-primary float-right">Add to cart</button>
             </div>
         </div>

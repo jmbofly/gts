@@ -1,18 +1,58 @@
+TODO: App:@critical
+    ☐ fix aos issues @high
+    ☐ enable dynamic links (firebase?) @high
+    ☐ create theme styles _theme.scss @low
+    ☐ clean up all .ts @low
+    ☐ 
+
+
+TODO: Tech Store: @critical 
+    ✔ create route for navigation @done(20-01-30 19:34)
+    ✔ create StoreService @done(20-01-30 19:34)
+    ☐ create filters for products: brand, category, price
+    ☐ create pagination using ngb-pagination
+    ☐ add product item property data-bindings
+    ☐ create payment flow with stripe
+    ☐ create email responder for user on purchase
+    ☐ create email responder for vendor on purchase
+    ☐ create email responder admin(gts)on purchase
+    ☐ create thank you page triggered on purchase completion
+    ☐ create cookie for storing client cart data
+    
+
+TODO: User Auth: @low 
+    ☐ create login route with path to login page
+    ☐ add google, facebook, github? and twitter popup login with firebase
+    User Account:@low
+        ☐ create component for user account page
+        ☐ create email responder for user on account creation
+        ☐ create email responder for admin(gts) on account creation
+        ☐ create basic info edit functionality or component
+    User Account Edit: @low
+        ☐ create user edit method
+        ☐ create email responder for user on account edit
+        ☐ create delete account method
+        ☐ create email responder for user on account deletion
+        ☐ create email responder for admin(gts) on user account deletion
+
+
+
+
 TODO: Complete Services Page:
         ☐ collapsed info box for each service section @high 
         ☐ Fix navigation hash issue
+        ☐ add content for each service following SEO guidelines
+        ☐ add optimized category related images to masthead
 
-        TODO: Tech Store: @critical 
-            ☐ create route for navigation
-            ☐ create StoreService
         
 TODO: Image Slider: @low
-        ☐ masthead
-            ☐ ad/featured list input
-        ☐ testamonial
-            ☐ data list input
+        ✔ create default masthead slider @done(20-01-30 19:33)
+        ☐ create dynamic content @Input(): cta, animations, headers, text, images
+        ☐ create testmonials option
+        ☐ create products option
+        ☐ data list input
     
-TODO: Facebook Integration: @critical 
+TODO: Facebook Integration: @low 
         ☐ get user login status
         ☐ capture currentuser id
         ☐ api call for user data

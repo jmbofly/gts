@@ -1,12 +1,13 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Component, OnInit, TemplateRef, Input } from '@angular/core';
 import { NgbCarouselConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { StoreService } from '../core/store.service';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
-import { switchMap, map, filter } from 'rxjs/operators';
+import { switchMap, map, filter, count, reduce } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { ZOTAC } from './data/zotac';
 import { IBrand } from './interfaces/brands.interface';
 import { Product } from './interfaces/product';
+import { Masthead } from '../interface/masthead';
 
 @Component({
   selector: 'app-store',
@@ -15,11 +16,13 @@ import { Product } from './interfaces/product';
   providers: [NgbCarouselConfig]
 })
 export class StoreComponent implements OnInit {
-  images = ['https://www.indiafilings.com/learn/wp-content/uploads/2017/09/GST-for-Ecommerce.jpg', 'https://www.douglassdigital.com/wp-content/uploads/2017/06/Woocommerce-Ecommerce-Solution-From-Douglass-Digital.png', 'https://s3-us-west-2.amazonaws.com/puntoapunto.com.ar/wp-content/uploads/2018/12/05163539/E-commerce.jpg', 'https://iaidea.com/wp-content/uploads/2014/12/ventajas-del-comercio-electronico.jpg'];
+  @Input() isPage = true;
+  // images = ['https://www.indiafilings.com/learn/wp-content/uploads/2017/09/GST-for-Ecommerce.jpg', 'https://www.douglassdigital.com/wp-content/uploads/2017/06/Woocommerce-Ecommerce-Solution-From-Douglass-Digital.png', 'https://s3-us-west-2.amazonaws.com/puntoapunto.com.ar/wp-content/uploads/2018/12/05163539/E-commerce.jpg', 'https://iaidea.com/wp-content/uploads/2014/12/ventajas-del-comercio-electronico.jpg'];
 
-  title = {
+  title: Masthead = {
     main: 'The Latest Tech',
-    sub: '<h1 class="lead font-weight-bold">Save Time. Save Money.</h1><h3 class="my-4  text-primary">GTS Tech Store</h3>'
+    sub: '<h1 class="lead font-weight-bold">Save Time. Save Money.</h1><h3 class="my-4  text-primary">GTS Tech Store</h3>',
+    bg: 'store-header1.png'
   }
 
   filterState = {
@@ -34,7 +37,10 @@ export class StoreComponent implements OnInit {
     showBrandsMenu: false,
     showCategoriesMenu: false
   }
+
+  @Input() productDisplayCount: number = 6;
   list$: Observable<any>;
+  listResults: any[];
   ZOTAC_BRAND: IBrand;
   ACCESS_ABLE_DESIGNS_BRAND: IBrand;
   MISC_PRODUCTS: IBrand;
@@ -77,29 +83,15 @@ export class StoreComponent implements OnInit {
         'mini'
       ]
     };
-    this.ACCESS_ABLE_DESIGNS_BRAND = {
-      name: 'ACCESS_ABLE_DESIGNS',
-      dataLocation: accessAbleDesignsDataLocation,
-      data: this.store.getJsonData(accessAbleDesignsDataLocation),
-      categories: [
-        'Benches',
-        'Pool',
-        'Toilet',
-        'Bars'
-      ],
-      logoURL: 'https://www.accessabledesigns.com/wp-content/uploads/2017/05/AccessAbleDesigns-logo-height2.fw_.png',
-      tags: [
-        'accessibility',
-        'Accessabledesigns',
-        'lift'
-      ]
-    };
+
     this.filterList('ZOTAC_BRAND', 'Graphics');
+    if (!this.isPage) {
+      this.filterLimit(6);
+    }
   }
 
   filterList(brand: string, key?: string) {
     this.list$ = this.store.getJsonData(this[brand].dataLocation, key);
-    this.filterLimit(6)
   }
 
   openModal(content: TemplateRef<any>, id) {
@@ -120,6 +112,34 @@ export class StoreComponent implements OnInit {
 
   toggleFilterState(state: any) {
     state = !state;
+  }
+
+  getPageCount() {
+    return this.list$.pipe(reduce((a, b) => {
+      console.log(a, b)
+      return a + b
+    }));
+  }
+
+  goToPage(pageNum: number) {
+    console.log(pageNum)
+    let pagesLength;
+    const limitPerPage = this.productDisplayCount;
+    let pageStartsOn = limitPerPage * pageNum - limitPerPage;
+    let pageEndsOn = pageStartsOn + limitPerPage;
+    this.list$.pipe(
+      map(list => {
+        pagesLength = Math.round(list.length / limitPerPage);
+        console.log(list.length, pagesLength)
+      }),
+      filter((data, idx) => {
+        console.log(pageStartsOn, pageEndsOn)
+        return idx >= pageStartsOn && idx < pageEndsOn;
+      })
+    );
+
+
+
   }
 
 

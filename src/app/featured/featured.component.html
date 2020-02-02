@@ -1,9 +1,9 @@
 <app-masthead [images]="images" [title]="title" *ngIf="isPage"></app-masthead>
 <!-- Featured -->
-<section id="featured text-light" data-aos="fade">
+<section id="featured text-light" style="margin-top: 12rem;">
     <div class="container">
-        <h2 class="text-center text-light my-4" data-aos="fade-up">
-            Get an amazing service <em><b class="text-primary text-uppercase">plus</b></em>
+        <h2 class="text-center text-light my-4">
+            Get amazing products <em><b class="text-primary text-uppercase">plus</b></em>
         </h2>
         <hr class="style-seven">
         <div class="card text-light mb-4 text-center">
@@ -25,208 +25,7 @@
             </div>
         </div>
         <br>
-        <h2 class="mt-4 text-light text-center">
-
-            Check out these fantastic packages!
-            <hr class="style-seven">
-        </h2>
-        <div class="container">
-            <!-- <hr class="bg-light"> -->
-
-            <div class="container-fluid">
-                <div class="row justify-content-center text-center">
-
-                    <div class="card text-light mx-auto col-12 mx-2 my-2 justify-content-center col-lg-3">
-                        <div class="card-header text-center pt-5">
-                            <h3 class="card-title mbr-fonts-style display-5">
-                                3 Day Trial</h3>
-                            <div class="card-price" data-aos="flip-left" data-aos-delay="0">
-                                <span class="price-value mbr-fonts-style display-5">
-                                    $
-                                </span>
-                                <span class="price-figure mbr-fonts-style display-1">
-                                    3</span>
-                                <small class="price-term mbr-fonts-style display-7">3 Day</small>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-list align-center">
-                                <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                                    <li class="list-group-item">
-                                        $3
-                                        to try our Web Player and APP for Android for 3 days of all access use of
-                                        our
-                                        list.</li>
-                                </ul>
-                            </div>
-                            <div class="mbr-section-btn text-center py-4 pb-5"><button
-                                    (click)="openModal(signUpContent)" class="btn btn-primary">TRY
-                                    NOW</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card text-light mx-auto col-12 mx-2 my-2 justify-content-center col-lg-3">
-                        <div class="card-header text-center pt-5">
-                            <h3 class="card-title mbr-fonts-style display-5">
-                                Monthly</h3>
-                            <div class="card-price" data-aos="flip-left" data-aos-delay="250">
-                                <span class="price-value mbr-fonts-style display-5">
-                                    $
-                                </span>
-                                <span class="price-figure mbr-fonts-style display-1">
-                                    25</span>
-                                <small class="price-term mbr-fonts-style display-7">
-                                    per month</small>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-list align-center">
-                                <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                                    <li class="list-group-item"><span style="font-size: 1rem;">Access to our list to
-                                            use
-                                            on ANY device,
-                                            our
-                                            Web
-                                            Player (iOS, Windows, Mac, laptop, desktop) and APP for Android with
-                                            hundreds of live
-                                            channels.</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="mbr-section-btn text-center py-4 pb-5"><button
-                                    (click)="openModal(signUpContent)" class="btn btn-primary">BUY
-                                    NOW</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card text-light mx-auto col-12 mx-2 my-2 justify-content-center col-lg-3">
-                        <div class="card-header text-center pt-5">
-                            <h3 class="card-title mbr-fonts-style display-5">
-                                3 Months</h3>
-                            <div class="card-price" data-aos="flip-left" data-aos-delay="500">
-                                <span class="price-value mbr-fonts-style display-5">
-                                    $
-                                </span>
-                                <span class="price-figure mbr-fonts-style display-1">
-                                    70</span>
-                                <small class="price-term mbr-fonts-style display-7">
-                                    per 3 mo.</small>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-list align-center">
-                                <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                                    <li class="list-group-item">
-                                        <blockquote class="blockquote"><b class="text-success">Save $20/yr</b>
-                                        </blockquote>
-                                        Access to our list to
-                                        use on ANY device,
-                                        our Web Player (iOS,
-                                        Windows, Mac, laptop, desktop) and APP for Android with hundreds of live
-                                        channels.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="mbr-section-btn text-center py-4 pb-5"><button
-                                    (click)="openModal(signUpContent)" class="btn btn-primary">BUY
-                                    NOW</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--   <div class="card col-12 mx-2 my-2 justify-content-center col-lg-3">
-                      <div class="card-header text-center pt-5">
-                          <h3 class="card-title mbr-fonts-style display-5">
-                              6 Months</h3>
-                          <div class="card-price">
-                              <span class="price-value mbr-fonts-style display-5">
-                                  $
-                              </span>
-                              <span class="price-figure mbr-fonts-style display-1">
-                                  130</span>
-                              <small class="price-term mbr-fonts-style display-7">
-                                  per 6 mo.</small>
-                          </div>
-                      </div>
-                      <div class="card-body">
-                          <div class="card-list align-center">
-                              <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                                  <li class="list-group-item">Save $40/yr: Access to our list to use on ANY device, our Web Player (iOS, Windows, Mac, laptop, desktop) and APP for Android with hundreds of live channels, and thousands of VODs.</li>
-                              </ul>
-                          </div>
-                          <div class="mbr-section-btn text-center py-4 pb-5"><a href="javascript:;" onclick="cart.addCheckoutExternal(this,4); return false;" class="btn btn-warning display-4">BUY NOW</a></div>
-                      </div>
-                  </div>-->
-
-                    <!-- <div class="card col-12 mx-2 my-2 justify-content-center col-lg-3">
-                      <div class="card-header text-center pt-5">
-                          <h3 class="card-title mbr-fonts-style display-5">
-                              1 Year</h3>
-                          <div class="card-price">
-                              <span class="price-value mbr-fonts-style display-5">
-                                  $
-                              </span>
-                              <span class="price-figure mbr-fonts-style display-1">
-                                  250</span>
-                              <small class="price-term mbr-fonts-style display-7">
-                                  per year</small>
-                          </div>
-                      </div>
-                      <div class="card-body">
-                          <div class="card-list align-center">
-                              <ul class="list-group list-group-flush mbr-fonts-style display-7">
-                                  <li class="list-group-item">Save $50/yr: Access to our list to use on ANY device, our Web Player (iOS, Windows, Mac, laptop, desktop) and APP for Android with hundreds of live channels, and thousands of VODs.</li>
-                              </ul>
-                          </div>
-                          <div class="mbr-section-btn text-center py-4 pb-5"><a href="javascript:;" onclick="cart.addCheckoutExternal(this,5); return false;" class="btn btn-warning display-4">BUY NOW</a></div>
-                      </div>
-                  </div>-->
-                </div>
-            </div>
-            <br>
-            <br>
-            <h2 class="my-4 text-light text-center"><b>Service
-                    includes:</b>
-            </h2>
-            <hr class="style-seven">
-            <ul class="list-group text-light text-center">
-                <li class="list-group-item"><i class="fa fa-check-circle text-primary"></i> &nbsp;5 Devices anywhere
-                </li>
-                <li class="list-group-item"><i class="fa fa-check-circle text-primary"></i> &nbsp;500+ Channels on your
-                    phone</li>
-                <li class="list-group-item"><i class="fa fa-check-circle text-primary"></i> &nbsp;Watch TV/Sports on our
-                    Web Player
-                </li>
-                <li class="list-group-item"><i class="fa fa-check-circle text-primary"></i> &nbsp;Stream your favorite
-                    channels, including local
-                </li>
-                <li class="list-group-item"><i class="fa fa-check-circle text-primary"></i> &nbsp;Works on your android
-                    tablet, phone
-                    and
-                    android
-                    tv box using our APP</li>
-            </ul>
-            <div class="card text-light mt-2">
-                <div class="card-body">
-                    <p class="blockquote">
-                        Apple users, please use Safari or Chrome for best experience.
-                    </p>
-                    <hr>
-                    <p>Share with your
-                        family, it will work anywhere!
-                        Check out ALL the great features we have to offer.
-                    </p>
-                    <footer class="card-blockquote"><button (click)="openModal(signUpContent)"
-                            class="btn btn-primary mt-4">Learn
-                            more</button></footer>
-
-                </div>
-            </div>
-            <hr>
-
-        </div>
+        <app-store [isPage]="false"></app-store>
     </div>
 </section>
 
@@ -241,7 +40,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-6 p-2">
-                    <p>Signup for a 3 month package and get a chance to win a Samsung 50" 4k TV!</p>
+                    <p>Spend $150 or more and get a chance to win a Samsung 50" 4k TV!</p>
                 </div>
                 <div class="p-2 col-6">
                     <img [src]="getImage('samsung_tv.png')" width="200" alt="" class="img-fluid">
@@ -251,7 +50,7 @@
             <hr>
             <div class="row">
                 <div class="col-6 p-2">
-                    <p>Signup for a 1 month package and get a chance to win a Samsung Galaxy Tab A!</p>
+                    <p>Spend $50 or more and get a chance to win a Samsung Galaxy Tab A!</p>
                 </div>
                 <div class="p-2 col-6"><img [src]="getImage('samsung_tab.png')" width="200" alt="" class="img-fluid">
                 </div>
@@ -311,7 +110,7 @@
             <small class="text-muted">
                 After submitting, you will be redirected to our featured partner. You will be entered in prize
                 drawing
-                once you have signed up for their services as listed on each prize displayed.
+                once you have purchased their products as listed on each prize displayed.
             </small>
         </div>
     </div>

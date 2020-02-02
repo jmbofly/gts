@@ -1,8 +1,9 @@
 <div class="row">
 
-    <div class="col-lg-4 col-md-6 mb-4" *ngFor="let card of results; let i = index" data-aos="fade-left" data-aos="500">
-        <div class="card h-100">
-            <img class="card-img-top" [src]="card.IMAGE_URL ? card.IMAGE_URL:defaults.placeholderImg" alt="">
+    <div class="col-lg-4 col-md-6 mb-4" *ngFor="let card of results; let i = index" [hidden]="i > limit">
+        <div class="card h-100" data-aos="fade-up">
+            <img class="card-img-top" [src]="card.IMAGE_URL ? card.IMAGE_URL:defaults.placeholderImg"
+                [alt]="card.NAME + ' image'">
             <div class="card-body">
                 <h5 class="card-title">
                     <b class="font-weight-lighter text-primary">{{card.NAME}}</b>
@@ -18,7 +19,11 @@
             </div>
             <div class="card-footer">
                 <button class="btn btn-primary btn-lg btn-block" (click)="selectProduct(i)">Details</button>
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                <ngb-rating [(rate)]="card.rating" class="mt-2">
+                    <ng-template let-fill="fill" let-index="index">
+                        <span class="star" [class.filled]="fill === 100" [class.bad]="index < 3">&#9733;</span>
+                    </ng-template>
+                </ngb-rating>
             </div>
         </div>
     </div>

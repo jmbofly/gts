@@ -2,11 +2,11 @@
 // Core variables and mixins
 @import "variables";
 @import "~bootstrap/scss/bootstrap";
-@import "~hover.css/scss/hover";
-@import '~aos/dist/aos.css';
+@import '~aos/src/sass/aos';
 @import '~animate.css/animate.css';
-@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
-@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import "~hover.css/scss/hover";
+// @import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+// @import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @import "mixins";
 // Global CSS
@@ -21,6 +21,8 @@
 @import "about";
 @import "contact";
 @import "featured";
+@import "store";
 @import "testimonials";
 @import "call-to-action";
 @import "footer";
+@import "theme";

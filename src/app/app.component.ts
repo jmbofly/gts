@@ -32,31 +32,16 @@ export class AppComponent implements OnInit {
         console.log('event', event)
         this.ga.eventEmitter('set', 'page', event.urlAfterRedirects);
         this.ga.eventEmitter('send', 'pageview', `${event.id}`);
-      } else if (event instanceof NavigationStart) {
-        // const url = event.url;
-        // let fbclid = '';
-        // if (url.includes('?fbclid')) {
-        //   const idIdx = url.indexOf('=') + 1;
-        //   fbclid = url.slice(idIdx);
-        //   console.log('fb client found', fbclid);
-        // }
       }
     });
+  }
 
-    // Enable Facebook Like button
-    // let initParams: InitParams = {
-    //   appId: '2440507406167439',
-    //   xfbml: true,
-    //   cookie: true,
-    //   version: 'v5.0',
-    //   status: true,
-    //   frictionlessRequests: true
-    // };
-
-    // fb.init(initParams);
-    // const cookies = this.cookieService.getAll();
-    // const memberCookie = this.cookieService.get('amember_aff_id');
-    // console.log('cookies', cookies, memberCookie);
+  ngOnInit() {
+    AOS.init({
+      useClassNames: true,
+      // duration: 1000,
+      animatedClassName: 'animated',
+    })
   }
 
   // private getCookies() {
@@ -69,26 +54,15 @@ export class AppComponent implements OnInit {
   //   return cookies;
   // }
 
-  ngOnInit() {
-    AOS.init({
-      useClassNames: true,
-      once: false,
-      initClassName: null,
-      animatedClassName: 'animated',
-    })
-
-  }
-
   animateScroll(id: string) {
     const anchor: HTMLElement = document.getElementById(id);
     const top = anchor.offsetTop;
+    this.showMenuBar = false;
     window.scrollTo({
       top,
       behavior: 'smooth',
       left: 0
     });
-    this.showMenuBar = false;
-    // console.log('scrolled', { top, id, anchor });
   }
 
   checkScrollTop(navEl: HTMLElement) {
@@ -104,7 +78,6 @@ export class AppComponent implements OnInit {
   }
 
   async navigateTo(url: string, params = null) {
-    // console.log('navigating to :', url + '#' + params);
     const ids = [
       'home',
       'featured',
@@ -116,14 +89,18 @@ export class AppComponent implements OnInit {
       this.activeLink = url;
       document.getElementById(id).classList.remove('active');
     })
-    document.getElementById(url).classList.toggle('active')
-    const res = await this.router.navigate([`${url}`], { relativeTo: this.route, fragment: params && typeof params === 'string' ? params : null });
-    window.scrollTo({
-      top: 0,
-      behavior: 'auto',
-      left: 0
+    document.getElementById(url).classList.toggle('active');
+    await this.router.navigate([`${url}`], {
+      relativeTo: this.route,
+      fragment: params && typeof params === 'string' ? params : null
+    }).then(res => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'auto',
+        left: 0
+      });
+      this.showMenuBar = false;
     });
-    this.showMenuBar = false;
   }
 
   toggleMenuBar() {

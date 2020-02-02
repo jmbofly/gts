@@ -1,57 +1,83 @@
 [data-aos="header"] {
-    padding: 2rem;
+    // padding: 2rem 2rem 1rem 2rem;
     position: absolute;
     top: 0;
-    // left: 0;
     width: 100%;
     z-index: 9;
+    flex-wrap: nowrap;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
 
     img {
         width: 150px;
     }
 
-    @include transition(all, .35s, ease-out);
+    .main-menubar {
+        @media all and (max-width: 760px) {
+            height: 0;
+        }
+    }
 
     &.aos-animate {
-        animation: FadeInDown;
-        padding: 5px 0;
+        // animation: FadeInDown;
+        padding: 1rem 0 0 0;
         position: fixed;
         box-shadow: -21.213px 21.213px 30px 0px rgba(0, 0, 0, 0.3);
 
         img {
+            padding-left: 2rem;
             width: 100px;
+        }
+
+        // .menu-bar {
+        //     right: 2rem;
+        // }
+
+        .main-menubar {
+            @media all and (max-width: 760px) {
+                height: 0;
+            }
         }
     }
 }
 
 .menu-bar {
     cursor: pointer !important;
+    position: absolute;
+    right: 1rem;
+    top: -3rem;
 
-    span {
-        color: $black;
+    i {
+        color: $white;
         font-size: 28px;
     }
 }
 
 .main-menubar {
     position: relative;
+    height: 50px;
+    border-top: 1px solid $primary;
+    justify-content: center;
 }
 
 nav {
 
-    @include media-breakpoint-down (md) {
-        @include transition(all, .25s, ease-out);
+    @include media-breakpoint-down (lg) {
+        // @include transition(all, .8s, ease-out);
 
         &:not(.navbar) {
-            right: -50px;
+            right: -30px;
             width: 300px;
             border-bottom: .5px dashed $primary;
+            z-index: 10;
+            -webkit-animation-duration: 800;
+            animation-duration: 800;
         }
 
         margin-right: 0;
         position: absolute;
         right: 0;
-        top: 45px;
+        top: 0;
         text-align: right;
         padding: 20px;
         z-index: 5;
@@ -66,7 +92,10 @@ nav {
         }
     }
 
+    -webkit-transform-origin: 100% 50%;
+
     transform-origin: 100% 50%;
+
 
     &.hide {
         display: none;

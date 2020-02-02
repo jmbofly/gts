@@ -57,8 +57,6 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-155113708-1', 'auto');
     ga('set', 'userId', 'USER_ID'); // Set the user ID using signed-in user_id.
-    console.log('ga', ga);
-
   </script>
   <style>
     body {
@@ -66,6 +64,7 @@
     }
   </style>
 </head>
+
 
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -75,11 +74,19 @@
 
   <app-root></app-root>
   <!-- <script type="text/javascript" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
 
   <!-- <script src="https://kit.fontawesome.com/3c26e821e1.js" crossorigin="anonymous"></script> -->
 
   <noscript>Please enable JavaScript to continue using this application.</noscript>
+  <script>
+    document.addEventListener('data-aos:in', ({ detail }) => {
+      console.log('animated in', detail);
+    });
+
+    document.addEventListener('aos:out', ({ detail }) => {
+      console.log('animated out', detail);
+    });
+  </script>
 </body>
 
 </html>

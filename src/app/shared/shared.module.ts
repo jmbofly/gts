@@ -17,6 +17,6 @@ import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
   ],
   exports: [MastheadComponent, CallToActionComponent, FormsModule, CommonModule, SafeHtmlPipe, NgbCarouselModule, NgbModule],
-  entryComponents: [MastheadComponent, CallToActionComponent]
+  entryComponents: [MastheadComponent, CallToActionComponent],
 })
 export class SharedModule { }

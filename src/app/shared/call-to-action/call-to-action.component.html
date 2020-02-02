@@ -1,10 +1,6 @@
 <!-- Call to Action -->
 <section #cta class="call-to-action text-white text-center border-top-dashed">
-    <div class="overlay">
-        <div class="stars" [hidden]="cta.clientWidth < 760"></div>
-        <div class="twinkling" [hidden]="cta.clientWidth < 760"></div>
-        <div class="clouds" [hidden]="cta.clientWidth < 760"></div>
-    </div>
+    <div class="overlay"></div>
     <div class="container" data-aos="fade-up">
         <div class="row">
             <div class="col-xl-9 mx-auto">
@@ -13,15 +9,15 @@
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                 <form>
                     <div class="form-row">
-                        <div class="col-12 col-md-9 mb-2 mb-md-0">
+                        <div class="input-group">
                             <label for="email" aria-label="email" hidden></label>
                             <input #signup type="email" class="form-control form-control-lg"
                                 placeholder="Enter your email...">
-                        </div>
-                        <div class="col-12 col-md-3">
                             <button type="button" (click)="signUpWithEmail(signup.value, {})"
-                                class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                                class="input-group-addon btn btn-block btn-lg btn-primary w-25"><i
+                                    class="fa fa-paper-plane"></i></button>
                         </div>
+
                         <div *ngIf="signUpSuccess" class="text-success text-bolder p-3">
                             <i class="fa fa-check"></i>Success! Check your email.
                             inbox!

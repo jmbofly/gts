@@ -1,32 +1,76 @@
 header.masthead {
   position: relative;
-  background-color: $gray-800;
-  background: no-repeat center center;
-  @include background-cover;
-  background-attachment: fixed;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  margin-top: 6rem;
+
+  @media all and (max-width: 760px) {
+    margin-top: 4rem;
+  }
 
   .overlay {
-    position: absolute;
-    background-color: $gray-900;
     height: 100%;
     width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
+    margin: 4rem auto;
 
-    .carousel {
-      height: 500px;
+  }
 
-      [ngbSlide] {
-        transition: .1s;
+  .carousel {
+    height: 100%;
+
+    .carousel-indicators {
+      display: -webkit-box;
+      display: flex;
+      z-index: 4 !important;
+
+      @media all and (max-width: 670px) {
+        display: none;
+      }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      z-index: 4 !important;
+    }
+
+    [ngbSlide] {
+      -webkit-transition: all .75s ease-out;
+      transition: all .75s ease-out;
+    }
+
+    .carousel-img-wrapper {
+      -webkit-transition: all .75s ease-out;
+      transition: all .75s ease-out;
+      -webkit-animation-duration: .75s;
+      animation-duration: .75s;
+
+      img:not(.img-inner) {
+        height: 600px;
+        width: 100%;
+        opacity: .2;
       }
 
-      .carousel-img-wrapper {
-        img {
-          height: 500px;
-          width: 100%;
+      .carousel-caption {
+        z-index: 3 !important;
+        top: 0;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        right: 4rem;
+        left: 4rem;
+
+        .img-inner {
+          max-width: 200px;
+        }
+
+        form {
+          button {
+            min-width: 100px;
+          }
+        }
+
+        @media all and (max-width: 514px) {
+          form {
+            margin-left: -25px;
+            margin-right: -25px;
+          }
         }
       }
     }
@@ -38,10 +82,410 @@ header.masthead {
 
   @media (min-width: 990px) {
     padding-top: 12rem;
-    padding-bottom: 5rem;
 
     h1 {
       font-size: 3rem;
     }
   }
+}
+
+.slider_area::before {
+  background: $primary;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  opacity: .15;
+}
+
+/* line 20, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single_slider {
+  height: 600px;
+  // background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom bottom;
+  background-attachment: fixed;
+}
+
+/* line 25, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single_slider.single_slider2 {
+  height: 450px;
+}
+
+@media (max-width: 767px) {
+
+  /* line 25, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single_slider.single_slider2 {
+    height: auto;
+  }
+}
+
+/* line 30, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single_slider.single_slider2 .property_wrap {
+  position: relative;
+  top: 166px;
+}
+
+@media (max-width: 767px) {
+
+  /* line 30, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single_slider.single_slider2 .property_wrap {
+    top: 0;
+  }
+}
+
+/* line 37, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single_slider.single_slider2 .property_wrap .slider_text h3 {
+  font-size: 60px;
+  line-height: 80px;
+  margin-bottom: 51px;
+}
+
+/* line 43, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single_slider.single_slider2 .property_wrap .property_form {
+  background: #001D38;
+}
+
+@media (max-width: 767px) {
+
+  /* line 20, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single_slider {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* line 20, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single_slider {
+    height: 600px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* line 55, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text {
+    margin: 90px 0;
+  }
+}
+
+/* line 59, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single_slider .slider_text h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  font-weight: 600;
+  line-height: 70px;
+  margin-bottom: 30px;
+  color: #fff;
+  margin-top: 31px;
+}
+
+/* line 69, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single_slider .slider_text h3 span {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+
+  /* line 59, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text h3 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* line 59, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text h3 {
+    font-size: 54px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  /* line 59, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text h3 {
+    font-size: 35px;
+  }
+}
+
+/* line 84, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single_slider .slider_text p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFF;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  /* line 84, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* line 84, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text p {
+    font-size: 16px;
+  }
+}
+
+/* line 95, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single_slider .slider_text .video_service_btn>a {
+  margin-right: 15px;
+}
+
+@media (max-width: 767px) {
+
+  /* line 95, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text .video_service_btn>a {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 102, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single_slider .property_form {
+  padding: 30px;
+  background: rgba(0, 28, 56, 0.6);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+
+  /* line 102, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single_slider .property_form {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* line 109, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single_slider .property_form .form_wrap {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* line 109, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single_slider .property_form .form_wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+/* line 120, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .serach_icon a {
+  width: 45px;
+  height: 45px;
+  background: #FD8E5E;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+
+  /* line 120, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .serach_icon a {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* line 120, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .serach_icon a {
+    width: 50%;
+  }
+}
+
+/* line 137, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .serach_icon {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: end;
+  -moz-align-items: end;
+  -ms-align-items: end;
+  align-items: end;
+}
+
+@media (max-width: 767px) {
+
+  /* line 137, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .serach_icon {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* line 137, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .serach_icon {
+    width: 50%;
+    align-items: center;
+    margin-top: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* line 149, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single-field {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 153, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single-field.range_slider {
+  width: 100%;
+}
+
+/* line 155, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single-field.range_slider #slider {
+  margin: 0;
+}
+
+/* line 161, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single-field .nice-select .list {
+  color: #000;
+  border-radius: 0;
+}
+
+/* line 165, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single-field.max_width {
+  margin-right: 24px;
+}
+
+@media (max-width: 767px) {
+
+  /* line 165, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single-field.max_width {
+    margin-right: 0;
+  }
+}
+
+/* line 170, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single-field.max_width label {
+  display: block;
+  font-size: 15px;
+  color: #FDAE5C;
+}
+
+/* line 176, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single-field.max_width .nice-select.wide {
+  width: 166px;
+  background: transparent;
+  color: #C7C7C7;
+  font-size: 15px;
+  font-weight: 400;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  height: 45px;
+  line-height: 45px;
+}
+
+@media (max-width: 767px) {
+
+  /* line 176, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single-field.max_width .nice-select.wide {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* line 190, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single-field.max_width .nice-select::after {
+  content: "\e64b";
+  display: block;
+  height: 5px;
+  margin-top: -5px;
+  pointer-events: none;
+  position: absolute;
+  right: 30px;
+  top: 8px;
+  transition: all 0.15s ease-in-out;
+  width: 5px;
+  font-family: 'themify';
+  color: #ddd;
+  color: #FFFFFF;
+  top: 5px;
+  font-size: 12px;
+}
+
+/* line 208, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single-field.min_width {
+  margin-right: 24px;
+}
+
+@media (max-width: 767px) {
+
+  /* line 208, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single-field.min_width {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 214, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single-field.min_width label {
+  display: block;
+  font-size: 15px;
+  color: #FDAE5C;
+}
+
+/* line 220, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single-field.min_width .nice-select.wide {
+  width: 110px;
+  background: transparent;
+  color: #C7C7C7;
+  font-size: 15px;
+  font-weight: 400;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  height: 45px;
+  line-height: 45px;
+}
+
+@media (max-width: 767px) {
+
+  /* line 220, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+  .slider_area .single-field.min_width .nice-select.wide {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* line 234, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
+.slider_area .single-field.min_width .nice-select::after {
+  content: "\e64b";
+  display: block;
+  height: 5px;
+  margin-top: -5px;
+  pointer-events: none;
+  position: absolute;
+  right: 30px;
+  top: 8px;
+  transition: all 0.15s ease-in-out;
+  width: 5px;
+  font-family: 'themify';
+  color: #ddd;
+  color: #FFFFFF;
+  top: 5px;
+  font-size: 12px;
 }

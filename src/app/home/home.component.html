@@ -1,48 +1,51 @@
 <!-- Masthead -->
-<app-masthead #masthead [title]="title"></app-masthead>
+<app-masthead #masthead [slider]="true" [title]="title"></app-masthead>
 <!-- Icons Grid -->
-<section class="features-icons text-center text-light" data-aos="fade" [style.background]="'#151719'">
+<section class="features-icons text-center text-light" [style.background]="'#151719'">
     <div class="container">
-        <h1 class="text-center mb-4 text-primary">
-            A Central Hub For All Your Tech Needs
-            <hr class="style-seven">
-        </h1>
         <div class="row">
             <div class="col-lg-4">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" data-aos="flip-right">
-                    <div class="features-icons-icon d-flex" (click)="navigateTo('services')">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 " data-aos="zoom-up">
+                    <div class="features-icons-icon d-flex" (click)="navigateTo('services')" data-aos="flip-left"
+                        data-aos-delay="50">
                         <i class="fa fa-wheelchair m-auto text-primary"></i>
                     </div>
                     <h3>Accessibility</h3>
-                    <p class="lead mb-0">Research and development of Accessible
+                    <p class="lead mb-0">Research and Development focusing on Accessibility
                         and Medical technology
                     </p>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" data-aos="flip-right"
-                    data-aos-delay="250">
-                    <div class="features-icons-icon d-flex" (click)="navigateTo('services')">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 " data-aos="zoom-up">
+                    <div class="features-icons-icon d-flex" (click)="navigateTo('services')" data-aos="flip-left"
+                        data-aos-delay="150">
                         <i class="fa fa-chain m-auto text-primary"></i>
                     </div>
                     <h3>Connection</h3>
-                    <p class="lead mb-0">Bundled packages including Mobile, Video Streaming, Telemedicine and more
+                    <p class="lead mb-0">Bundled packages, Mobile, Video Streaming, Telemedicine, Gaming, Mini PC's
+                        and much more
                     </p>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="features-icons-item mx-auto mb-0 mb-lg-3" data-aos="flip-right" data-aos-delay="350">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3 " data-aos="zoom-up" data-aos="flip-left"
+                    data-aos-delay="250">
                     <div class="features-icons-icon d-flex" (click)="navigateTo('services')">
                         <i class="fa fa-area-chart m-auto text-primary"></i>
                     </div>
                     <h3>Marketing</h3>
                     <p class="lead mb-0">Customized Digital Marketing, Website/App
-                        Development and much more.</p>
+                        Development, Branding, SEO and more.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- <section class="pt-4">
+    <app-store [isPage]="false"></app-store>
+</section> -->
 
 
 <!-- Featured -->
@@ -51,9 +54,9 @@
         <i class="fa fa-handshake-o text-primary"></i> Featured Partner
         <hr class="style-seven">
 
-        <a href="https://xstreamingtv.com/dump/aff/go/kevin">
+        <a href="https://www.zotac.com/us">
             <img width="250" class="img-thumbnail bg-dark my-4 box-shadow-far"
-                src="https://xstreamingtv.com/assets/images/xstreamingtv-logo-5000x1659.png" alt="xstreamingtv logo">
+                src="https://logodix.com/logo/2058670.png" alt="xstreamingtv logo">
         </a>
     </h2>
     <div class="col-md-8 mb-4 mx-auto">

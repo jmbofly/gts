@@ -36,10 +36,6 @@
       {
         "source": "/**",
         "dynamicLinks": true
-      },
-      {
-        "source": "/scrape",
-        "function": "scrape"
       }
     ]
   },

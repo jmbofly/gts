@@ -18,7 +18,7 @@ export class AboutComponent implements OnInit {
     overlay: {
       src: 'sdv3.png',
       alt: 'Service Disabled Veteran Owned Small Business Logo',
-      width: 300
+      width: 100
     }
   }
   constructor(private data: DataService) { }

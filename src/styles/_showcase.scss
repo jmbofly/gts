@@ -1,5 +1,15 @@
 .showcase {
 
+  [data-aos] {
+    &.showcase-img {
+      opacity: 0;
+    }
+
+    &.aos-animate {
+      opacity: 1;
+    }
+  }
+
   .showcase-text {
     padding: 3rem;
     color: $white;

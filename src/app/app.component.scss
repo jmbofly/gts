@@ -2,7 +2,6 @@
     position: fixed;
     top: 50%;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -10,6 +9,7 @@
     display: block;
     text-align: center;
     padding: 16px;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     color: white;
     font-size: 20px;
@@ -45,6 +45,7 @@
 }
 
 .gradient {
+    background: -webkit-gradient(linear, left top, left bottom, from(#434343), to(#000000));
     background: linear-gradient(#434343, #000000);
 }
 
@@ -53,10 +54,11 @@
     left: -14px;
     max-height: 330px;
     padding: .35rem;
-    top: 30%;
+    top: 35%;
     height: auto;
     width: auto;
     max-width: 74px;
+
 
     .btn-group .btn {
         min-width: 50px;

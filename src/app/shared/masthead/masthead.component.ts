@@ -3,6 +3,11 @@ import { DataService } from 'src/app/core/data.service';
 import { Masthead } from 'src/app/interface/masthead';
 import { Router, ActivatedRoute } from '@angular/router';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+
+export interface Slide {
+  img?: string;
+  html?: HTMLElement;
+}
 @Component({
   selector: 'app-masthead',
   templateUrl: './masthead.component.html',
@@ -10,10 +15,15 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class MastheadComponent implements OnInit {
   @Input() title: Masthead;
-  @Input() images: string[];
+  @Input() images?: string[];
+
+  @Input() slider = false;
+  slideStore: any[] = [
+    { name: 'home', content: { title: `` } }
+  ]
   emailSuccess = false;
 
-  defaultImages = ['https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/itCjTBE/bright-orange-gear-circuit-board-and-arrows-tech-background-video-animation-hd-1920x1080_v0br3penx__F0003.png', 'https://ak8.picdn.net/shutterstock/videos/22199068/thumb/1.jpg', 'https://cdn.hipwallpaper.com/i/93/76/HMKcJh.jpg', 'https://st4.depositphotos.com/24875246/26617/v/600/depositphotos_266171126-stock-video-golden-cube-particles-background-spectacular.jpg'];
+  defaultImages = ['https://i.cbc.ca/1.4833630.1537555507!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/global-internet-abstract.jpg', 'https://images.unsplash.com/photo-1505424297051-c3ad50b055ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80', 'https://adoredtv.com/wp-content/uploads/2019/07/cropped-zotac-super-featured-v2-adoredtv.jpg'];
   constructor(public router: Router, private route: ActivatedRoute, private data: DataService, private config: NgbCarouselConfig) {
     config.interval = 10000;
     config.wrap = true;
@@ -42,5 +52,9 @@ export class MastheadComponent implements OnInit {
 
   navigateTo(url: string) {
     return this.router.navigateByUrl(url, { relativeTo: this.route })
+  }
+
+  slideInit(event: any) {
+    console.log('carousel', event)
   }
 }

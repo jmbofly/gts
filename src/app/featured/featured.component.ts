@@ -15,13 +15,13 @@ export class FeaturedComponent implements OnInit {
     main: 'Featured Partner',
     sub: '<h1 class="lead font-weight-bold">For a limited time only</h1><h3 class="text-primary my-4">Want to know more about this partner?</h3>',
     cta: true,
-    bg: 'bg-masthead-4.jpg',
+    bg: 'store-header2.png',
     action: 'redirect',
-    redirectURL: 'https://xstreamingtv.com/dump/aff/go/kevin',
+    redirectURL: 'https://www.zotac.com/us',
     overlay: {
-      src: 'xstreamingtv-logo.png',
-      alt: 'Xstreaming tv logo',
-      width: 300
+      src: 'zotac_logo.png',
+      alt: 'Zotac logo',
+      width: 150
     }
   }
 
