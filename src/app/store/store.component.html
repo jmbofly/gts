@@ -33,7 +33,7 @@
 
     </div>
 </nav> -->
-<app-masthead [title]="title" *ngIf="isPage">
+<app-masthead #masthead [title]="title" *ngIf="isPage">
 </app-masthead>
 <!-- Page Content -->
 <section class="main" style="">
@@ -70,7 +70,11 @@
         <!-- <ngb-pagination class="d-flex justify-content-center" [collectionSize]="17"
             [(page)]="filterState.activePage" [pageSize]="6">
         </ngb-pagination> -->
-
+        <div class="container mb-5" *ngIf="!isPage">
+            <h2 class="text-center text-white mt-5 mb-5">Check out all of our available products</h2>
+            <button class="btn btn-block btn-outline-primary" (click)="navigateTo('store')">Go to
+                store</button>
+        </div>
     </div>
 
 

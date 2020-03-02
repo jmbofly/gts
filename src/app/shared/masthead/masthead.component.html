@@ -1,5 +1,5 @@
 <!-- Masthead -->
-<header #header class="masthead text-white text-center pt-4">
+<header #header class="masthead text-white text-center pt-0">
     <ngb-carousel #carousel *ngIf="slider && images" (slide)="slideInit($event)">
         <ng-template *ngFor="let slide of images ? images : defaultImages; let i = index;" ngbSlide let-images>
             <div class="carousel-img-wrapper fadeInRightBig  fast">
@@ -62,7 +62,7 @@
                                 <img class="img-inner" [src]="getImage(title?.overlay?.src)" [alt]="title?.overlay?.alt"
                                     [width]="title?.overlay?.width">
                             </div>
-                            <a *ngIf="title.action === 'redirect'" class="btn btn-primary btn-block"
+                            <a *ngIf="title.action === 'redirect'" class="btn btn-primary btn-block border-dark"
                                 [href]="title?.redirectURL" target="_blank">Go now!</a>
                             <form *ngIf="title.action === 'signup'" class="w-auto">
                                 <div class="form-row align-items-center justify-content-center">

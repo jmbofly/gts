@@ -12,32 +12,32 @@
         width: 150px;
     }
 
-    .main-menubar {
-        @media all and (max-width: 760px) {
-            height: 0;
-        }
-    }
+    // .main-menubar {
+    //     @media all and (max-width: 760px) {
+    //         height: 0;
+    //     }
+    // }
 
     &.aos-animate {
         // animation: FadeInDown;
-        padding: 1rem 0 0 0;
+        padding: 1rem;
         position: fixed;
         box-shadow: -21.213px 21.213px 30px 0px rgba(0, 0, 0, 0.3);
 
         img {
-            padding-left: 2rem;
+            padding-left: 3rem;
             width: 100px;
         }
 
-        // .menu-bar {
-        //     right: 2rem;
-        // }
-
-        .main-menubar {
-            @media all and (max-width: 760px) {
-                height: 0;
-            }
+        .menu-bar {
+            right: 2rem;
         }
+
+        // .main-menubar {
+        //     @media all and (max-width: 760px) {
+        //         height: 0;
+        //     }
+        // }
     }
 }
 
@@ -45,7 +45,6 @@
     cursor: pointer !important;
     position: absolute;
     right: 1rem;
-    top: -3rem;
 
     i {
         color: $white;
@@ -56,7 +55,6 @@
 .main-menubar {
     position: relative;
     height: 50px;
-    border-top: 1px solid $primary;
     justify-content: center;
 }
 
@@ -77,7 +75,7 @@ nav {
         margin-right: 0;
         position: absolute;
         right: 0;
-        top: 0;
+        top: 70px;
         text-align: right;
         padding: 20px;
         z-index: 5;

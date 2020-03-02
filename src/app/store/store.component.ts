@@ -21,7 +21,7 @@ export class StoreComponent implements OnInit {
 
   title: Masthead = {
     main: 'The Latest Tech',
-    sub: '<h1 class="lead font-weight-bold">Save Time. Save Money.</h1><h3 class="my-4  text-primary">GTS Tech Store</h3>',
+    sub: '<h1 class="lead font-weight-bold">Save Time. Save Money.</h1><h3 class="my-4  text-dark">GTS Tech Store</h3>',
     bg: 'store-header1.png'
   }
 
@@ -47,7 +47,7 @@ export class StoreComponent implements OnInit {
   ZotacList$: Observable<Product[]>;
   AcessAbleDesignsList$: Observable<Product[]>;
   selectedProduct: any;
-  constructor(public store: StoreService, config: NgbCarouselConfig, public modal: NgbModal) {
+  constructor(private router: Router, public store: StoreService, config: NgbCarouselConfig, public modal: NgbModal) {
     config.interval = 10000;
     config.wrap = true;
     config.keyboard = false;
@@ -85,9 +85,7 @@ export class StoreComponent implements OnInit {
     };
 
     this.filterList('ZOTAC_BRAND', 'Graphics');
-    if (!this.isPage) {
-      this.filterLimit(6);
-    }
+    !this.isPage ? this.filterLimit(6) : null;
   }
 
   filterList(brand: string, key?: string) {
@@ -140,6 +138,10 @@ export class StoreComponent implements OnInit {
 
 
 
+  }
+
+  navigateTo(url) {
+    return this.router.navigateByUrl(url);
   }
 
 

@@ -7,42 +7,42 @@
         <div class="header-top d-flex justify-content-between align-items-center">
           <div class="logo" style="cursor: pointer;" (click)="navigateTo('home')">
             <h1>
-              <img [src]="checkScrollTop(navbar)" class="img-fluid p-2" alt="global technology services logo">
+              <img [src]="checkScrollTop(navbar)" class="img-fluid pl-4" alt="global technology services logo">
             </h1>
           </div>
-        </div>
-      </div>
-      <div class="main-menubar d-flex align-items-center align-content-end">
-        <nav role="menubar" class="animated fast"
-          [ngClass]="{'show': showMenuBar || navbar.clientWidth > 1200, 'hide': !showMenuBar, 'slideInRight': showMenuBar || navbar.clientWidth > 1200}">
-          <button role="menuitem" id="home" class="btn btn-link hvr hvr-underline-from-left"
-            (click)="navigateTo('home')">Home</button>
-          <button role="menuitem" id="featured" class="btn btn-link hvr hvr-underline-from-left"
-            (click)="navigateTo('featured')">Featured</button>
-          <button role="menuitem" id="store" class="btn btn-link hvr hvr-underline-from-left"
-            (click)="navigateTo('store')">Store</button>
-          <div ngbDropdown class="d-inline-block">
-            <button role="menuitem" id="services" class="btn btn-link hvr hvr-underline-from-left"
-              ngbDropdownToggle>Services</button>
-            <div ngbDropdownMenu aria-labelledby="services">
-              <button role="menuitem" class="dropdown-item" (click)="navigateTo('services', 'digital-marketing')"><i
-                  class="fa fa-line-chart"></i> Digital
-                Marketing</button>
-              <button role="menuitem" class="dropdown-item" (click)="navigateTo('services', 'store')"><i
-                  class="fa fa-shopping-cart"></i> Tech
-                Store</button>
-              <button role="menuitem" class="dropdown-item" (click)="navigateTo('services', 'medical-accessibilty')"><i
-                  class="fa fa-wheelchair"></i> Medical &
-                Accessibility</button>
-            </div>
+          <div class="main-menubar d-flex align-items-center align-content-end">
+            <nav role="menubar" class="animated fast"
+              [ngClass]="{'show': showMenuBar || navbar.clientWidth > 1200, 'hide': !showMenuBar, 'slideInRight': showMenuBar || navbar.clientWidth > 1200}">
+              <button role="menuitem" id="home" class="btn btn-link hvr hvr-underline-from-left"
+                (click)="navigateTo('home')">Home</button>
+              <button role="menuitem" id="featured" class="btn btn-link hvr hvr-underline-from-left"
+                (click)="navigateTo('featured')">Featured</button>
+              <!-- <button role="menuitem" id="store" class="btn btn-link hvr hvr-underline-from-left"
+                (click)="navigateTo('store')">Store</button> -->
+              <div ngbDropdown class="d-inline-block">
+                <button role="menuitem" id="services" class="btn btn-link hvr hvr-underline-from-left"
+                  ngbDropdownToggle>Services</button>
+                <div ngbDropdownMenu aria-labelledby="services">
+                  <button role="menuitem" class="dropdown-item" (click)="navigateTo('services', 'digital-marketing')"><i
+                      class="fa fa-line-chart"></i> Digital
+                    Marketing</button>
+                  <button role="menuitem" class="dropdown-item" (click)="navigateTo('services', 'store')"><i
+                      class="fa fa-shopping-cart"></i> Tech
+                    Store</button>
+                  <button role="menuitem" class="dropdown-item"
+                    (click)="navigateTo('services', 'medical-accessibilty')"><i class="fa fa-wheelchair"></i> Medical &
+                    Accessibility</button>
+                </div>
+              </div>
+              <button role="menuitem" id="about" class="btn btn-link hvr hvr-underline-from-left"
+                (click)="navigateTo('about')">About</button>
+              <button role="menuitem" id="contact" class="btn btn-link hvr hvr-underline-from-left"
+                (click)="navigateTo('contact')">Contact</button>
+            </nav>
+            <div *ngIf="navbar.clientWidth < 1200" class="menu-bar text-light mr-2" (click)="toggleMenuBar()"><i
+                class="fa fa-bars"></i></div>
           </div>
-          <button role="menuitem" id="about" class="btn btn-link hvr hvr-underline-from-left"
-            (click)="navigateTo('about')">About</button>
-          <button role="menuitem" id="contact" class="btn btn-link hvr hvr-underline-from-left"
-            (click)="navigateTo('contact')">Contact</button>
-        </nav>
-        <div *ngIf="navbar.clientWidth < 1200" class="menu-bar text-light mr-2" (click)="toggleMenuBar()"><i
-            class="fa fa-bars"></i></div>
+        </div>
       </div>
     </div>
 

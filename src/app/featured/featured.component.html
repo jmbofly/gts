@@ -1,11 +1,39 @@
 <app-masthead [images]="images" [title]="title" *ngIf="isPage"></app-masthead>
 <!-- Featured -->
-<section id="featured text-light" style="margin-top: 12rem;">
+<section id="featured text-light" style="margin-top: 4rem;">
     <div class="container">
-        <h2 class="text-center text-light my-4">
+        <h2 class="text-light text-center my-4">
+            <i class="fa fa-handshake-o text-primary"></i> Featured Partner
+            <hr class="bg-primary">
+
+            <a href="https://www.zotac.com/us">
+                <img width="250" class="img-thumbnail bg-dark my-4 box-shadow-far"
+                    src="https://logodix.com/logo/2058670.png" alt="xstreamingtv logo">
+            </a>
+        </h2>
+        <div class="col-md-8 mb-4 mx-auto">
+            <h5 class="text-center mb-4 pb-4 text-light">Global Technology Services LLC works with dozens of companies
+                to bring our customers and clients the
+                best technology and
+                services
+                available.
+                Global
+                Technology Services chooses one of those companies to be our Featured Partner every
+                month.<br /><br />Featured
+                Partners
+                are highlighted on our featured page, and customers who signup with the featured partner will
+                qualify to
+                particiapate in the Global Technology Services LLC Featured Partner Prize Drawing. Prizes depend on the
+                services or products
+                offered by
+                the featured partner, and are available while inventory last.</h5>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center text-light my-4" data-aos="fade-right">
             Get amazing products <em><b class="text-primary text-uppercase">plus</b></em>
         </h2>
-        <hr class="style-seven">
         <div class="card text-light mb-4 text-center">
             <div class="card-body">
                 <h3 class="text-center">Win a <b>Samsung 50" 4k TV</b> or <b>Galaxy Tab A</b></h3>
@@ -25,7 +53,7 @@
             </div>
         </div>
         <br>
-        <app-store [isPage]="false"></app-store>
+        <!-- <app-store [isPage]="false"></app-store> -->
     </div>
 </section>
 

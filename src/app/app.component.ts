@@ -83,7 +83,6 @@ export class AppComponent implements OnInit {
       'featured',
       'services',
       'about',
-      'store',
       'contact',
     ].map(id => {
       this.activeLink = url;
