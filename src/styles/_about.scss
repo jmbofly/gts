@@ -1,5 +1,5 @@
-.rounded-circle {
-    box-shadow: 0px 14px 16px rgba(0, 0, 0, .3);
+.about {
+    background-color: $gray-200;
 }
 
 .showcase {
@@ -16,7 +16,7 @@
 
     .showcase-text {
         padding: 3rem;
-        color: $white;
+        color: $black;
 
         h2 {
             color: $primary;

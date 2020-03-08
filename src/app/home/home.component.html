@@ -1,7 +1,8 @@
 <!-- Masthead -->
 <app-masthead #masthead [slider]="true" [title]="title"></app-masthead>
 <!-- Icons Grid -->
-<section class="features-icons text-center text-light" [style.background]="'#151719'">
+<section class="features-icons text-center text-dark bg-light">
+    <div class="text-center w-100 pb-5"><i class="fa fa-chevron-down fa-2x animated bounce infinite slower"></i></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
@@ -20,11 +21,11 @@
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 " data-aos="zoom-up">
                     <div class="features-icons-icon d-flex" (click)="navigateTo('services')" data-aos="flip-left"
                         data-aos-delay="150">
-                        <i class="fa fa-chain m-auto text-primary"></i>
+                        <i class="fa fa-puzzle-piece m-auto text-primary"></i>
                     </div>
-                    <h3>Connection</h3>
-                    <p class="lead mb-0">Bundled packages, Mobile, Video Streaming, Telemedicine, Gaming, Mini PC's
-                        and much more
+                    <h3>Solutions</h3>
+                    <p class="lead mb-0">Get an exclusive team for customized solutions for your business and your
+                        needs.
                     </p>
                 </div>
             </div>
@@ -54,7 +55,7 @@
 <app-about [isPage]="false"></app-about>
 
 <!-- Testimonials -->
-<section class="testimonials text-center text-light bg-dark">
+<section class="testimonials text-center text-dark">
     <div class="container">
         <h2 class="mb-5">What people are saying...</h2>
         <div class="row">

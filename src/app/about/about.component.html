@@ -2,7 +2,7 @@
 <!-- Marketing messaging and featurettes
       ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
-<section class="features-icons text-center text-light">
+<section class="about features-icons text-center text-dark">
     <div class="container marketing">
 
         <!-- Three columns of text below the carousel -->
@@ -23,8 +23,8 @@
                         <i class="fa fa-users m-auto text-primary"></i>
                     </div>
                     <h3>Community</h3>
-                    <p class="lead mb-0">An active role in our community is a priority and a privalege. We care for our
-                        neighbors and are proud of what we have accomplisdhed with their support.</p>
+                    <p class="lead mb-0">Having an active role in our community is a priority and a privalege. We care for our
+                        neighbors and are proud of what we have accomplished with their support.</p>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -43,15 +43,15 @@
 </section>
 <section class="showcase">
     <div class="container">
-        <h1 class="text-center text-light mt-4">
-            <i class="fa fa-map-pin text-primary"></i> Origin Story
+        <h1 class="text-center text-primary mt-4">
+            <i class="fa fa-map-pin"></i> Origin Story
         </h1>
     </div>
     <div class="container-fluid p-0 text-center">
-        <div class="p-4 m-0 text-center" [style.background]="'transparent'">
+        <div class="p-4 m-0 mb-5 text-center" [style.background]="'transparent'">
             <div class="container">
                 <div class="row">
-                    <div class="card bg-transparent text-light mx-auto d slowest">
+                    <div class="card bg-transparent mx-auto d slowest">
                         <div class="card-body">
                             <div>
                                 <h4 class="my-1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
@@ -69,7 +69,17 @@
                                     implement
                                     those
                                     services
-                                    with precision and empathy.</h5>
+                                    with precision and empathy.<br><br> Talk is cheap, and too many companies are
+                                    wasting
+                                    money
+                                    trying to get the technology needed to stay competetive and keep their customers
+                                    coming back. Demand requires we keep up with technology. Let us be the
+                                    solution.<br><br>
+                                    After experiencing the pains of not having the tools needed to succeed, our founder
+                                    went out and started helping those who face the same problem. The growth
+                                    technology has created, should be for every business. Our founder knew
+                                    that technology levels the playing-field, and no longer are the days of the large
+                                    companies being the only ones with the best technology.<br><br> </h5>
                             </div>
                             <img class="img-fluid" width="200" [src]="getImage('sdv3.png')" alt="">
                         </div>
@@ -77,10 +87,19 @@
                 </div>
             </div>
         </div>
-        <div class="row no-gutters" style="margin-top: 4rem;">
-            <div class="col-lg-6 order-lg-2 showcase-img " data-aos="fade-up"
-                [style.background-image]="'url(' +  getImage('bg-showcase-1.jpg') + ')'">
+        <app-call-to-action></app-call-to-action>
+        <div class="row no-gutters">
+            <div class="col-lg-6 order-lg-2 my-auto showcase-text">
+                <h2>Step-by-step Guidence</h2>
+                <p class="lead mb-0">Change can be scary, and it helps to have experience and knowledge when deciding
+                    what is next. That's where GTS comes in. Finding the solution is our specialty.</p>
+                <button class="btn btn-outline-primary btn-block mt-4">Learn more</button>
             </div>
+            <div class="col-lg-6 order-lg-1 showcase-img " data-aos="fade-up"
+                [style.background-image]="'url(' +  getImage('bg-masthead-3.jpg') + ')'">
+            </div>
+        </div>
+        <div class="row no-gutters">
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                 <h2>Digital Marketing</h2>
                 <p class="lead mb-0">When a business is ready to grow, GTS can provide expert marketing and consulting
@@ -90,29 +109,32 @@
                     campaigns are just some of the services we offer.</p>
                 <button class="btn btn-outline-primary btn-block mt-4">Learn more</button>
             </div>
+            <div class="col-lg-6 order-lg-2 showcase-img " data-aos="fade-up"
+                [style.background-image]="'url(' +  getImage('bg-showcase-1.jpg') + ')'">
+            </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-lg-6 showcase-img " data-aos="fade-up"
-                [style.background-image]="'url(' +  getImage('bg-showcase-2.jpg') + ')'">
-            </div>
-            <div class="col-lg-6 my-auto showcase-text">
+            <div class="col-lg-6 my-auto showcase-text order-lg-2">
                 <h2>Research &amp; Development</h2>
                 <p class="lead mb-0">Have an idea you want to make a reality? Or a product line that you want to supply
                     on a larger scale? GTS will guide you step-by-step through the design, development, integration and
                     implementation phases.</p>
                 <button class="btn btn-outline-primary btn-block mt-4">Learn more</button>
             </div>
+            <div class="col-lg-6 showcase-img order-lg-1" data-aos="fade-up"
+                [style.background-image]="'url(' +  getImage('bg-showcase-2.jpg') + ')'">
+            </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-2 showcase-img " data-aos="fade-up"
-                [style.background-image]="'url(' +  getImage('bg-showcase-3.jpg') + ')'">
-            </div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                 <h2>Accessibility &amp; Medical</h2>
                 <p class="lead mb-0">Technology needs to be available for everyone. We are determined to make technology
                     that is inclusive, helping those that integrate technology into their lives. Through our own
                     experience we see the benefits of making products that are available for everyone. </p>
                 <button class="btn btn-outline-primary btn-block mt-4">Learn more</button>
+            </div>
+            <div class="col-lg-6 order-lg-2 showcase-img " data-aos="fade-up"
+                [style.background-image]="'url(' +  getImage('bg-showcase-3.jpg') + ')'">
             </div>
         </div>
     </div>

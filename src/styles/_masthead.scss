@@ -1,6 +1,7 @@
 header.masthead {
   position: relative;
   margin-top: 4.5rem;
+  background-color: lighten($blue, 80);
 
   @media (max-width: 760px) {
     margin-top: 4rem;
@@ -45,7 +46,7 @@ header.masthead {
       img:not(.img-inner) {
         height: 600px;
         width: 100%;
-        opacity: .2;
+        opacity: .5;
       }
 
       .carousel-caption {

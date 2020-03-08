@@ -1,20 +1,19 @@
 <app-masthead #masthead [images]="images" [title]="currentTitle" *ngIf="isPage"></app-masthead>
-<section class="services-section" [style.background]="'#151719'" data-aos="fade">
-    <div *ngFor="let service of services" class="jumbotron jumbotron bg-transparent text-center  text-light mb-0"
-        [id]="service.id">
+<section class="services-section" data-aos="fade">
+    <div *ngFor="let service of services" class="jumbotron jumbotron bg-transparent text-center mb-0" [id]="service.id">
         <!-- <hr class="my-2 bg-transparent"> -->
         <div class="container mx-xs-0 px-xs-0">
             <h1 class="text-primary text-uppercase">{{service.title}}</h1>
-            <hr class="style-seven">
+            <hr class="bg-primary">
             <p class="lead">{{ service.subtitle }}</p>
             <div [innerHTML]="service.overview | safeHtml"></div>
-            <p class="lead">
+            <!-- <p class="lead">
                 <button class="btn btn-primary btn-lg" [disabled]="service.id === 'store'"
                     (click)="toggleService(service.id)">{{service.name}} <i class="fa animated"
-                        [ngClass]="service?.toggled ? ' FadeIn fa-chevron-up':'fadeIn fa-chevron-down'"></i></button>
-            </p>
-            <div class="card animated" [ngClass]="service.toggled ? 'zoomInUp':'d-none zoomOutDown'">
-                <div class="card-body text-light">
+                        [ngClass]="service?.toggled ? 'fadeIn fa-chevron-up':'fadeIn fa-chevron-down'"></i></button>
+            </p> -->
+            <div class="card animated overflow-hidden" [ngClass]="service.toggled ? 'zoomInUp':'d-none zoomOutDown'">
+                <div class="card-body">
                     <div class="container">
                         <div class="row">
                             <div *ngFor="let img of service.images" class="col-md-4 mx-auto">

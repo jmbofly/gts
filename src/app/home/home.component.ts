@@ -10,7 +10,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class HomeComponent implements OnInit {
   title = {
     main: 'Your Technology Solution',
-    sub: '<h1 class="lead font-weight-bold" data-aos="fade-left" data-aos-delay="750">Global Technology Services, LLC</h1><h3 class="text-primary my-4">Get our monthly Newsletter.</h3>',
+    sub: '<h1 class="lead text-dark font-weight-bold" data-aos="fade-left" data-aos-delay="750">Global Technology Services, LLC</h1><h3 class="text-primary my-4">Get our monthly Newsletter.</h3>',
     cta: true,
     bg: 'bg-masthead-2.jpg',
     action: 'signup',

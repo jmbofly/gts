@@ -9,8 +9,8 @@
 
 .card {
     background: rgba(67, 67, 67, 0.3) !important;
-    border-bottom: .5px dashed $orange;
-    border-top: .5px dashed $orange;
+    border-bottom: .5px solid $primary;
+    border-top: .5px solid $primary;
     @include box-shadow-far(0, 14px, 16px, rgba(0, 0, 0, .3));
 
     .card-header {

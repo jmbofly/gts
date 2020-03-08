@@ -62,7 +62,7 @@
                                 <img class="img-inner" [src]="getImage(title?.overlay?.src)" [alt]="title?.overlay?.alt"
                                     [width]="title?.overlay?.width">
                             </div>
-                            <a *ngIf="title.action === 'redirect'" class="btn btn-primary btn-block border-dark"
+                            <a *ngIf="title.action === 'redirect'" class="btn btn-primary btn-block border-dark btn-lg border-0" style="outline: none;"
                                 [href]="title?.redirectURL" target="_blank">Go now!</a>
                             <form *ngIf="title.action === 'signup'" class="w-auto">
                                 <div class="form-row align-items-center justify-content-center">

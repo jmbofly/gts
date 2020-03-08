@@ -1,7 +1,14 @@
 .features-icons {
   background-color: $gray-700;
-  padding-top: 12rem;
+  padding-top: 4rem;
   padding-bottom: 7rem;
+
+  .bounce {
+    -webkit-animation-duration: 1200ms !important;
+    animation-duration: 1200ms !important;
+    -webkit-animation-iteration-count: infinite !important;
+    animation-iteration-count: infinite !important;
+  }
 
   .features-icons-item {
     max-width: 20rem;

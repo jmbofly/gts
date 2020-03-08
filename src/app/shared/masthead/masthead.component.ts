@@ -23,7 +23,7 @@ export class MastheadComponent implements OnInit {
   ]
   emailSuccess = false;
 
-  defaultImages = ['https://i.cbc.ca/1.4833630.1537555507!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/global-internet-abstract.jpg', 'https://images.unsplash.com/photo-1505424297051-c3ad50b055ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80', 'https://adoredtv.com/wp-content/uploads/2019/07/cropped-zotac-super-featured-v2-adoredtv.jpg'];
+  defaultImages = ['https://i.cbc.ca/1.4833630.1537555507!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/global-internet-abstract.jpg', 'https://images.unsplash.com/photo-1505424297051-c3ad50b055ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80'];
   constructor(public router: Router, private route: ActivatedRoute, private data: DataService, private config: NgbCarouselConfig) {
     config.interval = 10000;
     config.wrap = true;
